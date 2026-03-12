@@ -1,0 +1,275 @@
+{
+  "date": "2026-03-03",
+  "time": "08:30",
+  "price_snapshots": [
+    {
+      "ticker": "MSFT",
+      "name": "微软 - AI全栈",
+      "price": 398.55,
+      "change_pct": 1.48,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "TSM",
+      "name": "台积电 - 芯片制造",
+      "price": 369.11,
+      "change_pct": -1.46,
+      "emoji": "🔴",
+      "dist_52w": null
+    },
+    {
+      "ticker": "AMD",
+      "name": "AMD - GPU竞争者",
+      "price": 198.62,
+      "change_pct": -0.79,
+      "emoji": "🔴",
+      "dist_52w": null
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML - 光刻机垄断",
+      "price": 1423.54,
+      "change_pct": -1.86,
+      "emoji": "🔴",
+      "dist_52w": null
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy - 核电龙头",
+      "price": 327.16,
+      "change_pct": -0.82,
+      "emoji": "🔴",
+      "dist_52w": null
+    },
+    {
+      "ticker": "CCJ",
+      "name": "Cameco - 铀矿龙头",
+      "price": 125.74,
+      "change_pct": 6.2,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "XOM",
+      "name": "埃克森美孚 - 石油",
+      "price": 154.22,
+      "change_pct": 1.13,
+      "emoji": "🟢",
+      "dist_52w": null
+    }
+  ],
+  "earnings": [],
+  "news": [
+    {
+      "title": "Apple launches new iPhone and iPad Air as it gears up for a major AI push",
+      "link": "https://www.marketwatch.com/story/apple-launches-new-iphone-and-ipad-air-as-it-gears-up-for-a-major-ai-push-570b24ae?mod=mw_rss_topstories",
+      "published": "03-03 00:16",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Nvidia’s stock is Morgan Stanley’s new top chip pick — replacing Micron",
+      "link": "https://www.marketwatch.com/story/nvidias-stock-is-morgan-stanleys-new-top-chip-pick-replacing-micron-2dfffd2b?mod=mw_rss_topstories",
+      "published": "03-02 22:18",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "First flights take off from Dubai after Iran strikes, but service is 'limited'",
+      "link": "https://www.cnbc.com/2026/03/02/middle-east-flights.html",
+      "published": "03-03 00:12",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "The Strait of Hormuz crisis explained: What it means for global shipping",
+      "link": "https://www.cnbc.com/2026/03/02/strait-of-hormuz-crisis-us-iran-israel-war-shipping-trade-oil.html",
+      "published": "03-02 17:49",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Apple launches lower cost iPhone 17e and a new iPad Air powered by its M4 chip",
+      "link": "https://www.cnbc.com/2026/03/02/apple-iphone-17e-ipad-air-m4-chip.html",
+      "published": "03-02 17:11",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "What student loan borrowers need to know about judge's ruling on SAVE plan",
+      "link": "https://www.cnbc.com/2026/03/02/student-loan-borrowers-save-ruling.html",
+      "published": "03-02 20:09",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Wells Fargo Retains an Underweight Rating on Ternium S.A. (TX)",
+      "link": "https://finance.yahoo.com/news/wells-fargo-retains-underweight-rating-124441422.html",
+      "published": "03-01 12:44",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "BofA Maintains a Neutral Rating on Cleveland-Cliffs Inc. (CLF)",
+      "link": "https://finance.yahoo.com/news/bofa-maintains-neutral-rating-cleveland-124442068.html",
+      "published": "03-01 12:44",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Stripe wants to turn your AI costs into a profit center",
+      "link": "https://techcrunch.com/2026/03/02/stripe-wants-to-turn-your-ai-costs-into-a-profit-center/",
+      "published": "03-02 23:18",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "No one has a good plan for how AI companies should work with the government",
+      "link": "https://techcrunch.com/2026/03/02/openai-anthropic-department-of-defense-war-hegseth-ai-companies-work-with-us-government/",
+      "published": "03-02 22:59",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Tech workers urge DOD, Congress to withdraw Anthropic label as a supply-chain risk",
+      "link": "https://techcrunch.com/2026/03/02/tech-workers-urge-dod-congress-to-withdraw-anthropic-label-as-a-supply-chain-risk/",
+      "published": "03-02 17:18",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "X adds ‘Paid Partnership’ labels so creators can ditch the hashtags",
+      "link": "https://techcrunch.com/2026/03/02/x-ads-paid-partnership-labels-for-creators-so-they-can-ditch-the-hashtags/",
+      "published": "03-02 16:25",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Anthropic upgrades Claude’s memory to attract AI switchers",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/887885/anthropic-claude-memory-upgrades-importing",
+      "published": "03-02 22:29",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Apple’s cheapest AirPods have hit $89",
+      "link": "https://www.theverge.com/gadgets/887839/apple-airpods-4-active-noise-cancellation-deal-sale",
+      "published": "03-02 22:03",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "How the new iPhone 17E stacks up against Apple’s pricier phones",
+      "link": "https://www.theverge.com/gadgets/887570/iphone-17e-vs-17-pro-max-air-spec-comparison-price-features",
+      "published": "03-02 20:41",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Apple might use Google servers to store data for its upgraded AI Siri",
+      "link": "https://www.theverge.com/tech/887802/apple-ai-siri-google-servers",
+      "published": "03-02 20:22",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "AI-generated art can&#8217;t be copyrighted after Supreme Court declines to review the rule",
+      "link": "https://www.theverge.com/policy/887678/supreme-court-ai-art-copyright",
+      "published": "03-02 17:58",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Nvidia&#8217;s spending $4 billion on photonics to stay ahead of the curve in AI",
+      "link": "https://www.theverge.com/tech/887635/nvidia-ai-photonics-lumentum-coherent",
+      "published": "03-02 16:56",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "$599 M4 iPad Air is a lot like the old one, but with a substantial RAM boost",
+      "link": "https://arstechnica.com/gadgets/2026/03/apple-keeps-the-ipad-air-fresh-with-m4-chip-upgrade-and-12gb-of-ram/",
+      "published": "03-02 15:06",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "Apple's new iPhone 17e has an A19 chip, MagSafe, and 256GB of storage for $599",
+      "link": "https://arstechnica.com/gadgets/2026/03/apples-new-iphone-17e-has-an-a19-chip-magsafe-and-256gb-of-storage-for-599/",
+      "published": "03-02 14:34",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "It's almost a station wagon: The 2026 Subaru Trailseeker, driven",
+      "link": "https://arstechnica.com/cars/2026/03/2026-subaru-trailseeker-first-drive-the-most-quintessentially-subaru-ev-yet/",
+      "published": "03-02 14:00",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "AMD Ryzen AI 400 chips will bring newer CPUs, GPUs, and NPUs to AM5 desktops",
+      "link": "https://arstechnica.com/gadgets/2026/03/amd-ryzen-ai-400-cpus-will-bring-upgraded-graphics-to-socket-am5-desktops/",
+      "published": "03-02 08:00",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+      "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+      "published": "01-22 14:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+      "link": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+      "published": "01-16 14:01",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
+      "link": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+      "published": "01-13 13:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Tripartite agreement to advance nuclear energy in Africa",
+      "link": "https://www.world-nuclear-news.org//articles/tripartite-agreement-to-advance-nuclear-energy-in-africa",
+      "published": "02-17 10:56",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "AP1000 training centre opened in Madrid ahead of European fleet",
+      "link": "https://www.world-nuclear-news.org//articles/ap1000-control-room-simulator-opened-in-madrid-for-european-fleet-training",
+      "published": "02-17 16:03",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "Slovenia moves ahead with new nuclear planning",
+      "link": "https://www.world-nuclear-news.org//articles/slovenia-moves-ahead-with-new-nuclear-planning",
+      "published": "02-18 12:31",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "Surging Oil Prices Could Derail Pakistan’s Fragile Economic Recovery",
+      "link": "https://oilprice.com/Energy/Crude-Oil/Surging-Oil-Prices-Could-Derail-Pakistans-Fragile-Economic-Recovery.html",
+      "published": "03-02 23:00",
+      "source": "OilPrice",
+      "category": "能源核能"
+    },
+    {
+      "title": "The High Stakes Futility of the AI Race",
+      "link": "https://oilprice.com/Energy/Energy-General/The-High-Stakes-Futility-of-the-AI-Race.html",
+      "published": "03-02 20:00",
+      "source": "OilPrice",
+      "category": "能源核能"
+    }
+  ]
+}

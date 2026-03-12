@@ -1,0 +1,198 @@
+{
+  "date": "2026-02-25",
+  "time": "08:30",
+  "price_snapshots": [
+    {
+      "ticker": "MSFT",
+      "name": "微软 - AI全栈",
+      "price": 389.0,
+      "change_pct": 1.18,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "TSM",
+      "name": "台积电 - 芯片制造",
+      "price": 385.75,
+      "change_pct": 4.25,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "AMD",
+      "name": "AMD - GPU竞争者",
+      "price": 213.84,
+      "change_pct": 8.77,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML - 光刻机垄断",
+      "price": 1497.8,
+      "change_pct": 0.79,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy - 核电龙头",
+      "price": 312.64,
+      "change_pct": 6.41,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "CCJ",
+      "name": "Cameco - 铀矿龙头",
+      "price": 121.08,
+      "change_pct": 1.96,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "XOM",
+      "name": "埃克森美孚 - 石油",
+      "price": 149.26,
+      "change_pct": -0.99,
+      "emoji": "🔴",
+      "dist_52w": null
+    }
+  ],
+  "earnings": [],
+  "news": [
+    {
+      "title": "Workday’s stock dives as earnings reveal the cost of competing in AI",
+      "link": "https://www.marketwatch.com/story/workdays-stock-dives-as-earnings-reveal-the-cost-of-competing-in-ai-3578985b?mod=mw_rss_topstories",
+      "published": "02-24 23:29",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Why did AI ‘science fiction’ spur market panic? We asked a behavioral-finance expert to find out.",
+      "link": "https://www.marketwatch.com/story/why-did-ai-science-fiction-spur-market-panic-we-asked-a-behavioral-finance-expert-to-find-out-beb32363?mod=mw_rss_topstories",
+      "published": "02-24 22:58",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "‘I am fearful’: My ailing relative is being forced into assisted living. What can I do?",
+      "link": "https://www.marketwatch.com/story/i-am-fearful-my-ailing-relative-is-being-forced-into-assisted-living-what-can-i-do-7ce8b42a?mod=mw_rss_topstories",
+      "published": "02-24 22:36",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Emerging Markets And The AI Surge",
+      "link": "https://seekingalpha.com/article/4874219-emerging-markets-and-the-ai-surge?source=feed_all_articles",
+      "published": "02-25 00:15",
+      "source": "SeekingAlpha",
+      "category": "金融新闻"
+    },
+    {
+      "title": "PayPal Doesn't Need A Buyout Now",
+      "link": "https://seekingalpha.com/article/4874170-paypal-doesnt-need-a-buyout-now?source=feed_all_articles",
+      "published": "02-24 23:55",
+      "source": "SeekingAlpha",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Chipotle Mexican Grill Stock: Analyst Estimates & Ratings",
+      "link": "https://finance.yahoo.com/news/chipotle-mexican-grill-stock-analyst-124210963.html",
+      "published": "02-23 12:42",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "RS Large Cap Value Strategy’s Views on Sealed Air Corporation (SEE)",
+      "link": "https://finance.yahoo.com/news/rs-large-cap-value-strategy-125602697.html",
+      "published": "02-23 12:56",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Spanish ‘soonicorn’ Multiverse Computing releases free compressed AI model",
+      "link": "https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/",
+      "published": "02-24 23:32",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Uber engineers built an AI version of their boss",
+      "link": "https://techcrunch.com/2026/02/24/uber-engineers-built-ai-version-of-boss-dara-khosrowshahi/",
+      "published": "02-24 23:09",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Former L3Harris Trenchant boss jailed for selling hacking tools to Russian broker",
+      "link": "https://techcrunch.com/2026/02/24/former-l3harris-trenchant-boss-jailed-for-selling-hacking-tools-to-russian-broker/",
+      "published": "02-24 21:50",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Anthropic won’t budge as Pentagon escalates AI dispute",
+      "link": "https://techcrunch.com/2026/02/24/anthropic-wont-budge-as-pentagon-escalates-ai-dispute/",
+      "published": "02-24 21:18",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "OpenAI defeats xAI’s trade secrets lawsuit",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/884049/openai-elon-musk-xai-trade-secrets-lawsuit",
+      "published": "02-24 23:05",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Seedance 2.0 might be gen AI video’s next big hope, but it’s still slop",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/883615/seedance-bytedance-tom-cruise-brad-pitt-jia-zhangke",
+      "published": "02-24 18:30",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Archer Aviation accuses rival Vertical Aerospace of ripping off its air taxi designs",
+      "link": "https://www.theverge.com/transportation/883648/archer-vertical-patent-infringement-air-taxi",
+      "published": "02-24 17:16",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Meta could end up owning 10% of AMD in new chip deal",
+      "link": "https://arstechnica.com/ai/2026/02/meta-could-end-up-owning-of-10-amd-in-new-chip-deal/",
+      "published": "02-24 14:10",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+      "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+      "published": "01-22 14:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+      "link": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+      "published": "01-16 14:01",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
+      "link": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+      "published": "01-13 13:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "US campaign puts case for disposal, not reprocessing, of used fuel",
+      "link": "https://www.world-nuclear-news.org//articles/us-campaign-puts-case-for-disposal-not-reprocessing-of-used-fuel",
+      "published": "02-12 10:33",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    }
+  ]
+}

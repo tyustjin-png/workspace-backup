@@ -1,0 +1,248 @@
+{
+  "date": "2026-03-06",
+  "time": "08:30",
+  "price_snapshots": [
+    {
+      "ticker": "NVDA",
+      "name": "英伟达 - AI芯片",
+      "price": 183.34,
+      "change_pct": 0.16,
+      "emoji": "🟢",
+      "dist_52w": -13.6
+    },
+    {
+      "ticker": "MSFT",
+      "name": "微软 - AI全栈",
+      "price": 410.68,
+      "change_pct": 1.35,
+      "emoji": "🟢",
+      "dist_52w": -26.1
+    },
+    {
+      "ticker": "TSM",
+      "name": "台积电 - 芯片制造",
+      "price": 353.86,
+      "change_pct": -1.0,
+      "emoji": "🔴",
+      "dist_52w": -9.3
+    },
+    {
+      "ticker": "AMD",
+      "name": "AMD - GPU竞争者",
+      "price": 199.45,
+      "change_pct": -1.3,
+      "emoji": "🔴",
+      "dist_52w": -25.3
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML - 光刻机垄断",
+      "price": 1368.36,
+      "change_pct": -2.22,
+      "emoji": "🔴",
+      "dist_52w": -11.6
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy - 核电龙头",
+      "price": 332.07,
+      "change_pct": 2.86,
+      "emoji": "🟢",
+      "dist_52w": -19.5
+    },
+    {
+      "ticker": "CCJ",
+      "name": "Cameco - 铀矿龙头",
+      "price": 114.24,
+      "change_pct": -4.99,
+      "emoji": "🔴",
+      "dist_52w": -15.5
+    },
+    {
+      "ticker": "XOM",
+      "name": "埃克森美孚 - 石油",
+      "price": 150.76,
+      "change_pct": 0.63,
+      "emoji": "🟢",
+      "dist_52w": -5.5
+    }
+  ],
+  "earnings": [],
+  "news": [
+    {
+      "title": "Why Broadcom’s earnings report has Wall Street so upbeat on a bad day for chip stocks",
+      "link": "https://www.marketwatch.com/story/why-broadcoms-earnings-report-has-wall-street-so-upbeat-on-a-bad-day-for-chip-stocks-8ff9306e?mod=mw_rss_topstories",
+      "published": "03-06 00:19",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Trade Desk’s stock soars, as a potential OpenAI partnership gives investors reason to cheer",
+      "link": "https://www.marketwatch.com/story/trade-desks-stock-soars-as-a-potential-openai-partnership-gave-investors-reason-to-cheer-542f2331?mod=mw_rss_topstories",
+      "published": "03-05 23:10",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "The scary numbers on retirement healthcare: You’ll need up to $469,000 saved",
+      "link": "https://www.marketwatch.com/story/the-scary-numbers-on-retirement-healthcare-youll-need-up-to-469-000-saved-ae5d4f96?mod=mw_rss_topstories",
+      "published": "03-05 22:38",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "This Gap brand continues to be an underperformer, and it is dragging the retailer’s stock",
+      "link": "https://www.marketwatch.com/story/this-gap-brand-continues-to-be-an-underperformer-and-it-is-dragging-the-retailers-stock-579397c9?mod=mw_rss_topstories",
+      "published": "03-05 22:28",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Anthropic officially told by DOD that it's a supply chain risk even as Claude used in Iran",
+      "link": "https://www.cnbc.com/2026/03/05/anthropic-pentagon-ai-claude-iran.html",
+      "published": "03-05 22:08",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Boeing And Airbus Deliveries Weakness Show Critical Challenge: What's Going On?",
+      "link": "https://seekingalpha.com/article/4879205-boeing-and-airbus-deliveries-weakness-show-critical-challenge-whats-going-on?source=feed_all_articles",
+      "published": "03-05 23:56",
+      "source": "SeekingAlpha",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Oil prices steady after President Trump offers tankers protection through Strait of Hormuz",
+      "link": "https://finance.yahoo.com/news/oil-prices-steady-after-president-trump-offers-tankers-protection-through-strait-of-hormuz-124828108.html",
+      "published": "03-04 12:48",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "DiligenceSquared uses AI, voice agents to make M&A research affordable",
+      "link": "https://techcrunch.com/2026/03/05/diligencesquared-uses-ai-voice-agents-to-make-ma-research-affordable/",
+      "published": "03-05 23:14",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "AWS launches a new AI agent platform specifically for healthcare",
+      "link": "https://techcrunch.com/2026/03/05/aws-amazon-connect-health-ai-agent-platform-health-care-providers/",
+      "published": "03-05 21:54",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "US reportedly considering sweeping new chip export controls",
+      "link": "https://techcrunch.com/2026/03/05/us-reportedly-considering-sweeping-new-chip-export-controls/",
+      "published": "03-05 21:24",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "It’s official: The Pentagon has labeled Anthropic a supply-chain risk",
+      "link": "https://techcrunch.com/2026/03/05/its-official-the-pentagon-has-labeled-anthropic-a-supply-chain-risk/",
+      "published": "03-05 20:24",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "The Pentagon formally labels Anthropic a supply-chain risk",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/890347/pentagon-anthropic-supply-chain-risk",
+      "published": "03-05 23:02",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "United Airlines can permanently ban passengers who don’t wear headphones",
+      "link": "https://www.theverge.com/transportation/890202/united-airlines-headphones-policy-contract-of-carriage",
+      "published": "03-05 20:22",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Birdbuddy’s AI-powered hummingbird feeder is matching its best price to date",
+      "link": "https://www.theverge.com/gadgets/889975/birdbuddy-smart-hummingbird-feeder-pro-solar-deal-sale",
+      "published": "03-05 18:58",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Netflix is buying Ben Affleck’s AI startup",
+      "link": "https://www.theverge.com/streaming/889973/netflix-ben-affleck-interpositive-ai",
+      "published": "03-05 18:27",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "OpenAI’s new GPT-5.4 model is a big step toward autonomous agents",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/889926/openai-gpt-5-4-model-release-ai-agents",
+      "published": "03-05 18:00",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "OpenAI introduces GPT-5.4 with more knowledge-work capability",
+      "link": "https://arstechnica.com/ai/2026/03/openai-introduces-gpt-5-4-with-more-knowledge-work-capability/",
+      "published": "03-05 20:55",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "The Boys S5 trailer tees up a bloody final season",
+      "link": "https://arstechnica.com/culture/2026/03/the-boys-s5-trailer-tees-up-a-bloody-final-season/",
+      "published": "03-05 18:55",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+      "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+      "published": "01-22 14:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+      "link": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+      "published": "01-16 14:01",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
+      "link": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+      "published": "01-13 13:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Kairos, DOE enhance collaboration on advanced reactor design",
+      "link": "https://www.world-nuclear-news.org//articles/kairos-doe-enhance-collaboration-on-advanced-reactor-design",
+      "published": "02-23 09:20",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "First concrete for Kaiga 5 & 6 in India approved",
+      "link": "https://www.world-nuclear-news.org//articles/first-concrete-for-kaiga-5-6-in-india-approved",
+      "published": "02-26 10:17",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "AI Boom Siphons Billions From Crucial Energy Innovation Funding",
+      "link": "https://oilprice.com/Energy/Energy-General/AI-Boom-Siphons-Billions-From-Crucial-Energy-Innovation-Funding.html",
+      "published": "03-05 21:00",
+      "source": "OilPrice",
+      "category": "能源核能"
+    },
+    {
+      "title": "Drone Strike Hits Bahrain Refinery as Crack Spreads Surge",
+      "link": "https://oilprice.com/Latest-Energy-News/World-News/Drone-Strike-Hits-Bahrain-Refinery-as-Crack-Spreads-Surge.html",
+      "published": "03-05 16:45",
+      "source": "OilPrice",
+      "category": "能源核能"
+    }
+  ]
+}

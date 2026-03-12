@@ -1,0 +1,247 @@
+{
+  "date": "2026-02-27",
+  "time": "08:30",
+  "price_snapshots": [
+    {
+      "ticker": "MSFT",
+      "name": "微软 - AI全栈",
+      "price": 401.72,
+      "change_pct": 0.28,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "TSM",
+      "name": "台积电 - 芯片制造",
+      "price": 376.81,
+      "change_pct": -2.82,
+      "emoji": "🔴",
+      "dist_52w": null
+    },
+    {
+      "ticker": "AMD",
+      "name": "AMD - GPU竞争者",
+      "price": 203.68,
+      "change_pct": -3.41,
+      "emoji": "🔴",
+      "dist_52w": null
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML - 光刻机垄断",
+      "price": 1463.8,
+      "change_pct": -4.11,
+      "emoji": "🔴",
+      "dist_52w": null
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy - 核电龙头",
+      "price": 323.56,
+      "change_pct": -0.7,
+      "emoji": "🔴",
+      "dist_52w": null
+    },
+    {
+      "ticker": "CCJ",
+      "name": "Cameco - 铀矿龙头",
+      "price": 118.18,
+      "change_pct": -1.29,
+      "emoji": "🔴",
+      "dist_52w": null
+    },
+    {
+      "ticker": "XOM",
+      "name": "埃克森美孚 - 石油",
+      "price": 148.54,
+      "change_pct": -0.35,
+      "emoji": "🔴",
+      "dist_52w": null
+    }
+  ],
+  "earnings": [],
+  "news": [
+    {
+      "title": "Duolingo is making some changes to contend with the threat of AI. Its stock is sinking.",
+      "link": "https://www.marketwatch.com/story/duolingo-is-making-some-changes-to-contend-with-the-threat-of-ai-its-stock-is-sinking-32e75bc6?mod=mw_rss_topstories",
+      "published": "02-26 23:49",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Anthropic CEO Amodei says Pentagon's threats 'do not change our position' on AI",
+      "link": "https://www.cnbc.com/2026/02/26/anthropic-pentagon-ai-amodei.html",
+      "published": "02-26 23:41",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Trump said beef, egg and chicken prices are falling. Here's what the data shows",
+      "link": "https://www.cnbc.com/2026/02/26/trump-beef-egg-chicken-food-prices.html",
+      "published": "02-26 14:47",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "NVIDIA: Jensen Just Raised The AI Bar (Again), Buy The Post-Earnings Dip",
+      "link": "https://seekingalpha.com/article/4875833-nvidia-jensen-just-raised-the-ai-bar-again-buy-the-post-earnings-dip?source=feed_all_articles",
+      "published": "02-27 00:06",
+      "source": "SeekingAlpha",
+      "category": "金融新闻"
+    },
+    {
+      "title": "2 Cybersecurity Stocks to Buy Now for an Nvidia AI Boost",
+      "link": "https://finance.yahoo.com/news/2-cybersecurity-stocks-buy-now-123002927.html",
+      "published": "02-25 12:30",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "European Council adopts simplified sustainability reporting laws",
+      "link": "https://finance.yahoo.com/news/european-council-adopts-simplified-sustainability-123300116.html",
+      "published": "02-25 12:33",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Google paid startup Form Energy $1B for its massive 100-hour battery",
+      "link": "https://techcrunch.com/2026/02/26/google-paid-startup-form-energy-1b-for-its-massive-100-hour-battery/",
+      "published": "02-26 21:04",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "So, we’re getting Prada Meta AI glasses, right?",
+      "link": "https://techcrunch.com/2026/02/26/so-were-getting-prada-meta-ai-glasses-right/",
+      "published": "02-26 20:11",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Sophia Space raises $10M seed to demo novel space computers",
+      "link": "https://techcrunch.com/2026/02/26/sophia-space-raises-10m-seed-to-demo-novel-space-computers/",
+      "published": "02-26 19:55",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Mistral AI inks a deal with global consulting giant Accenture",
+      "link": "https://techcrunch.com/2026/02/26/mistral-ai-inks-a-deal-with-global-consulting-giant-accenture/",
+      "published": "02-26 19:17",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Microsoft&#8217;s Copilot Tasks AI uses its own computer to get things done",
+      "link": "https://www.theverge.com/tech/885741/microsoft-copilot-tasks-ai",
+      "published": "02-26 22:56",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Jack Dorsey’s Block cuts nearly half of its staff in AI gamble",
+      "link": "https://www.theverge.com/tech/885710/jack-dorsey-block-layoffs-job-cuts-ai",
+      "published": "02-26 22:11",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Why no magnets in Galaxy S26? Samsung R&#038;D chief explains",
+      "link": "https://www.theverge.com/news/885616/samsung-galaxy-s26-no-magnets-because-people-use-cases",
+      "published": "02-26 21:57",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Perplexity announces \"Computer,\" an AI agent that assigns work to other AI agents",
+      "link": "https://arstechnica.com/ai/2026/02/perplexity-announces-computer-an-ai-agent-that-assigns-work-to-other-ai-agents/",
+      "published": "02-26 22:53",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "xAI spent $7M building wall that barely muffles annoying power plant noise",
+      "link": "https://arstechnica.com/tech-policy/2026/02/pops-whines-and-roars-xai-accused-of-torturing-neighbors-of-noisy-power-plant/",
+      "published": "02-26 22:19",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "Google reveals Nano Banana 2 AI image model, coming to Gemini today",
+      "link": "https://arstechnica.com/ai/2026/02/google-releases-nano-banana-2-ai-image-generator-promises-pro-results-with-flash-speed/",
+      "published": "02-26 17:12",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "New AirSnitch attack breaks Wi-Fi encryption in homes, offices, and enterprises",
+      "link": "https://arstechnica.com/security/2026/02/new-airsnitch-attack-breaks-wi-fi-encryption-in-homes-offices-and-enterprises/",
+      "published": "02-26 15:45",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+      "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+      "published": "01-22 14:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+      "link": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+      "published": "01-16 14:01",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
+      "link": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+      "published": "01-13 13:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Nuclear central in France's latest energy strategy",
+      "link": "https://www.world-nuclear-news.org//articles/nuclear-central-in-frances-latest-energy-strategy",
+      "published": "02-13 15:17",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "OPG and Port Hope to collaborate on 10 GW new nuclear plan",
+      "link": "https://www.world-nuclear-news.org//articles/opg-and-port-hope-to-collaborate-on-10-gw-new-nuclear-plan",
+      "published": "02-13 12:24",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "Bannerman partners with CNNC for Namibian uranium project",
+      "link": "https://www.world-nuclear-news.org//articles/bannerman-partners-with-cnnc-for-namibian-uranium-project",
+      "published": "02-13 16:20",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "Taipingling 1 connected to the grid",
+      "link": "https://www.world-nuclear-news.org//articles/taipingling-1-connected-to-the-grid",
+      "published": "02-16 16:00",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "Britain Reconsiders 78% North Sea Oil Tax as Investment Slows",
+      "link": "https://oilprice.com/Latest-Energy-News/World-News/Britain-Reconsiders-78-North-Sea-Oil-Tax-as-Investment-Slows.html",
+      "published": "02-26 22:30",
+      "source": "OilPrice",
+      "category": "能源核能"
+    },
+    {
+      "title": "Ukraine’s Drone War Puts Kazakhstan’s Oil Lifeline at Risk",
+      "link": "https://oilprice.com/Energy/Energy-General/Ukraines-Drone-War-Puts-Kazakhstans-Oil-Lifeline-at-Risk.html",
+      "published": "02-26 19:00",
+      "source": "OilPrice",
+      "category": "能源核能"
+    }
+  ]
+}

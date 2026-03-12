@@ -1,0 +1,134 @@
+{
+  "date": "2026-03-09",
+  "time": "08:30",
+  "price_snapshots": [],
+  "earnings": [],
+  "news": [
+    {
+      "title": "We have $13.5 million and 3 kids, but one is an addict. How do we fairly divide our estate?",
+      "link": "https://www.marketwatch.com/story/my-husband-and-i-have-13-5-million-and-3-kids-but-one-is-an-addict-how-do-we-fairly-divide-our-estate-669a955b?mod=mw_rss_topstories",
+      "published": "03-08 17:36",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "China says 'thorough preparations' needed as Trump-Xi meeting hangs in the balance amid Iran war",
+      "link": "https://www.cnbc.com/2026/03/08/china-says-thorough-preparations-needed-ahead-of-trump-xi-meeting.html",
+      "published": "03-08 07:17",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "In a jobs apocalypse, look to ‘AI-proof’ skilled trades, career experts say",
+      "link": "https://www.cnbc.com/2026/03/08/jobs-apocalypse-ai-proof-skilled-trades.html",
+      "published": "03-08 13:30",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Meet the Artificial Intelligence (AI) ETF With 20% of Its Portfolio Parked in Alphabet, Nvidia, Micron, and Amazon",
+      "link": "https://finance.yahoo.com/news/meet-artificial-intelligence-ai-etf-134200771.html",
+      "published": "03-07 13:42",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Fixed costs gobble up a staggering 92% of high-earning couple's income. Ramit Sethi explains what's blocking their path",
+      "link": "https://finance.yahoo.com/news/fixed-costs-gobble-staggering-92-124500653.html",
+      "published": "03-07 12:45",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Bank of America Is Bullish on Tesla Again. Is That a Reason to Buy TSLA Stock?",
+      "link": "https://finance.yahoo.com/news/bank-america-bullish-tesla-again-140002231.html",
+      "published": "03-07 14:00",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Owner of ICE detention facility sees big opportunity in AI man camps",
+      "link": "https://techcrunch.com/2026/03/08/owner-of-ice-detention-facility-sees-big-opportunity-in-ai-man-camps/",
+      "published": "03-08 16:30",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "A roadmap for AI, if anyone will listen",
+      "link": "https://techcrunch.com/2026/03/07/a-roadmap-for-ai-if-anyone-will-listen/",
+      "published": "03-08 06:05",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Google just gave Sundar Pichai a $692M pay package",
+      "link": "https://techcrunch.com/2026/03/07/google-just-gave-sundar-pichai-a-692m-pay-package/",
+      "published": "03-08 00:20",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "OpenAI hardware exec Caitlin Kalinowski quits in response to Pentagon deal",
+      "link": "https://techcrunch.com/2026/03/07/openai-robotics-lead-caitlin-kalinowski-quits-in-response-to-pentagon-deal/",
+      "published": "03-07 20:44",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Jessica Jones joins the fray in Daredevil: Born Again trailer",
+      "link": "https://arstechnica.com/culture/2026/03/jessica-jones-joins-the-fray-in-daredevil-born-again-trailer/",
+      "published": "03-08 13:13",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "From Iran to Ukraine, everyone's trying to hack security cameras",
+      "link": "https://arstechnica.com/security/2026/03/from-iran-to-ukraine-everyones-trying-to-hack-security-cameras/",
+      "published": "03-07 11:30",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+      "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+      "published": "01-22 14:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+      "link": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+      "published": "01-16 14:01",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
+      "link": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+      "published": "01-13 13:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Kairos, DOE enhance collaboration on advanced reactor design",
+      "link": "https://www.world-nuclear-news.org//articles/kairos-doe-enhance-collaboration-on-advanced-reactor-design",
+      "published": "02-23 09:20",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "First concrete for Kaiga 5 & 6 in India approved",
+      "link": "https://www.world-nuclear-news.org//articles/first-concrete-for-kaiga-5-6-in-india-approved",
+      "published": "02-26 10:17",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "President Milei's Nuclear Ambitions Face Local Resistance in Patagonia",
+      "link": "https://oilprice.com/Metals/Commodities/President-Mileis-Nuclear-Ambitions-Face-Local-Resistance-in-Patagonia.html",
+      "published": "03-07 22:00",
+      "source": "OilPrice",
+      "category": "能源核能"
+    }
+  ]
+}

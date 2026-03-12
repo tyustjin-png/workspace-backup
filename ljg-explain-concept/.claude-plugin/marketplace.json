@@ -1,0 +1,18 @@
+{
+  "name": "ljg-explain-concept",
+  "description": "Concept Anatomist — 8-dimensional deep concept exploration skill for Claude Code",
+  "owner": {
+    "name": "lijigang"
+  },
+  "metadata": {
+    "description": "Deep concept anatomist that deconstructs any concept through 8 exploration dimensions (history, dialectics, phenomenology, linguistics, formalization, existentialism, aesthetics, meta-philosophy) and compresses insights into an epiphany.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "ljg-explain-concept",
+      "source": "./",
+      "description": "Deep concept anatomist skill. Use /ljg-explain-concept <concept> to deconstruct any concept."
+    }
+  ]
+}

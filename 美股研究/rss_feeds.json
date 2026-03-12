@@ -1,0 +1,20 @@
+{
+  "金融新闻": {
+    "Reuters Business": "http://feeds.reuters.com/reuters/businessNews",
+    "MarketWatch": "http://feeds.marketwatch.com/marketwatch/topstories/",
+    "CNBC": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+    "SeekingAlpha": "https://seekingalpha.com/feed.xml",
+    "Yahoo Finance": "https://finance.yahoo.com/news/rssindex"
+  },
+  "科技AI": {
+    "TechCrunch": "https://techcrunch.com/feed/",
+    "The Verge": "https://www.theverge.com/rss/index.xml",
+    "Ars Technica": "http://feeds.arstechnica.com/arstechnica/index",
+    "VentureBeat AI": "https://venturebeat.com/category/ai/feed/"
+  },
+  "能源核能": {
+    "World Nuclear News": "https://world-nuclear-news.org/rss",
+    "OilPrice": "https://oilprice.com/rss/main",
+    "Energy.gov": "https://www.energy.gov/rss/articles.xml"
+  }
+}

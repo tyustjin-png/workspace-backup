@@ -1,0 +1,25 @@
+{
+  "芯链": {
+    "NVDA": "英伟达 - AI芯片",
+    "MSFT": "微软 - AI全栈",
+    "TSM": "台积电 - 芯片制造",
+    "AMD": "AMD - GPU竞争者",
+    "ASML": "ASML - 光刻机垄断"
+  },
+  "能量": {
+    "CEG": "Constellation Energy - 核电龙头",
+    "CCJ": "Cameco - 铀矿龙头",
+    "XOM": "埃克森美孚 - 石油",
+    "NEE": "NextEra Energy - 新能源"
+  },
+  "ETF": {
+    "URA": "Global X Uranium ETF",
+    "ROBO": "AI机器人ETF",
+    "ARKX": "ARK Space ETF"
+  },
+  "IPO跟踪": {
+    "SpaceX": "2026年预期IPO",
+    "CoreWeave": "AI算力 2026年IPO",
+    "Figure AI": "机器人AI"
+  }
+}

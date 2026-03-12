@@ -1,0 +1,40 @@
+{
+  "_comment": "币安自动买入配置文件",
+  
+  "binance_api_key": "你的币安API_KEY",
+  "binance_api_secret": "你的币安API_SECRET",
+  "testnet": false,
+  
+  "symbol": "BTCUSDT",
+  "quote_asset": "USDT",
+  
+  "mode": "fixed_budget",
+  
+  "total_budget": 100000,
+  "expected_multiplier": 1.5,
+  "cycle_days": 365,
+  
+  "base_amount": null,
+  
+  "z_api_url": null,
+  "manual_z_value": 1,
+  
+  "_strategy_notes": {
+    "z_value_mapping": {
+      "0": "不买入（牛市/高位）",
+      "1": "1倍基础份额",
+      "2": "2倍基础份额",
+      "3": "3倍基础份额",
+      "4": "5倍基础份额（斐波那契）",
+      "5": "8倍基础份额",
+      "6": "13倍基础份额（极端底部）"
+    },
+    "base_amount_calculation": "如果不设置 base_amount，将自动计算：base_amount = total_budget / (expected_multiplier × cycle_days)",
+    "example": "总预算 $100,000，期望倍数 1.5，周期 365 天 → 基础份额 = 100000 / (1.5 × 365) ≈ $182.65"
+  },
+  
+  "_modes": {
+    "fixed_budget": "固定预算模式 - 投完就停",
+    "continuous": "固定份额追加模式 - 只要 z≠0 就持续投入"
+  }
+}

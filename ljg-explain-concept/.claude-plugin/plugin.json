@@ -1,0 +1,7 @@
+{
+  "name": "ljg-explain-concept",
+  "description": "Deep concept anatomist — deconstructs any concept through 8 exploration dimensions and compresses insights into an epiphany. Produces org-mode output.",
+  "author": {
+    "name": "lijigang"
+  }
+}

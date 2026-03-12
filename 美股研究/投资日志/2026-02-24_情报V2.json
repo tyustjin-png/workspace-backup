@@ -1,0 +1,197 @@
+{
+  "date": "2026-02-24",
+  "time": "08:30",
+  "price_snapshots": [],
+  "earnings": [],
+  "news": [
+    {
+      "title": "Snowstorm hits airline stocks as flight cancellations near 5,000",
+      "link": "https://www.marketwatch.com/story/snowstorm-hits-airline-stocks-as-total-flight-cancellations-top-5-300-764ef9b6?mod=mw_rss_topstories",
+      "published": "02-23 22:21",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Here’s what airlines, hotels and Airbnb actually owe travelers stranded in Mexico",
+      "link": "https://www.marketwatch.com/story/heres-what-airlines-hotels-and-airbnb-actually-owe-travelers-stranded-in-mexico-51655025?mod=mw_rss_topstories",
+      "published": "02-23 21:55",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Cybersecurity stocks drop for a second day as new Anthropic tool fuels AI disruption fears",
+      "link": "https://www.cnbc.com/2026/02/23/cybersecurity-stocks-anthropic-ai-crowdstrike.html",
+      "published": "02-23 21:07",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "IBM is the latest AI casualty. Shares tank 13% on Anthropic programming language threat",
+      "link": "https://www.cnbc.com/2026/02/23/ibm-is-the-latest-ai-casualty-shares-are-tanking-on-anthropic-cobol-threat.html",
+      "published": "02-23 21:22",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Uber acquiring parking app SpotHero as it moves beyond ride-hailing and food delivery",
+      "link": "https://www.cnbc.com/2026/02/23/uber-acquiring-spothero.html",
+      "published": "02-23 22:06",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Anthropic CEO Dario Amodei to meet with Defense Secretary Pete Hegseth on AI DOD model use",
+      "link": "https://www.cnbc.com/2026/02/23/anthropic-ai-dario-defense-secretary-pete-hegseth.html",
+      "published": "02-23 19:43",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Mexico violence after cartel boss killing slows cross-border trade, hitting air freight, trucking, ports",
+      "link": "https://www.cnbc.com/2026/02/23/mexico-violence-cartel-boss-killing-freight-trade.html",
+      "published": "02-23 21:19",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Forward Air Corporation (FWRD) Q4 2025 Earnings Call Transcript",
+      "link": "https://seekingalpha.com/article/4873635-forward-air-corporation-fwrd-q4-2025-earnings-call-transcript?source=feed_all_articles",
+      "published": "02-24 00:24",
+      "source": "SeekingAlpha",
+      "category": "金融新闻"
+    },
+    {
+      "title": "With AI, investor loyalty is (almost) dead: At least a dozen OpenAI VCs now also back Anthropic",
+      "link": "https://techcrunch.com/2026/02/23/with-ai-investor-loyalty-is-almost-dead-at-least-a-dozen-openai-vcs-now-also-back-anthropic/",
+      "published": "02-23 21:46",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Anthropic accuses Chinese AI labs of mining Claude as US debates AI chip exports",
+      "link": "https://techcrunch.com/2026/02/23/anthropic-accuses-chinese-ai-labs-of-mining-claude-as-us-debates-ai-chip-exports/",
+      "published": "02-23 19:57",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Google’s Cloud AI leads on the three frontiers of model capability",
+      "link": "https://techcrunch.com/2026/02/23/googles-cloud-ai-lead-on-the-three-frontiers-of-model-capability/",
+      "published": "02-23 19:18",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "OpenAI calls in the consultants for its enterprise push",
+      "link": "https://techcrunch.com/2026/02/23/openai-calls-in-the-consultants-for-its-enterprise-push/",
+      "published": "02-23 18:11",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Particle’s AI news app listens to podcasts for interesting clips so you you don’t have to",
+      "link": "https://techcrunch.com/2026/02/23/particles-ai-news-app-listens-to-podcasts-for-interesting-clips-so-you-you-dont-have-to/",
+      "published": "02-23 16:55",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Spotify rolls out AI-powered  Prompted Playlists to the UK and other markets",
+      "link": "https://techcrunch.com/2026/02/23/spotify-ai-prompted-playlists-uk-markets/",
+      "published": "02-23 16:50",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Anthropic accuses DeepSeek and other Chinese firms of using Claude to train their AI",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/883243/anthropic-claude-deepseek-china-ai-distillation",
+      "published": "02-23 20:22",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Apple’s newest AirTags are already on sale if you’re looking to upgrade",
+      "link": "https://www.theverge.com/gadgets/883101/apple-airtag-second-gen-location-bluetooth-tracker-costco-deal-sale",
+      "published": "02-23 18:06",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Does Big Tech actually care about fighting AI slop?",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/882956/ai-deepfake-detection-labels-c2pa-instagram-youtube",
+      "published": "02-23 16:00",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "New Microsoft gaming chief has \"no tolerance for bad AI\"",
+      "link": "https://arstechnica.com/gaming/2026/02/new-microsoft-gaming-chief-has-no-tolerance-for-bad-ai/",
+      "published": "02-23 17:45",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "AIs can generate near-verbatim copies of novels from training data",
+      "link": "https://arstechnica.com/ai/2026/02/ais-can-generate-near-verbatim-copies-of-novels-from-training-data/",
+      "published": "02-23 15:38",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "NASA says it needs to haul the Artemis II rocket back to the hangar for repairs",
+      "link": "https://arstechnica.com/space/2026/02/nasa-says-it-needs-to-haul-the-artemis-ii-rocket-back-to-the-hangar-for-repairs/",
+      "published": "02-21 23:54",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+      "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+      "published": "01-22 14:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+      "link": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+      "published": "01-16 14:01",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
+      "link": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+      "published": "01-13 13:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Podcast: What should be the target time to build a nuclear plant?",
+      "link": "https://www.world-nuclear-news.org//articles/podcast-what-should-be-the-target-time-to-build-a-nuclear-plant",
+      "published": "02-10 14:36",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "US, Armenia sign agreement on nuclear energy",
+      "link": "https://www.world-nuclear-news.org//articles/us-armenia-sign-agreement-on-nuclear-energy",
+      "published": "02-10 09:13",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "A Narrow Window for Peace Opens in the U.S.-Iran Nuclear Standoff",
+      "link": "https://oilprice.com/Geopolitics/Middle-East/A-Narrow-Window-for-Peace-Opens-in-the-US-Iran-Nuclear-Standoff.html",
+      "published": "02-23 19:00",
+      "source": "OilPrice",
+      "category": "能源核能"
+    },
+    {
+      "title": "Ukraine Strikes Russia's Druzhba Pipeline Network",
+      "link": "https://oilprice.com/Latest-Energy-News/World-News/Ukraine-Strikes-Russias-Druzhba-Pipeline-Network.html",
+      "published": "02-23 17:30",
+      "source": "OilPrice",
+      "category": "能源核能"
+    }
+  ]
+}

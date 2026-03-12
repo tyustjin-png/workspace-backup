@@ -1,0 +1,275 @@
+{
+  "date": "2026-02-26",
+  "time": "08:30",
+  "price_snapshots": [
+    {
+      "ticker": "MSFT",
+      "name": "微软 - AI全栈",
+      "price": 400.6,
+      "change_pct": 2.98,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "TSM",
+      "name": "台积电 - 芯片制造",
+      "price": 387.73,
+      "change_pct": 0.51,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "AMD",
+      "name": "AMD - GPU竞争者",
+      "price": 210.86,
+      "change_pct": -1.39,
+      "emoji": "🔴",
+      "dist_52w": null
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML - 光刻机垄断",
+      "price": 1526.51,
+      "change_pct": 1.92,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy - 核电龙头",
+      "price": 325.84,
+      "change_pct": 4.22,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "CCJ",
+      "name": "Cameco - 铀矿龙头",
+      "price": 119.72,
+      "change_pct": -1.12,
+      "emoji": "🔴",
+      "dist_52w": null
+    },
+    {
+      "ticker": "XOM",
+      "name": "埃克森美孚 - 石油",
+      "price": 149.06,
+      "change_pct": -0.13,
+      "emoji": "🔴",
+      "dist_52w": null
+    }
+  ],
+  "earnings": [],
+  "news": [
+    {
+      "title": "Salesforce’s stock falls as mixed earnings forecast fails to dispel AI gloom",
+      "link": "https://www.marketwatch.com/story/salesforces-stock-falls-as-mixed-earnings-forecast-fails-to-dispel-ai-gloom-d230d256?mod=mw_rss_topstories",
+      "published": "02-25 23:26",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "How learning to ‘speak AI’ can help you beat the market",
+      "link": "https://www.marketwatch.com/story/why-learning-to-speak-ai-can-help-your-money-manager-beat-the-market-0c6c445a?mod=mw_rss_topstories",
+      "published": "02-25 21:58",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Nvidia reports earnings and guidance beat as AI boom pushes data center revenue up 75%",
+      "link": "https://www.cnbc.com/2026/02/25/nvidia-nvda-earnings-report-q4-2026.html",
+      "published": "02-26 00:06",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Bill Gates reportedly apologizes, admits to two affairs in candid town hall",
+      "link": "https://www.cnbc.com/2026/02/25/bill-gates-epstein-files-affair.html",
+      "published": "02-25 19:47",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Thrive Capital invested about $1 billion in OpenAI at a $285 billion valuation, source says",
+      "link": "https://www.cnbc.com/2026/02/25/thrive-capital-openai-joshua-kushner.html",
+      "published": "02-25 19:56",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "S&P Cotality Case-Shiller Index: Home Prices Up For Fifth Straight Month",
+      "link": "https://seekingalpha.com/article/4874920-s-p-cotality-case-shiller-index-home-prices-up-for-fifth-straight-month?source=feed_all_articles",
+      "published": "02-26 00:25",
+      "source": "SeekingAlpha",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Samsung Brings AI And Hardware Refinements To S26",
+      "link": "https://seekingalpha.com/article/4874914-samsung-brings-ai-hardware-refinements-to-s26?source=feed_all_articles",
+      "published": "02-26 00:10",
+      "source": "SeekingAlpha",
+      "category": "金融新闻"
+    },
+    {
+      "title": "JPMorgan's Erik Wytenus On AI 'Fear Trade' & Tariff Fallout",
+      "link": "https://finance.yahoo.com/video/jpmorgans-erik-wytenus-ai-fear-125117701.html",
+      "published": "02-24 12:51",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "How Is Walmart’s Stock Performance Compared to Other Retail Stocks?",
+      "link": "https://finance.yahoo.com/news/walmart-stock-performance-compared-other-123518986.html",
+      "published": "02-24 12:35",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Artisan Mid Cap Fund Maintains Its Confidence in Argenx’s (ARGX) VYVGART",
+      "link": "https://finance.yahoo.com/news/artisan-mid-cap-fund-maintains-123336654.html",
+      "published": "02-24 12:33",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "H.C. Wainwright Initiates Coverage of AlphaTON Capital with $2 Share Price Target",
+      "link": "https://finance.yahoo.com/news/h-c-wainwright-initiates-coverage-125641531.html",
+      "published": "02-24 12:56",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Gushwork bets on AI search for customer leads — and early results are emerging",
+      "link": "https://techcrunch.com/2026/02/25/gushwork-bets-on-ai-search-for-customer-leads-and-early-results-are-emerging/",
+      "published": "02-26 00:00",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Anthropic acquires computer-use AI startup Vercept after Meta poached one of its founders",
+      "link": "https://techcrunch.com/2026/02/25/anthropic-acquires-vercept-ai-startup-agents-computer-use-founders-investors/",
+      "published": "02-25 23:49",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "The White House wants AI companies to cover rate hikes. Most have already said they would.",
+      "link": "https://techcrunch.com/2026/02/25/the-white-house-wants-ai-companies-to-cover-rate-hikes-most-have-already-said-they-would/",
+      "published": "02-25 20:42",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "An accountant won a big jackpot on Kalshi by betting against DOGE",
+      "link": "https://techcrunch.com/2026/02/25/an-accountant-won-a-big-jackpot-on-kalshi-by-betting-against-doge/",
+      "published": "02-25 19:36",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "How the new Galaxy S26 phones stack up against each other on paper",
+      "link": "https://www.theverge.com/gadgets/883733/samsung-galaxy-s26-vs-plus-ultra-specs-features-hardware-comparison",
+      "published": "02-25 22:26",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Corsair is halting Drop sales after March 25th",
+      "link": "https://www.theverge.com/news/884824/corsair-ending-drop-shopping-site",
+      "published": "02-25 21:58",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "The Peace Corps is recruiting volunteers to sell AI to developing nations",
+      "link": "https://www.theverge.com/policy/884625/peace-corps-tech-promote-american-ai",
+      "published": "02-25 20:45",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Trump claims tech companies will sign deals next week to pay for their own power supply",
+      "link": "https://www.theverge.com/science/884191/ai-data-center-energy-state-of-the-union-trump",
+      "published": "02-25 20:37",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Google and Samsung just launched the AI features Apple couldn’t with Siri",
+      "link": "https://www.theverge.com/tech/884703/google-samsung-galaxy-s26-gemini-apple-siri",
+      "published": "02-25 19:56",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Musk has no proof OpenAI stole xAI trade secrets, judge rules, tossing lawsuit",
+      "link": "https://arstechnica.com/tech-policy/2026/02/judge-xai-cant-claim-openai-stole-trade-secrets-just-by-hiring-ex-staffers/",
+      "published": "02-25 22:09",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "The Galaxy S26 is faster, more expensive, and even more chock-full of AI",
+      "link": "https://arstechnica.com/gadgets/2026/02/samsung-reveals-galaxy-s26-lineup-with-privacy-display-and-exclusive-gemini-smarts/",
+      "published": "02-25 21:41",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "2026 Lexus RZ 550e review: Likable, but it needs improvement",
+      "link": "https://arstechnica.com/cars/2026/02/2026-lexus-rz-550e-review-likable-but-it-needs-improvement/",
+      "published": "02-25 18:27",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "Boozy chimps fail urine test, confirm hotly debated theory",
+      "link": "https://arstechnica.com/science/2026/02/boozy-chimps-fail-urine-test-confirm-hotly-debated-theory/",
+      "published": "02-25 00:05",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+      "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+      "published": "01-22 14:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+      "link": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+      "published": "01-16 14:01",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
+      "link": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+      "published": "01-13 13:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "US campaign puts case for disposal, not reprocessing, of used fuel",
+      "link": "https://www.world-nuclear-news.org//articles/us-campaign-puts-case-for-disposal-not-reprocessing-of-used-fuel",
+      "published": "02-12 10:33",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "Nuclear central in France's latest energy strategy",
+      "link": "https://www.world-nuclear-news.org//articles/nuclear-central-in-frances-latest-energy-strategy",
+      "published": "02-13 15:17",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "OPG and Port Hope to collaborate on 10 GW new nuclear plan",
+      "link": "https://www.world-nuclear-news.org//articles/opg-and-port-hope-to-collaborate-on-10-gw-new-nuclear-plan",
+      "published": "02-13 12:24",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    }
+  ]
+}

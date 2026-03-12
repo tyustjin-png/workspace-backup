@@ -1,0 +1,25 @@
+{
+  "addresses": [
+    "0x你的钱包地址1",
+    "0x你的钱包地址2"
+  ],
+  "networks": {
+    "ethereum": {
+      "enabled": true,
+      "rpc": "https://eth.llamarpc.com"
+    },
+    "bsc": {
+      "enabled": true,
+      "rpc": "https://bsc-dataseed.binance.org"
+    },
+    "polygon": {
+      "enabled": false,
+      "rpc": "https://polygon-rpc.com"
+    }
+  },
+  "alerts": {
+    "balance_drop_threshold_percent": 10,
+    "unexpected_deposit_threshold": 0.1,
+    "check_recent_blocks": 100
+  }
+}

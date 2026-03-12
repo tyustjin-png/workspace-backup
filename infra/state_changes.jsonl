@@ -1,0 +1,32 @@
+{"ts": "2026-03-08T20:34:30.648624", "path": "daily_tasks.xiaoding.status", "old": "pending", "new": "completed", "trigger": "manual_sync"}
+{"ts": "2026-03-08T20:34:30.690624", "path": "schedule.sync_from_xiaoding", "old": "pending", "new": "synced", "trigger": "manual_sync"}
+{"ts": "2026-03-08T20:34:30.691163", "path": "daily_tasks.xiaoding.completed_at", "old": null, "new": "2026-03-08T20:34:30.648400", "trigger": "manual_sync"}
+{"ts": "2026-03-08T20:34:30.691614", "path": "daily_tasks.xiaoding.details", "old": {}, "new": {"amount": 182.28, "btc": 0.002715}, "trigger": "manual_sync"}
+{"ts": "2026-03-08T20:34:55.215554", "path": "daily_tasks.schedule_10.status", "old": "pending", "new": "sent", "trigger": "audit_fix"}
+{"ts": "2026-03-08T20:34:55.216024", "path": "daily_tasks.schedule_10.sent_at", "old": null, "new": "2026-03-08T20:34:55.215213", "trigger": "audit_fix"}
+{"ts": "2026-03-08T20:34:55.216501", "path": "notifications.sent_count", "old": 0, "new": 1, "trigger": "audit_fix"}
+{"ts": "2026-03-08T20:34:55.216889", "path": "notifications.last_sent_at", "old": null, "new": "2026-03-08T20:34:55.215213", "trigger": "audit_fix"}
+{"ts": "2026-03-08T20:34:55.217287", "path": "daily_tasks.schedule_15.status", "old": "pending", "new": "sent", "trigger": "audit_fix"}
+{"ts": "2026-03-08T20:34:55.217661", "path": "daily_tasks.schedule_15.sent_at", "old": null, "new": "2026-03-08T20:34:55.216970", "trigger": "audit_fix"}
+{"ts": "2026-03-08T20:34:55.218194", "path": "notifications.sent_count", "old": 1, "new": 2, "trigger": "audit_fix"}
+{"ts": "2026-03-08T20:34:55.218609", "path": "notifications.last_sent_at", "old": "2026-03-08T20:34:55.215213", "new": "2026-03-08T20:34:55.216970", "trigger": "audit_fix"}
+{"ts": "2026-03-08T20:34:55.218980", "path": "daily_tasks.schedule_19.status", "old": "pending", "new": "sent", "trigger": "audit_fix"}
+{"ts": "2026-03-08T20:34:55.219701", "path": "daily_tasks.schedule_19.sent_at", "old": null, "new": "2026-03-08T20:34:55.218688", "trigger": "audit_fix"}
+{"ts": "2026-03-08T20:34:55.220120", "path": "notifications.sent_count", "old": 2, "new": 3, "trigger": "audit_fix"}
+{"ts": "2026-03-08T20:34:55.220499", "path": "notifications.last_sent_at", "old": "2026-03-08T20:34:55.216970", "new": "2026-03-08T20:34:55.218688", "trigger": "audit_fix"}
+{"ts": "2026-03-09T08:00:01.890742", "path": "daily_tasks.xiaoding.status", "old": "pending", "new": "completed", "trigger": "auto_dca"}
+{"ts": "2026-03-09T08:00:02.029346", "path": "schedule.sync_from_xiaoding", "old": "pending", "new": "synced", "trigger": "auto_dca"}
+{"ts": "2026-03-09T08:00:02.030550", "path": "daily_tasks.xiaoding.completed_at", "old": null, "new": "2026-03-09T08:00:01.887439", "trigger": "auto_dca"}
+{"ts": "2026-03-09T08:00:02.031430", "path": "daily_tasks.xiaoding.details", "old": {}, "new": {"source": "auto_dca.sh"}, "trigger": "auto_dca"}
+{"ts": "2026-03-10T08:00:01.800718", "path": "daily_tasks.xiaoding.status", "old": "pending", "new": "completed", "trigger": "auto_dca"}
+{"ts": "2026-03-10T08:00:01.844303", "path": "schedule.sync_from_xiaoding", "old": "pending", "new": "synced", "trigger": "auto_dca"}
+{"ts": "2026-03-10T08:00:01.844854", "path": "daily_tasks.xiaoding.completed_at", "old": null, "new": "2026-03-10T08:00:01.799895", "trigger": "auto_dca"}
+{"ts": "2026-03-10T08:00:01.845318", "path": "daily_tasks.xiaoding.details", "old": {}, "new": {"source": "auto_dca.sh"}, "trigger": "auto_dca"}
+{"ts": "2026-03-11T08:00:02.289186", "path": "daily_tasks.xiaoding.status", "old": "pending", "new": "completed", "trigger": "auto_dca"}
+{"ts": "2026-03-11T08:00:02.333261", "path": "schedule.sync_from_xiaoding", "old": "pending", "new": "synced", "trigger": "auto_dca"}
+{"ts": "2026-03-11T08:00:02.333788", "path": "daily_tasks.xiaoding.completed_at", "old": null, "new": "2026-03-11T08:00:02.287781", "trigger": "auto_dca"}
+{"ts": "2026-03-11T08:00:02.336841", "path": "daily_tasks.xiaoding.details", "old": {}, "new": {"source": "auto_dca.sh"}, "trigger": "auto_dca"}
+{"ts": "2026-03-12T08:00:02.444427", "path": "daily_tasks.xiaoding.status", "old": "pending", "new": "completed", "trigger": "auto_dca"}
+{"ts": "2026-03-12T08:00:02.488089", "path": "schedule.sync_from_xiaoding", "old": "pending", "new": "synced", "trigger": "auto_dca"}
+{"ts": "2026-03-12T08:00:02.488672", "path": "daily_tasks.xiaoding.completed_at", "old": null, "new": "2026-03-12T08:00:02.443682", "trigger": "auto_dca"}
+{"ts": "2026-03-12T08:00:02.489086", "path": "daily_tasks.xiaoding.details", "old": {}, "new": {"source": "auto_dca.sh"}, "trigger": "auto_dca"}

@@ -1,0 +1,38 @@
+{
+  "date": "2026-02-20",
+  "time": "17:30",
+  "price_snapshots": [
+    {
+      "ticker": "MSFT",
+      "price": 398.46,
+      "change_pct": -0.29,
+      "emoji": "🔴"
+    },
+    {
+      "ticker": "TSM",
+      "price": 360.39,
+      "change_pct": -0.52,
+      "emoji": "🔴"
+    },
+    {
+      "ticker": "AMD",
+      "price": 203.37,
+      "change_pct": 1.62,
+      "emoji": "🟢"
+    },
+    {
+      "ticker": "ASML",
+      "price": 1458.93,
+      "change_pct": -0.67,
+      "emoji": "🔴"
+    },
+    {
+      "ticker": "CEG",
+      "price": 291.66,
+      "change_pct": -0.81,
+      "emoji": "🔴"
+    }
+  ],
+  "earnings": [],
+  "highlights": []
+}

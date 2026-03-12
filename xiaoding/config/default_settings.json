@@ -1,0 +1,10 @@
+{
+  "_comment": "小定的默认定投设置",
+  "base_amount": 100,
+  "symbol": "BTCUSDT",
+  "mode": "continuous",
+  "safety": {
+    "max_slippage": 0.05,
+    "min_order_value": 10
+  }
+}

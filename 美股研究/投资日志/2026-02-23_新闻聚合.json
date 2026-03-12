@@ -1,0 +1,108 @@
+{
+  "date": "2026-02-23",
+  "time": "19:17",
+  "keywords": [
+    "NVDA",
+    "AI",
+    "核能"
+  ],
+  "news": {
+    "金融新闻": [
+      {
+        "title": "Novo Nordisk pitted a new weight-loss drug against Eli Lilly’s — and lost",
+        "link": "https://www.marketwatch.com/story/novo-nordisk-pitted-a-new-weight-loss-drug-against-eli-lilly-and-lost-5652d079?mod=mw_rss_topstories",
+        "published": "2026-02-23 11:01",
+        "summary": "Novo Nordisk shares were under pressure on Monday as the struggling Danish pharmaceutical said a head-to-head study found a drug in development didn’t cut as much weight as an Eli Lilly product.",
+        "source": "MarketWatch"
+      },
+      {
+        "title": "Novo Nordisk sinks 15% after weight loss drug fails to match Eli Lilly's in trial",
+        "link": "https://www.cnbc.com/2026/02/23/novo-nordisk-stock-cagrisema-trial-fails-weight-loss.html",
+        "published": "2026-02-23 11:01",
+        "summary": "Novo Nordisk stock fell 15% Monday after it said its next-generation weight loss drug didn't meet its primary target.",
+        "source": "CNBC"
+      },
+      {
+        "title": "The AI boom is helping Samsung and coming for Apple",
+        "link": "https://finance.yahoo.com/news/the-ai-boom-is-helping-samsung-and-coming-for-apple-110057196.html",
+        "published": "2026-02-23 11:00",
+        "summary": "",
+        "source": "Yahoo Finance"
+      }
+    ],
+    "科技AI": [
+      {
+        "title": "Wispr Flow launches an Android app for AI-powered dictation",
+        "link": "https://techcrunch.com/2026/02/23/wispr-flow-launches-an-android-app-for-ai-powered-dictation/",
+        "published": "2026-02-23 08:01",
+        "summary": "AI-powered dictation startup Wispr Flow has launched its Android app today. The company released its app for Mac and Windows first, then launched on iOS in June 2025. On iOS, users could use Wispr Flo",
+        "source": "TechCrunch"
+      },
+      {
+        "title": "Can the creator economy stay afloat in a flood of AI slop?",
+        "link": "https://techcrunch.com/2026/02/22/can-the-creator-economy-stay-afloat-in-a-flood-of-ai-slop/",
+        "published": "2026-02-22 22:15",
+        "summary": "On the latest episode of Equity, we debated what’s next for the creator economy, and whether there will be any room for the next generation of creators to stand out.",
+        "source": "TechCrunch"
+      },
+      {
+        "title": "How many AIs does it take to read a PDF?",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/882891/ai-pdf-parsing-failure",
+        "published": "2026-02-23 11:00",
+        "summary": "Last November, the House Oversight Committee had just released 20,000 pages of documents from the estate of Jeffrey Epstein, and Luke Igel and some friends were clicking around, trying to follow the t",
+        "source": "The Verge"
+      },
+      {
+        "title": "Samsung is adding Perplexity to Galaxy AI",
+        "link": "https://www.theverge.com/tech/882921/samsung-is-adding-perplexity-to-galaxy-ai",
+        "published": "2026-02-22 22:15",
+        "summary": "In addition to summoning Bixby or Gemini, Galaxy S26 users will be able to call on Perplexity by saying \"hey, Plex.\" The integration of Perplexity into Galaxy AI is just one element of the company's e",
+        "source": "The Verge"
+      },
+      {
+        "title": "NASA says it needs to haul the Artemis II rocket back to the hangar for repairs",
+        "link": "https://arstechnica.com/space/2026/02/nasa-says-it-needs-to-haul-the-artemis-ii-rocket-back-to-the-hangar-for-repairs/",
+        "published": "2026-02-21 23:54",
+        "summary": "\"Accessing and remediating any of these issues can only be performed in the VAB.\"",
+        "source": "Ars Technica"
+      },
+      {
+        "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+        "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+        "published": "2026-01-22 14:00",
+        "summary": "<p><a href=\"https://railway.com/\">Railway</a>, a San Francisco-based cloud platform that has quietly amassed two million developers without spending a dollar on marketing, announced Thursday that it r",
+        "source": "VentureBeat AI"
+      },
+      {
+        "title": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
+        "link": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
+        "published": "2026-01-19 14:00",
+        "summary": "<p>The artificial intelligence coding revolution comes with a catch: it&#x27;s expensive.</p><p><a href=\"https://claude.com/product/claude-code\">Claude Code</a>, Anthropic&#x27;s terminal-based AI age",
+        "source": "VentureBeat AI"
+      },
+      {
+        "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+        "link": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+        "published": "2026-01-16 14:01",
+        "summary": "<p>Alfred Wahlforss was running out of options. His startup, <a href=\"https://listenlabs.ai/\">Listen Labs</a>, needed to hire over 100 engineers, but competing against Mark Zuckerberg&#x27;s <a href=\"",
+        "source": "VentureBeat AI"
+      }
+    ],
+    "能源核能": [
+      {
+        "title": "Tepco restarts Kashiwazaki-Kariwa unit 6",
+        "link": "https://www.world-nuclear-news.org//articles/first-tepco-reactor-restarted",
+        "published": "2026-02-09 12:13",
+        "summary": "<p>Tokyo Electric Power Company has restarted unit 6 of its Kashiwazaki-Kariwa nuclear power plant in Japan's Niigata Prefecture. The company aims to return the reactor to commercial operation on 18 M",
+        "source": "World Nuclear News"
+      },
+      {
+        "title": "Goldman Sachs Hikes Year-End Oil Price Forecast by $6 Per Barrel",
+        "link": "https://oilprice.com/Energy/Energy-General/Goldman-Sachs-Hikes-Year-End-Oil-Price-Forecast-by-6-Per-Barrel.html",
+        "published": "2026-02-23 10:30",
+        "summary": "Even if it maintains the view of global oversupply this year, Goldman Sachs has raised its oil price forecast for the fourth quarter by $6 per barrel as inventories in advanced economies remain low. T",
+        "source": "OilPrice"
+      }
+    ]
+  }
+}

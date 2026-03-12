@@ -1,0 +1,62 @@
+{
+  "IBIT": {
+    "aum_millions": 54166029.0,
+    "prev_close": "$39.71",
+    "market_cap": "54,833,328,892",
+    "avg_vol_20d": "65,236,379"
+  },
+  "FBTC": {
+    "aum_millions": 14500728.0,
+    "prev_close": "$61.03",
+    "market_cap": "13,173,086,210",
+    "avg_vol_20d": "6,054,505"
+  },
+  "GBTC": {
+    "aum_millions": 13144950.0,
+    "prev_close": "$54.60",
+    "market_cap": "13,692,041,505",
+    "avg_vol_20d": "3,932,570"
+  },
+  "ARKB": {
+    "aum_millions": 3159889.0,
+    "prev_close": "$23.255",
+    "market_cap": "2,517,140,700",
+    "avg_vol_20d": "6,512,455"
+  },
+  "BITB": {
+    "aum_millions": 2656651.0,
+    "prev_close": "$38.05",
+    "market_cap": "N/A",
+    "avg_vol_20d": "4,138,680"
+  },
+  "HODL": {
+    "aum_millions": 1274822.0,
+    "prev_close": "$19.82",
+    "market_cap": "1,201,694,750",
+    "avg_vol_20d": "2,379,205"
+  },
+  "BTCO": {
+    "aum_millions": 345461.0,
+    "prev_close": "$69.79",
+    "market_cap": "474,428,600",
+    "avg_vol_20d": "139,785"
+  },
+  "EZBC": {
+    "aum_millions": 401247.0,
+    "prev_close": "$40.53",
+    "market_cap": "439,352,500",
+    "avg_vol_20d": "254,910"
+  },
+  "BRRR": {
+    "aum_millions": 44505.0,
+    "prev_close": "$19.78",
+    "market_cap": "444,585,750",
+    "avg_vol_20d": "357,840"
+  },
+  "BTCW": {
+    "aum_millions": 108244.0,
+    "prev_close": "$74.14",
+    "market_cap": "152,945,550",
+    "avg_vol_20d": "56,930"
+  }
+}

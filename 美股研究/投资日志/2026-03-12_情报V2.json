@@ -1,0 +1,275 @@
+{
+  "date": "2026-03-12",
+  "time": "08:30",
+  "price_snapshots": [
+    {
+      "ticker": "MSFT",
+      "name": "微软 - AI全栈",
+      "price": 404.88,
+      "change_pct": -0.22,
+      "emoji": "🔴",
+      "dist_52w": null
+    },
+    {
+      "ticker": "TSM",
+      "name": "台积电 - 芯片制造",
+      "price": 354.56,
+      "change_pct": 2.15,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "AMD",
+      "name": "AMD - GPU竞争者",
+      "price": 204.83,
+      "change_pct": 0.79,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML - 光刻机垄断",
+      "price": 1386.68,
+      "change_pct": 0.24,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy - 核电龙头",
+      "price": 300.69,
+      "change_pct": -5.17,
+      "emoji": "🔴",
+      "dist_52w": null
+    },
+    {
+      "ticker": "CCJ",
+      "name": "Cameco - 铀矿龙头",
+      "price": 115.39,
+      "change_pct": -3.91,
+      "emoji": "🔴",
+      "dist_52w": null
+    },
+    {
+      "ticker": "XOM",
+      "name": "埃克森美孚 - 石油",
+      "price": 151.58,
+      "change_pct": 2.33,
+      "emoji": "🟢",
+      "dist_52w": null
+    }
+  ],
+  "earnings": [],
+  "news": [
+    {
+      "title": "Oracle’s stock surges. Here’s how it finally left the AI penalty box.",
+      "link": "https://www.marketwatch.com/story/oracles-stock-surges-heres-how-it-finally-left-the-ai-penalty-box-d1d73d39?mod=mw_rss_topstories",
+      "published": "03-11 23:07",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "As Starbucks’ Howard Schultz heads to Miami, here’s a list of other billionaire business leaders moving to Florida",
+      "link": "https://www.marketwatch.com/story/as-starbucks-howard-schultz-heads-to-miami-heres-a-list-of-other-billionaire-business-leaders-moving-to-florida-2d14af75?mod=mw_rss_topstories",
+      "published": "03-11 21:48",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "The S&P 500’s biggest gainer since the Iran conflict started is not an oil stock",
+      "link": "https://www.marketwatch.com/story/the-s-p-500s-biggest-gainer-since-the-iran-conflict-started-is-not-an-oil-stock-ef9e5632?mod=mw_rss_topstories",
+      "published": "03-11 21:03",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Atlassian slashes 10% of workforce to 'self-fund' investments in AI and enterprise sales",
+      "link": "https://www.cnbc.com/2026/03/11/atlassian-slashes-10percent-of-workforce-to-self-fund-investments-in-ai.html",
+      "published": "03-11 22:30",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Iran sends millions of oil barrels to China through Strait of Hormuz even as war chokes the waterway",
+      "link": "https://www.cnbc.com/2026/03/11/iran-ships-oil-china-strait-hormuz-closure-.html",
+      "published": "03-11 14:18",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Asure Software, Inc. (ASUR) Discusses Impact of AI on Enterprise Software Economics and Platform Strategy Transcript",
+      "link": "https://seekingalpha.com/article/4881346-asure-software-inc-asur-discusses-impact-of-ai-on-enterprise-software-economics-and-platform?source=feed_all_articles",
+      "published": "03-12 00:02",
+      "source": "SeekingAlpha",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Mortgage rate predictions for the next 5 years: An AI-driven forecast through 2030",
+      "link": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-rate-predictions-for-the-next-5-years-ai-forecast-through-2030-195826526.html",
+      "published": "08-18 19:58",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Strong Results Lifted Kaiser Aluminum Corporation (KALU) in Q4",
+      "link": "https://finance.yahoo.com/news/strong-results-lifted-kaiser-aluminum-125152318.html",
+      "published": "03-10 12:51",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Denison Mines Corp. (DNN) Price Target Raised to C$7 at Desjardins",
+      "link": "https://finance.yahoo.com/news/denison-mines-corp-dnn-price-125306735.html",
+      "published": "03-10 12:53",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Cantor Fitzgerald Lowers BigBear.ai Holdings, Inc. (BBAI) Price Target to $5",
+      "link": "https://finance.yahoo.com/news/cantor-fitzgerald-lowers-bigbear-ai-125305779.html",
+      "published": "03-10 12:53",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Needham Lowers Archer Aviation Inc. (ACHR) Price Target to $9",
+      "link": "https://finance.yahoo.com/news/needham-lowers-archer-aviation-inc-125310021.html",
+      "published": "03-10 12:53",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "TD Cowen Raises Warner Bros. Discovery, Inc. (WBD) Price Target to $26",
+      "link": "https://finance.yahoo.com/news/td-cowen-raises-warner-bros-125316778.html",
+      "published": "03-10 12:53",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "AI ‘actor’ Tilly Norwood put out the worst song I’ve ever heard",
+      "link": "https://techcrunch.com/2026/03/11/ai-actor-tilly-norwood-put-out-the-worst-song-ive-ever-heard/",
+      "published": "03-11 23:35",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Google Play is adding new paid and PC games, game trials, community posts, and more",
+      "link": "https://techcrunch.com/2026/03/11/google-play-is-adding-new-paid-and-pc-games-game-trials-community-posts-and-more/",
+      "published": "03-11 23:00",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Ford’s new AI assistant will help fleet owners know if seatbelts are being used",
+      "link": "https://techcrunch.com/2026/03/11/fords-new-ai-assistant-will-help-fleet-owners-know-if-seatbelts-are-being-used/",
+      "published": "03-11 22:51",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Ride-hailing inDrive acquires Pakistan’s Krave Mart to bolster grocery delivery",
+      "link": "https://techcrunch.com/2026/03/11/ride-hailing-indrive-acquires-pakistans-kravemart-to-bolster-grocery-delivery/",
+      "published": "03-11 22:45",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Netflix may have paid $600 million for Ben Affleck’s AI startup",
+      "link": "https://techcrunch.com/2026/03/11/netflix-may-have-paid-600-million-for-ben-afflecks-ai-startup/",
+      "published": "03-11 22:00",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "One of Grammarly’s ‘experts’ is suing the company over its identity-stealing AI feature",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/893451/grammarly-ai-lawsuit-julia-angwin",
+      "published": "03-11 22:51",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Grammarly says it will stop using AI to clone experts without permission",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/893270/grammarly-ai-expert-review-disabled",
+      "published": "03-11 18:45",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "OpenAI’s Sora video generator is reportedly coming to ChatGPT",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/893189/openai-chatgpt-sora-integration",
+      "published": "03-11 16:50",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "FCC chair blasts Amazon after it criticizes SpaceX megaconstellation",
+      "link": "https://arstechnica.com/space/2026/03/fcc-chair-blasts-amazon-after-it-criticizes-spacex-megaconstellation/",
+      "published": "03-11 22:04",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "Explain it like I'm 5: Why is everyone on speakerphone in public?",
+      "link": "https://arstechnica.com/culture/2026/03/explain-it-like-im-5-why-is-everyone-on-speakerphone-in-public/",
+      "published": "03-11 21:09",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "\"Use a gun\" or \"beat the crap out of him\": AI chatbot urged violence, study finds",
+      "link": "https://arstechnica.com/tech-policy/2026/03/use-a-gun-or-beat-the-crap-out-of-him-ai-chatbot-urged-violence-study-finds/",
+      "published": "03-11 20:44",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "Intel shores up its desktop CPU lineup with boosted Core Ultra 200S Plus chips",
+      "link": "https://arstechnica.com/gadgets/2026/03/intel-shores-up-its-desktop-cpu-lineup-with-boosted-core-ultra-200s-plus-chips/",
+      "published": "03-11 17:21",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+      "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+      "published": "01-22 14:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+      "link": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+      "published": "01-16 14:01",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
+      "link": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+      "published": "01-13 13:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "First concrete for Kaiga 5 & 6 in India approved",
+      "link": "https://www.world-nuclear-news.org//articles/first-concrete-for-kaiga-5-6-in-india-approved",
+      "published": "02-26 10:17",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "Agreement to build German nuclear fusion power plant",
+      "link": "https://www.world-nuclear-news.org//articles/agreement-to-build-german-fusion-power-plant",
+      "published": "02-26 14:24",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "Amazon and Meta agreements boost Vistra nuclear plants",
+      "link": "https://www.world-nuclear-news.org//articles/ppas-support-extended-operations-at-vistra-plants",
+      "published": "02-27 16:02",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    }
+  ]
+}

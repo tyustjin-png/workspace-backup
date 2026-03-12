@@ -1,0 +1,2 @@
+{"timestamp": 1770555443.660952, "task_id": "task-54810b4d", "event": "status_changed", "data": {"status": "planning", "error_message": null}}
+{"timestamp": 1770555443.661289, "task_id": "task-54810b4d", "event": "status_changed", "data": {"status": "executing", "error_message": null}}

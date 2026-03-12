@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-03-12",
+  "source": "Nasdaq API",
+  "total_aum_billions": 89.802526,
+  "etfs": [
+    {
+      "ticker": "IBIT",
+      "aum_millions": 54166029.0,
+      "aum_billions": 54.166029,
+      "prev_close": "$39.71",
+      "avg_vol_20d": "65,236,379"
+    },
+    {
+      "ticker": "FBTC",
+      "aum_millions": 14500728.0,
+      "aum_billions": 14.500728,
+      "prev_close": "$61.03",
+      "avg_vol_20d": "6,054,505"
+    },
+    {
+      "ticker": "GBTC",
+      "aum_millions": 13144950.0,
+      "aum_billions": 13.14495,
+      "prev_close": "$54.60",
+      "avg_vol_20d": "3,932,570"
+    },
+    {
+      "ticker": "ARKB",
+      "aum_millions": 3159889.0,
+      "aum_billions": 3.159889,
+      "prev_close": "$23.255",
+      "avg_vol_20d": "6,512,455"
+    },
+    {
+      "ticker": "BITB",
+      "aum_millions": 2656651.0,
+      "aum_billions": 2.656651,
+      "prev_close": "$38.05",
+      "avg_vol_20d": "4,138,680"
+    },
+    {
+      "ticker": "HODL",
+      "aum_millions": 1274822.0,
+      "aum_billions": 1.274822,
+      "prev_close": "$19.82",
+      "avg_vol_20d": "2,379,205"
+    },
+    {
+      "ticker": "BTCO",
+      "aum_millions": 345461.0,
+      "aum_billions": 0.345461,
+      "prev_close": "$69.79",
+      "avg_vol_20d": "139,785"
+    },
+    {
+      "ticker": "EZBC",
+      "aum_millions": 401247.0,
+      "aum_billions": 0.401247,
+      "prev_close": "$40.53",
+      "avg_vol_20d": "254,910"
+    },
+    {
+      "ticker": "BRRR",
+      "aum_millions": 44505.0,
+      "aum_billions": 0.044505,
+      "prev_close": "$19.78",
+      "avg_vol_20d": "357,840"
+    },
+    {
+      "ticker": "BTCW",
+      "aum_millions": 108244.0,
+      "aum_billions": 0.108244,
+      "prev_close": "$74.14",
+      "avg_vol_20d": "56,930"
+    }
+  ]
+}

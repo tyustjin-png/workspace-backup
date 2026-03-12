@@ -1,0 +1,268 @@
+{
+  "date": "2026-02-23",
+  "time": "21:34",
+  "price_snapshots": [
+    {
+      "ticker": "MSFT",
+      "name": "微软 - AI全栈",
+      "price": 397.23,
+      "change_pct": -0.31,
+      "emoji": "🔴",
+      "dist_52w": null
+    },
+    {
+      "ticker": "TSM",
+      "name": "台积电 - 芯片制造",
+      "price": 370.54,
+      "change_pct": 2.82,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "AMD",
+      "name": "AMD - GPU竞争者",
+      "price": 200.15,
+      "change_pct": -1.58,
+      "emoji": "🔴",
+      "dist_52w": null
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML - 光刻机垄断",
+      "price": 1469.59,
+      "change_pct": 0.73,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy - 核电龙头",
+      "price": 294.84,
+      "change_pct": 1.09,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "CCJ",
+      "name": "Cameco - 铀矿龙头",
+      "price": 121.35,
+      "change_pct": 1.95,
+      "emoji": "🟢",
+      "dist_52w": null
+    },
+    {
+      "ticker": "XOM",
+      "name": "埃克森美孚 - 石油",
+      "price": 147.28,
+      "change_pct": -2.44,
+      "emoji": "🔴",
+      "dist_52w": null
+    }
+  ],
+  "earnings": [],
+  "news": [
+    {
+      "title": "Snowstorm hits airline stocks as total flight cancellations top 5,300",
+      "link": "https://www.marketwatch.com/story/snowstorm-hits-airline-stocks-as-total-flight-cancellations-top-5-300-764ef9b6?mod=mw_rss_topstories",
+      "published": "02-23 13:29",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "‘I need to get my financial ducks in a row’: I’m 80 with $1 million. How do I prevent my son from being hit with inheritance tax?",
+      "link": "https://www.marketwatch.com/story/i-need-to-get-my-financial-ducks-in-a-row-im-80-with-1-million-how-do-i-prevent-my-son-from-being-hit-with-inheritance-tax-27913be6?mod=mw_rss_topstories",
+      "published": "02-23 12:00",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "There’s another AI-doom post doing the rounds. This time, the S&P 500 dives nearly 40%.",
+      "link": "https://www.marketwatch.com/story/theres-another-ai-doom-post-doing-the-rounds-this-time-the-s-p-500-dives-nearly-40-13162b42?mod=mw_rss_topstories",
+      "published": "02-23 11:45",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Airlines halt Puerto Vallarta flights after violence following Mexican cartel leader's killing",
+      "link": "https://www.cnbc.com/2026/02/23/puerto-vallarta-flights-mexico.html",
+      "published": "02-23 13:17",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "OpenAI lands multi-year deals with consulting giants in enterprise push",
+      "link": "https://www.cnbc.com/2026/02/23/open-ai-consulting-accenture-boston-capgemini-mckinsey-frontier.html",
+      "published": "02-23 13:30",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Novo Nordisk sinks 15% after weight loss drug fails to match Eli Lilly's in trial",
+      "link": "https://www.cnbc.com/2026/02/23/novo-nordisk-stock-cagrisema-trial-fails-weight-loss.html",
+      "published": "02-23 13:10",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "The AI Memory Supercycle: Why Astera Labs And Marvell Are Top Buys",
+      "link": "https://seekingalpha.com/article/4872910-the-ai-memory-supercycle-why-astera-labs-and-marvell-are-top-buys?source=feed_all_articles",
+      "published": "02-23 13:00",
+      "source": "SeekingAlpha",
+      "category": "金融新闻"
+    },
+    {
+      "title": "German Recovery Gains Momentum, But Tariffs Could Spoil The Party",
+      "link": "https://seekingalpha.com/article/4873433-german-recovery-gains-momentum-tariffs-could-spoil-party?source=feed_all_articles",
+      "published": "02-23 12:55",
+      "source": "SeekingAlpha",
+      "category": "金融新闻"
+    },
+    {
+      "title": "EWY: South Korea Is Cashing In On Its Memory Chips",
+      "link": "https://seekingalpha.com/article/4873430-ewy-south-korea-is-cashing-in-on-its-memory-chips?source=feed_all_articles",
+      "published": "02-23 12:53",
+      "source": "SeekingAlpha",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Wispr Flow launches an Android app for AI-powered dictation",
+      "link": "https://techcrunch.com/2026/02/23/wispr-flow-launches-an-android-app-for-ai-powered-dictation/",
+      "published": "02-23 08:01",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Can the creator economy stay afloat in a flood of AI slop?",
+      "link": "https://techcrunch.com/2026/02/22/can-the-creator-economy-stay-afloat-in-a-flood-of-ai-slop/",
+      "published": "02-22 22:15",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "All the important news from the ongoing India AI Impact Summit",
+      "link": "https://techcrunch.com/2026/02/22/all-the-important-news-from-the-ongoing-india-ai-summit/",
+      "published": "02-22 17:00",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "China’s brain-computer interface industry is racing ahead",
+      "link": "https://techcrunch.com/2026/02/22/chinas-brain-computer-interface-industry-is-racing-ahead/",
+      "published": "02-22 16:00",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Nothing couldn’t wait to show off the Phone 4A",
+      "link": "https://www.theverge.com/gadgets/882983/nothing-phone-4a-official-design-glyph-bar",
+      "published": "02-23 13:01",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Uber launches robotaxi support project to aid AV partners",
+      "link": "https://www.theverge.com/transportation/882364/uber-autonomous-solutions-training-data-partners",
+      "published": "02-23 13:00",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "How many AIs does it take to read a PDF?",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/882891/ai-pdf-parsing-failure",
+      "published": "02-23 11:00",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Samsung is adding Perplexity to Galaxy AI",
+      "link": "https://www.theverge.com/tech/882921/samsung-is-adding-perplexity-to-galaxy-ai",
+      "published": "02-22 22:15",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "You need to listen to Laurie Spiegel’s masterpiece of early ambient music",
+      "link": "https://www.theverge.com/entertainment/882915/laurie-spiegel-the-expanding-universe-review-masterpiece-ambient-music",
+      "published": "02-22 21:30",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "America desperately needs new privacy laws",
+      "link": "https://www.theverge.com/column/882516/privacy-laws-america",
+      "published": "02-22 13:00",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "NASA says it needs to haul the Artemis II rocket back to the hangar for repairs",
+      "link": "https://arstechnica.com/space/2026/02/nasa-says-it-needs-to-haul-the-artemis-ii-rocket-back-to-the-hangar-for-repairs/",
+      "published": "02-21 23:54",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+      "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+      "published": "01-22 14:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+      "link": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+      "published": "01-16 14:01",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
+      "link": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+      "published": "01-13 13:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "US funding for research into recycling used nuclear fuel",
+      "link": "https://www.world-nuclear-news.org//articles/us-funding-for-research-into-recycling-used-nuclear-fuel",
+      "published": "02-09 14:45",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "Podcast: What should be the target time to build a nuclear plant?",
+      "link": "https://www.world-nuclear-news.org//articles/podcast-what-should-be-the-target-time-to-build-a-nuclear-plant",
+      "published": "02-10 14:36",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "US, Armenia sign agreement on nuclear energy",
+      "link": "https://www.world-nuclear-news.org//articles/us-armenia-sign-agreement-on-nuclear-energy",
+      "published": "02-10 09:13",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "EU Names Azerbaijan a Cornerstone of Europe’s Post-Russia Energy Map",
+      "link": "https://oilprice.com/Energy/Energy-General/EU-Names-Azerbaijan-a-Cornerstone-of-Europes-Post-Russia-Energy-Map.html",
+      "published": "02-22 22:00",
+      "source": "OilPrice",
+      "category": "能源核能"
+    },
+    {
+      "title": "America’s Nuclear Comeback Is Gaining Momentum",
+      "link": "https://oilprice.com/Alternative-Energy/Nuclear-Power/Americas-Nuclear-Comeback-Is-Gaining-Momentum.html",
+      "published": "02-22 20:00",
+      "source": "OilPrice",
+      "category": "能源核能"
+    },
+    {
+      "title": "Off-Balance Sheet AI Financing Stirs Tech Bubble Fears",
+      "link": "https://oilprice.com/Finance/the-Markets/Off-Balance-Sheet-AI-Financing-Stirs-Tech-Bubble-Fears.html",
+      "published": "02-22 18:00",
+      "source": "OilPrice",
+      "category": "能源核能"
+    }
+  ]
+}

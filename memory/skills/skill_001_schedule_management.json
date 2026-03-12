@@ -1,0 +1,50 @@
+{
+  "id": "skill_001",
+  "name": "日程管理",
+  "description": "使用 daily_schedule_manager.py 管理每日任务清单",
+  "category": "工具使用",
+  "created_at": "2026-03-09",
+  "last_used": "2026-03-09",
+  "trigger_conditions": [
+    "金哥提到完成了某项任务",
+    "需要添加新的待办事项",
+    "需要查看今日任务清单",
+    "需要更新任务完成状态"
+  ],
+  "execution_steps": [
+    "1. cd /root/.openclaw/workspace",
+    "2. 根据需求选择命令：",
+    "   - 添加任务：python3 daily_schedule_manager.py add '类别' '任务名'",
+    "   - 完成任务：python3 daily_schedule_manager.py complete '类别' '任务名'",
+    "   - 查看清单：python3 daily_schedule_manager.py show",
+    "3. 确认操作成功（检查输出）"
+  ],
+  "examples": [
+    {
+      "scenario": "金哥说：刚做完100个仰卧起坐",
+      "command": "python3 daily_schedule_manager.py complete '运动' '100仰卧起坐'",
+      "result": "✅ 已标记完成"
+    },
+    {
+      "scenario": "需要添加临时任务",
+      "command": "python3 daily_schedule_manager.py add '写作' '回复投资人邮件'",
+      "result": "✅ 已添加任务"
+    }
+  ],
+  "utility_score": 9.1,
+  "usage_count": 1,
+  "application_history": [
+    {
+      "applied_at": "2026-03-09T10:27:45.693306",
+      "scenario": "金哥完成了运动任务（100仰卧起坐、20深蹲、50俯卧撑）",
+      "success": true,
+      "feedback": "成功标记3项任务完成，用时<5秒"
+    }
+  ],
+  "related_skills": [],
+  "related_lessons": [
+    "L016"
+  ],
+  "related_patterns": [],
+  "notes": "优先使用工具，不要手动编辑 markdown 文件。教训 L016：忘记使用现有工具是低效的。"
+}

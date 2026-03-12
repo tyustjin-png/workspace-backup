@@ -1,0 +1,41 @@
+{
+  "date": "2026-03-12",
+  "daily_tasks": {
+    "xiaoding": {
+      "status": "completed",
+      "completed_at": "2026-03-12T08:00:02.443682",
+      "details": {
+        "source": "auto_dca.sh"
+      }
+    },
+    "schedule_10": {
+      "status": "pending",
+      "sent_at": null
+    },
+    "schedule_15": {
+      "status": "pending",
+      "sent_at": null
+    },
+    "schedule_19": {
+      "status": "pending",
+      "sent_at": null
+    },
+    "daily_summary": {
+      "status": "pending",
+      "sent_at": null
+    },
+    "audit": {
+      "status": "pending",
+      "completed_at": null
+    }
+  },
+  "schedule": {
+    "completed": [],
+    "pending": []
+  },
+  "notifications": {
+    "sent_count": 0,
+    "last_sent_at": null
+  },
+  "last_updated": "2026-03-12T08:00:02.488862"
+}

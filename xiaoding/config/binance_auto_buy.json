@@ -1,0 +1,11 @@
+{
+  "binance_api_key": "vDuhFNi4U82UizIZuRxBEkH6IcpSIQLIBFcaZfubtVhsTyEikj8sVtuqVcaLxQ5z",
+  "binance_api_secret": "uvJlRYa7GsKqytG7gXYPYNaj0gWmzCQ8xWPeraRaV0Y8EGaIkXUjVqzNbeW2nxpN",
+  "symbol": "BTCUSDT",
+  "base_amount": 182.65,
+  "total_budget": 100000,
+  "expected_multiplier": 1.5,
+  "cycle_days": 365,
+  "mode": "continuous"
+}
+

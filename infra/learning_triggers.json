@@ -1,0 +1,44 @@
+[
+  {
+    "id": "8b333f70",
+    "ts": "2026-03-08T20:57:21.321540",
+    "type": "correction",
+    "description": "日程汇报没有主动推送，而是在heartbeat响应里附带",
+    "context": {
+      "root_cause": "架构设计混乱",
+      "fixed": true
+    },
+    "severity": "high",
+    "processed": true,
+    "processed_at": "2026-03-08T20:57:24.338625",
+    "outcome": "lesson"
+  },
+  {
+    "id": "63ce8a3f",
+    "ts": "2026-03-08T20:57:21.321853",
+    "type": "mistake",
+    "description": "定投执行后没有同步到日程系统",
+    "context": {
+      "severity": "medium",
+      "fixed": true
+    },
+    "severity": "medium",
+    "processed": true,
+    "processed_at": "2026-03-08T20:57:24.338981",
+    "outcome": "logged"
+  },
+  {
+    "id": "6d6cf0ce",
+    "ts": "2026-03-08T20:57:21.322180",
+    "type": "mistake",
+    "description": "有工具不用，手动编辑文件",
+    "context": {
+      "tool": "daily_schedule_manager.py",
+      "fixed": true
+    },
+    "severity": "low",
+    "processed": true,
+    "processed_at": "2026-03-08T20:57:24.339377",
+    "outcome": "logged"
+  }
+]
