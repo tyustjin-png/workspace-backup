@@ -23,3 +23,7 @@ node_modules/
 *.tar.gz
 *.epub
 *.pdf
+
+# OpenClaw 备份（允许）
+!openclaw-backup/
+openclaw-backup/cron/runs/

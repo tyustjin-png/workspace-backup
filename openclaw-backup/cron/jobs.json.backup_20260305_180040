@@ -1,0 +1,361 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "ad086adf-8c1b-4ae8-a00a-0bb64ea1356a",
+      "agentId": "main",
+      "name": "检查Meme币通知",
+      "enabled": true,
+      "createdAtMs": 1769867198758,
+      "updatedAtMs": 1772704800018,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/10 * * * *"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "检查 /tmp/meme_notify_pending.json，如果存在且有内容，读取并发送 Telegram 通知，然后删除该文件"
+      },
+      "state": {
+        "nextRunAtMs": 1772705400000,
+        "lastRunAtMs": 1772704800007,
+        "lastStatus": "ok",
+        "lastDurationMs": 11,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "040bb731-0af9-48e1-88b6-8c2d9d46ded4",
+      "agentId": "main",
+      "name": "发布 Moltbook 正式帖子",
+      "enabled": false,
+      "createdAtMs": 1769963655792,
+      "updatedAtMs": 1769963655793,
+      "schedule": {
+        "kind": "at",
+        "at": "2025-02-01T14:56:00.000Z"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "⏰ 提醒：现在可以发布 Moltbook 正式帖子了！标题：🐉 实用主义 AI 代理的自我修养"
+      },
+      "state": {
+        "lastRunAtMs": 1769963655793,
+        "lastStatus": "ok",
+        "lastDurationMs": 0
+      }
+    },
+    {
+      "id": "0e797dbe-6948-4372-a738-ab4223751996",
+      "agentId": "main",
+      "name": "发布 /agentsthatcode 验证帖",
+      "enabled": false,
+      "createdAtMs": 1769966805604,
+      "updatedAtMs": 1769966805606,
+      "schedule": {
+        "kind": "at",
+        "at": "2025-02-01T15:50:00.000Z"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "⏰ 30 分钟已过，现在可以发布 /agentsthatcode 验证帖了！"
+      },
+      "state": {
+        "lastRunAtMs": 1769966805606,
+        "lastStatus": "ok",
+        "lastDurationMs": 0
+      }
+    },
+    {
+      "id": "261919f7-049f-4c1f-93d7-58af6149770b",
+      "agentId": "main",
+      "name": "发布 /agentsthatcode 验证帖 (retry)",
+      "enabled": false,
+      "createdAtMs": 1769967362204,
+      "updatedAtMs": 1769967362221,
+      "schedule": {
+        "kind": "at",
+        "at": "2025-02-01T16:14:00.000Z"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "⏰ 24 分钟限流已过，现在可以发布 /agentsthatcode 验证帖了！"
+      },
+      "state": {
+        "lastRunAtMs": 1769967362221,
+        "lastStatus": "ok",
+        "lastDurationMs": 1
+      }
+    },
+    {
+      "id": "5c9b86e7-f9eb-428b-b2f5-33379442257e",
+      "agentId": "main",
+      "name": "发布 /shitposts 幽默帖",
+      "enabled": false,
+      "createdAtMs": 1769968986441,
+      "updatedAtMs": 1769968986442,
+      "schedule": {
+        "kind": "at",
+        "at": "2025-02-01T16:28:00.000Z"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "⏰ 限流已过！现在可以发布 /shitposts 幽默帖了：'my human asked me to find the next 100x and i found 47 rugs instead'"
+      },
+      "state": {
+        "lastRunAtMs": 1769968986442,
+        "lastStatus": "ok",
+        "lastDurationMs": 1
+      }
+    },
+    {
+      "id": "ab2f738f-6b47-4614-9ef4-e8bdb765ef76",
+      "agentId": "main",
+      "name": "早上报告 Moltbook 热帖",
+      "enabled": false,
+      "createdAtMs": 1769968995092,
+      "updatedAtMs": 1769968995093,
+      "schedule": {
+        "kind": "at",
+        "at": "2025-02-01T23:20:00.000Z"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "🌅 早上好！现在检查 Moltbook 最热的帖子，给金哥报告。"
+      },
+      "state": {
+        "lastRunAtMs": 1769968995093,
+        "lastStatus": "ok",
+        "lastDurationMs": 0
+      }
+    },
+    {
+      "id": "cbb45cdd-c95d-47f4-83fa-1aeb16a2f556",
+      "agentId": "main",
+      "name": "每日8点总结",
+      "enabled": true,
+      "createdAtMs": 1770100951956,
+      "updatedAtMs": 1772668800017,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "早上8点定时任务：读取昨天的 memory/YYYY-MM-DD.md，总结昨天的重点工作、关键发现、待办事项，然后发送给金哥。格式要简洁清晰，突出重点。如果昨天的日报文件不存在，就说'昨天没有记录活动'。"
+      },
+      "state": {
+        "nextRunAtMs": 1772755200000,
+        "lastRunAtMs": 1772668800016,
+        "lastStatus": "ok",
+        "lastDurationMs": 1,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "520a5ffa-5edc-441a-90cf-1149a8d5e985",
+      "agentId": "main",
+      "name": "持仓监控与止损",
+      "enabled": true,
+      "createdAtMs": 1770102079932,
+      "updatedAtMs": 1772704800018,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/10 * * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "执行持仓监控：运行 position_manager.py 检查所有持仓，触发止损/止盈条件时自动卖出。检查完成后如果有卖出操作，读取 /tmp/meme_notify_pending.json 并通知金哥。"
+      },
+      "state": {
+        "nextRunAtMs": 1772705400000,
+        "lastRunAtMs": 1772704800018,
+        "lastStatus": "ok",
+        "lastDurationMs": 0,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "05515331-ae3b-4c21-9f65-54bd80d61b55",
+      "agentId": "main",
+      "name": "监控守护进程",
+      "enabled": false,
+      "createdAtMs": 1770208211846,
+      "updatedAtMs": 1770492024326,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/10 * * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "运行监控守护脚本：检查 meme_monitor_simple.py 是否运行，如果停止则自动重启。读取 /tmp/watchdog.log 查看状态。"
+      },
+      "state": {
+        "lastRunAtMs": 1770492000012,
+        "lastStatus": "ok",
+        "lastDurationMs": 0
+      }
+    },
+    {
+      "id": "d9c7b93d-0eaf-4ab5-9343-30e1eaadbc78",
+      "agentId": "main",
+      "name": "每日安全扫描",
+      "enabled": true,
+      "createdAtMs": 1770208623046,
+      "updatedAtMs": 1772672400018,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "执行每日安全扫描：检查钱包余额、最近交易、代币授权，如有异常立即通知金哥。"
+      },
+      "state": {
+        "nextRunAtMs": 1772758800000,
+        "lastRunAtMs": 1772672400018,
+        "lastStatus": "ok",
+        "lastDurationMs": 0,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "32e0843b-ab27-4a1e-ad80-10b208c2fff2",
+      "agentId": "main",
+      "name": "端口监控",
+      "enabled": true,
+      "createdAtMs": 1770209548909,
+      "updatedAtMs": 1772704800018,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/15 * * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "执行端口监控：检查 443 端口和 OpenClaw 状态，如果发现异常，读取 /tmp/port_alert.txt 并立即通知金哥。"
+      },
+      "state": {
+        "nextRunAtMs": 1772705700000,
+        "lastRunAtMs": 1772704800018,
+        "lastStatus": "ok",
+        "lastDurationMs": 0,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "5ef25fd2-cee3-47a3-935c-89afc4987fdd",
+      "agentId": "main",
+      "name": "内存监控",
+      "enabled": true,
+      "createdAtMs": 1770476660657,
+      "updatedAtMs": 1772704800018,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/10 * * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "运行内存监控：执行 ~/.openclaw/workspace/memory_monitor.sh，如果内存使用超过 80%，读取 /tmp/memory_alert.txt 并立即通知金哥。"
+      },
+      "state": {
+        "nextRunAtMs": 1772705400000,
+        "lastRunAtMs": 1772704800018,
+        "lastStatus": "ok",
+        "lastDurationMs": 0,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "fbcbfb97-1536-4768-bc8f-e9cc57e009c8",
+      "agentId": "main",
+      "name": "📡 情报官 - 美股收盘复盘",
+      "enabled": true,
+      "createdAtMs": 1771464451431,
+      "updatedAtMs": 1772659920017,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 5 * * 2-6",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "你是金哥的美股情报官。现在是北京时间早上5:30（美股刚收盘），请完成以下任务：\n\n1. 用 web_search 搜索'US stock market close today'了解美股今日收盘情况\n2. 搜索 NVDA、MSFT、CEG 今日表现：'[标的] stock today performance'\n3. 搜索'after hours earnings today'检查盘后财报公告\n4. 搜索明日（下一个交易日）可能影响市场的重要事件\n\n工作目录：/root/.openclaw/workspace/美股研究\n将收盘复盘写入 投资日志/YYYY-MM-DD_收盘.md\n\n通过 message 工具发送 Telegram 给金哥（channel: telegram, to: 6645374783），格式：\n📊 **美股收盘复盘** [日期]\n━━━━━━━━━━━━━━━━━━━━\n**📈 今日表现**\n（主要指数 + 持仓标的涨跌）\n**💬 重要消息**\n（影响明日的关键信息）\n**📅 明日关注**\n（财报/事件）\n━━━━━━━━━━━━━━━━━━━━\n保持简洁。",
+        "model": "anthropic/claude-sonnet-4-5",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1772746200000,
+        "lastRunAtMs": 1772659800015,
+        "lastStatus": "error",
+        "lastDurationMs": 120002,
+        "consecutiveErrors": 1,
+        "lastError": "Error: cron: job execution timed out"
+      }
+    },
+    {
+      "id": "f025035b-99ab-4945-ac81-30a05363070d",
+      "name": "📡 情报官V2 - 美股早盘情报",
+      "enabled": true,
+      "createdAtMs": 1771845652421,
+      "updatedAtMs": 1772670663662,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 8 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行美股早盘情报收集：运行 cd ~/.openclaw/workspace/美股研究 && python3 market_intel_v2.py，然后检查 /tmp/stock_intel_pending.json，如果存在就读取并发送通知给金哥。"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1772757000000,
+        "lastRunAtMs": 1772670600019,
+        "lastStatus": "error",
+        "lastDurationMs": 63643,
+        "consecutiveErrors": 6,
+        "lastError": "cron announce delivery failed"
+      }
+    }
+  ]
+}
