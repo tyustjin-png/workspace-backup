@@ -446,7 +446,7 @@
       "name": "日程汇报-19点",
       "enabled": true,
       "createdAtMs": 1773022618887,
-      "updatedAtMs": 1773230990229,
+      "updatedAtMs": 1773313227185,
       "schedule": {
         "kind": "cron",
         "expr": "0 19 * * *"
@@ -463,14 +463,14 @@
         "to": "6645374783"
       },
       "state": {
-        "nextRunAtMs": 1773313200000,
-        "lastRunAtMs": 1773226800012,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 54158,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "lastError": "Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/usr/lib/node_modules/openclaw/dist/deps-send-telegram.runtime-EkhycHA7.js' imported from /usr/lib/node_modules/openclaw/dist/compact-B247y5Qt.js"
+        "nextRunAtMs": 1773399600000,
+        "lastRunAtMs": 1773313200013,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 27172,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
       }
     },
     {
@@ -535,7 +535,7 @@
       "name": "完整审计与反思",
       "enabled": true,
       "createdAtMs": 1773025639479,
-      "updatedAtMs": 1773234040005,
+      "updatedAtMs": 1773320444423,
       "schedule": {
         "kind": "cron",
         "expr": "0 21 * * *"
@@ -551,14 +551,14 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773320400000,
-        "lastRunAtMs": 1773234000012,
+        "nextRunAtMs": 1773406800000,
+        "lastRunAtMs": 1773320400011,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 39993,
+        "lastDurationMs": 44412,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
+        "consecutiveErrors": 2,
         "lastError": "⚠️ ✉️ Message failed"
       }
     },
@@ -659,7 +659,7 @@
       "name": "验证审计-19点日程",
       "enabled": true,
       "createdAtMs": 1773123904226,
-      "updatedAtMs": 1773228625271,
+      "updatedAtMs": 1773315011144,
       "schedule": {
         "kind": "cron",
         "expr": "30 19 * * *",
@@ -677,11 +677,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773315000000,
-        "lastRunAtMs": 1773228600014,
+        "nextRunAtMs": 1773401400000,
+        "lastRunAtMs": 1773315000012,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 25257,
+        "lastDurationMs": 11132,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
