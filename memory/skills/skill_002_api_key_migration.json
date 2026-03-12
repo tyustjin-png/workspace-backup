@@ -1,0 +1,46 @@
+{
+  "id": "skill_002",
+  "name": "API密钥1Password迁移",
+  "description": "将API密钥从明文存储迁移到1Password管理，实现零明文配置",
+  "category": "系统维护",
+  "created_at": "2026-03-09T21:00:00Z",
+  "updated_at": "2026-03-09T21:00:00Z",
+  "utility_score": 8.5,
+  "use_count": 1,
+  "trigger_conditions": [
+    "需要添加新的API密钥到系统",
+    "担心配置文件中明文密钥泄露",
+    "迁移到新机器需要配置密钥",
+    "审计发现密钥安全风险"
+  ],
+  "execution_steps": [
+    "Step 1: 安装1Password CLI（brew install --cask 1password-cli 或 apt install）",
+    "Step 2: 1Password配置 - 创建Agent Vault + Service Account + 保存Token到~/.openclaw/.op-token（600权限）",
+    "Step 3: 在Agent Vault中手动创建密钥Items（命名规范：anthropic、brave、telegram-bot等）",
+    "Step 4: 创建同步脚本~/.openclaw/sync-secrets.sh，从1P同步到本地secrets.json",
+    "Step 5: 修改openclaw.json，将明文密钥改为SecretRef引用（source:file, provider:op_file, id:/keyname）"
+  ],
+  "examples": [
+    {
+      "scenario": "迁移Telegram Bot Token",
+      "command": "openclaw config set channels.telegram.botToken '{\"source\":\"file\",\"provider\":\"op_file\",\"id\":\"/telegram-bot\"}'",
+      "result": "配置文件只存引用，密钥从secrets.json读取"
+    },
+    {
+      "scenario": "新增API Key",
+      "command": "1. 手机1P App创建Item  2. ./sync-secrets.sh  3. openclaw config set ...",
+      "result": "全程不在聊天中发送密钥"
+    }
+  ],
+  "notes": "Service Account只读权限无法用CLI创建Item，需手动在App创建。需要OpenClaw 2026.3.7+版本支持完整SecretRef",
+  "references": [
+    "infra/API_MANAGEMENT.md",
+    "infra/API_MIGRATION_QUICKSTART.md",
+    "https://blog.yuanming.ai/posts/openclaw-1password-secrets/"
+  ],
+  "lessons_learned": [
+    "版本检查很重要 - 旧版本可能不支持完整SecretRef",
+    "用户路径要注意 - ubuntu用户 vs root用户的路径不同",
+    "安全投入产出比高 - 25分钟换来长期安全"
+  ]
+}

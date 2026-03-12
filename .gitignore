@@ -1,28 +1,25 @@
 # 敏感文件
+secrets.json
+credentials/
 *.key
 *.pem
 *_secret*
-*credentials*
 .env
-.env.*
+telegram/
+*.jsonl
+sessions/
+auth-profiles.json
 
-# API keys
-*api_key*
-*apikey*
-
-# 缓存和临时文件
+# 临时文件
 __pycache__/
 *.pyc
 .venv/
 node_modules/
 *.log
-/tmp/
-
-# 系统文件
-.DS_Store
-Thumbs.db
 
 # 大文件
 *.mp4
 *.zip
 *.tar.gz
+*.epub
+*.pdf
