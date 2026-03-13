@@ -1,0 +1,50 @@
+# Book Video Pipeline 配置文件
+
+# API 配置
+api:
+  # Claude API (脚本生成)
+  claude:
+    api_key: "${ANTHROPIC_API_KEY}"
+    model: "claude-sonnet-4-20250514"
+  
+  # TTS 配置 (多选一)
+  tts:
+    provider: "edge"  # edge(免费) / elevenlabs / volcano
+    edge:
+      voice: "zh-CN-YunxiNeural"  # 男声，适合讲书
+      # 备选: zh-CN-XiaoxiaoNeural (女声)
+    elevenlabs:
+      api_key: "${ELEVENLABS_API_KEY}"
+      voice_id: "your_voice_id"
+    volcano:
+      app_id: ""
+      access_token: ""
+
+# 视频配置
+video:
+  width: 1080
+  height: 1920  # 9:16 竖屏
+  fps: 30
+  font: "fonts/SourceHanSansCN-Bold.otf"
+  font_size: 48
+  background_color: "#1a1a2e"
+  text_color: "#ffffff"
+  highlight_color: "#ffd700"
+
+# 输出配置
+output:
+  scripts_dir: "output/scripts"
+  audio_dir: "output/audio"
+  video_dir: "output/video"
+
+# 抖音发布配置
+douyin:
+  # RPA 模式配置
+  rpa:
+    enabled: true
+    device: "android"  # android / ios / web
+  # API 模式 (需要企业号)
+  api:
+    enabled: false
+    client_key: ""
+    client_secret: ""

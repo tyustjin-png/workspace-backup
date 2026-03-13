@@ -1,0 +1,20 @@
+# Book Video Pipeline 依赖
+
+# 核心依赖
+anthropic>=0.18.0          # Claude API
+edge-tts>=6.1.0            # 免费 TTS
+PyMuPDF>=1.23.0            # PDF 解析
+
+# 视频处理（可选，用于高级视频合成）
+moviepy>=1.0.3             # 视频编辑
+Pillow>=10.0.0             # 图像处理
+
+# 工具
+requests>=2.31.0           # HTTP 请求
+pyyaml>=6.0                # 配置解析
+
+# 可选：ElevenLabs TTS
+# elevenlabs>=0.3.0
+
+# 可选：图片生成
+# openai>=1.0.0            # DALL-E

@@ -1,0 +1,176 @@
+{
+  "date": "2026-03-13",
+  "time": "08:30",
+  "price_snapshots": [],
+  "earnings": [],
+  "news": [
+    {
+      "title": "Shoppers seeking a tariff refund from retailers are likely out of luck",
+      "link": "https://www.marketwatch.com/story/shoppers-seeking-a-tariff-refund-from-retailers-are-likely-out-of-luck-5aacf5f4?mod=mw_rss_topstories",
+      "published": "03-12 22:59",
+      "source": "MarketWatch",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Iran War: U.S. Navy will escort oil tankers through Strait of Hormuz when 'militarily possible,' Bessent tells Sky News",
+      "link": "https://www.cnbc.com/2026/03/12/iran-war-us-navy-strait-of-hormuz-oil-bessent.html",
+      "published": "03-12 20:28",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Sam Altman faced 'serious questions' in meeting with lawmakers about OpenAI's defense work",
+      "link": "https://www.cnbc.com/2026/03/12/sam-altman-faced-serious-questions-in-dc-meeting-openai-defense-work.html",
+      "published": "03-12 21:31",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Warren calls on State Department to provide more aid to Americans stuck in Middle East",
+      "link": "https://www.cnbc.com/2026/03/12/warren-state-department-americans-stuck-middle-east-iran-israel-war.html",
+      "published": "03-12 21:23",
+      "source": "CNBC",
+      "category": "金融新闻"
+    },
+    {
+      "title": "IAG, easyJet and Ryanair; which European airlines are investors selling as Iran burns?",
+      "link": "https://finance.yahoo.com/news/iag-easyjet-ryanair-european-airlines-115200396.html",
+      "published": "03-11 12:23",
+      "source": "Yahoo Finance",
+      "category": "金融新闻"
+    },
+    {
+      "title": "Sales automation startup Rox AI hits $1.2B valuation, sources say",
+      "link": "https://techcrunch.com/2026/03/12/sales-automation-startup-rox-ai-hits-1-2b-valuation-sources-say/",
+      "published": "03-12 22:25",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Facebook Marketplace now lets Meta AI respond to buyers’ messages",
+      "link": "https://techcrunch.com/2026/03/12/facebook-marketplace-now-lets-meta-ai-respond-to-buyers-messages/",
+      "published": "03-12 18:20",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "Atlassian follows Block’s footsteps and cuts staff in the name of AI",
+      "link": "https://techcrunch.com/2026/03/12/atlassian-follows-blocks-footsteps-and-cuts-staff-in-the-name-of-ai/",
+      "published": "03-12 17:20",
+      "source": "TechCrunch",
+      "category": "科技AI"
+    },
+    {
+      "title": "The original AirTag is the cheapest it’s ever been",
+      "link": "https://www.theverge.com/gadgets/894007/apple-airtag-first-generation-deal-sale",
+      "published": "03-12 18:50",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Facebook Marketplace adds AI auto-replies for annoying ‘Is this still available?’ messages",
+      "link": "https://www.theverge.com/tech/893907/facebook-marketplace-ai-auto-reply-listings",
+      "published": "03-12 17:59",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Anthropic&#8217;s Claude AI can respond with charts, diagrams, and other visuals now",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/893625/anthropic-claude-ai-charts-diagrams",
+      "published": "03-12 16:00",
+      "source": "The Verge",
+      "category": "科技AI"
+    },
+    {
+      "title": "Perplexity's \"Personal Computer\" brings its AI agents to the, uh, Personal Computer",
+      "link": "https://arstechnica.com/ai/2026/03/perplexitys-personal-computer-brings-its-ai-agents-to-the-uh-personal-computer/",
+      "published": "03-12 17:44",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "Apple's MacBook Neo makes repairs easier and cheaper than other MacBooks",
+      "link": "https://arstechnica.com/gadgets/2026/03/more-modular-design-makes-macbook-neo-easier-to-fix-than-other-apple-laptops/",
+      "published": "03-12 16:03",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "Rivian reveals pricing and trim details for its R2 SUV",
+      "link": "https://arstechnica.com/cars/2026/03/rivian-reveals-pricing-and-trim-details-for-its-r2-suv/",
+      "published": "03-12 15:00",
+      "source": "Ars Technica",
+      "category": "科技AI"
+    },
+    {
+      "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+      "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+      "published": "01-22 14:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+      "link": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+      "published": "01-16 14:01",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
+      "link": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+      "published": "01-13 13:00",
+      "source": "VentureBeat AI",
+      "category": "科技AI"
+    },
+    {
+      "title": "Amazon and Meta agreements boost Vistra nuclear plants",
+      "link": "https://www.world-nuclear-news.org//articles/ppas-support-extended-operations-at-vistra-plants",
+      "published": "02-27 16:02",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "IAEA: Nuclear diplomacy is hard, but never impossible",
+      "link": "https://www.world-nuclear-news.org//articles/iaea-nuclear-diplomacy-is-hard-but-never-impossible",
+      "published": "03-02 12:34",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "First concrete poured for new capacity at Kaiga in India",
+      "link": "https://www.world-nuclear-news.org//articles/first-concrete-poured-for-new-kaiga-capacity-in-india",
+      "published": "03-02 15:55",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "Cameco and India sign new uranium supply agreement",
+      "link": "https://www.world-nuclear-news.org//articles/cameco-and-india-sign-new-uranium-supply-agreement",
+      "published": "03-02 16:12",
+      "source": "World Nuclear News",
+      "category": "能源核能"
+    },
+    {
+      "title": "Only 3 U.S. Airlines Can Remain Profitable at Current Oil Prices",
+      "link": "https://oilprice.com/Energy/Energy-General/Only-3-US-Airlines-Can-Remain-Profitable-at-Current-Oil-Prices.html",
+      "published": "03-12 23:00",
+      "source": "OilPrice",
+      "category": "能源核能"
+    },
+    {
+      "title": "How Venezuela’s Oil Industry Killed Lake Maracaibo",
+      "link": "https://oilprice.com/Energy/Crude-Oil/How-Venezuelas-Oil-Industry-Killed-Lake-Maracaibo.html",
+      "published": "03-12 20:00",
+      "source": "OilPrice",
+      "category": "能源核能"
+    },
+    {
+      "title": "Trump Weighs Rare Jones Act Waiver as War Drives Fuel Prices Higher",
+      "link": "https://oilprice.com/Latest-Energy-News/World-News/Trump-Weighs-Rare-Jones-Act-Waiver-as-War-Drives-Fuel-Prices-Higher.html",
+      "published": "03-12 19:30",
+      "source": "OilPrice",
+      "category": "能源核能"
+    }
+  ]
+}

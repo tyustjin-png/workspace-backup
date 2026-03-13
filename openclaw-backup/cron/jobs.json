@@ -146,7 +146,7 @@
       "name": "每日8点总结",
       "enabled": true,
       "createdAtMs": 1770100951956,
-      "updatedAtMs": 1773273600014,
+      "updatedAtMs": 1773360000012,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -159,8 +159,8 @@
         "text": "早上8点定时任务：读取昨天的 memory/YYYY-MM-DD.md，总结昨天的重点工作、关键发现、待办事项，然后发送给金哥。格式要简洁清晰，突出重点。如果昨天的日报文件不存在，就说'昨天没有记录活动'。"
       },
       "state": {
-        "nextRunAtMs": 1773360000000,
-        "lastRunAtMs": 1773273600013,
+        "nextRunAtMs": 1773446400000,
+        "lastRunAtMs": 1773360000011,
         "lastStatus": "ok",
         "lastDurationMs": 1,
         "consecutiveErrors": 0,
@@ -222,7 +222,7 @@
       "name": "📡 情报官V2 - 美股早盘情报",
       "enabled": true,
       "createdAtMs": 1771845652421,
-      "updatedAtMs": 1773275400012,
+      "updatedAtMs": 1773361800012,
       "schedule": {
         "kind": "cron",
         "expr": "30 8 * * 1-5",
@@ -235,10 +235,10 @@
         "text": "执行美股早盘情报收集：运行 market_intel_v2.py，然后检查 /tmp/stock_intel_pending.json，如果存在就读取并发送通知给金哥。"
       },
       "state": {
-        "nextRunAtMs": 1773361800000,
-        "lastRunAtMs": 1773275400011,
+        "nextRunAtMs": 1773621000000,
+        "lastRunAtMs": 1773361800012,
         "lastStatus": "ok",
-        "lastDurationMs": 1,
+        "lastDurationMs": 0,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-requested"
@@ -316,7 +316,7 @@
       "name": "Web3早期项目雷达",
       "enabled": true,
       "createdAtMs": 1772868794058,
-      "updatedAtMs": 1773273681705,
+      "updatedAtMs": 1773360061580,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -334,11 +334,11 @@
         "to": "6645374783"
       },
       "state": {
-        "nextRunAtMs": 1773360000000,
-        "lastRunAtMs": 1773273600014,
+        "nextRunAtMs": 1773446400000,
+        "lastRunAtMs": 1773360000012,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 81691,
+        "lastDurationMs": 61568,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -382,7 +382,7 @@
       "name": "日程汇报-10点",
       "enabled": true,
       "createdAtMs": 1773022605690,
-      "updatedAtMs": 1773280819089,
+      "updatedAtMs": 1773367221320,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 * * *"
@@ -399,11 +399,11 @@
         "to": "6645374783"
       },
       "state": {
-        "nextRunAtMs": 1773367200000,
-        "lastRunAtMs": 1773280800011,
+        "nextRunAtMs": 1773453600000,
+        "lastRunAtMs": 1773367200016,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 19078,
+        "lastDurationMs": 21304,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false
@@ -414,7 +414,7 @@
       "name": "日程汇报-15点",
       "enabled": true,
       "createdAtMs": 1773022616378,
-      "updatedAtMs": 1773298829241,
+      "updatedAtMs": 1773385222935,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -431,11 +431,11 @@
         "to": "6645374783"
       },
       "state": {
-        "nextRunAtMs": 1773385200000,
-        "lastRunAtMs": 1773298800012,
+        "nextRunAtMs": 1773471600000,
+        "lastRunAtMs": 1773385200012,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 29229,
+        "lastDurationMs": 22923,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false
@@ -446,7 +446,7 @@
       "name": "日程汇报-19点",
       "enabled": true,
       "createdAtMs": 1773022618887,
-      "updatedAtMs": 1773313227185,
+      "updatedAtMs": 1773399629298,
       "schedule": {
         "kind": "cron",
         "expr": "0 19 * * *"
@@ -463,11 +463,11 @@
         "to": "6645374783"
       },
       "state": {
-        "nextRunAtMs": 1773399600000,
-        "lastRunAtMs": 1773313200013,
+        "nextRunAtMs": 1773486000000,
+        "lastRunAtMs": 1773399600012,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 27172,
+        "lastDurationMs": 29286,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false
@@ -502,7 +502,7 @@
       "name": "验证审计-定投",
       "enabled": true,
       "createdAtMs": 1773025596412,
-      "updatedAtMs": 1773275457269,
+      "updatedAtMs": 1773361843186,
       "schedule": {
         "kind": "cron",
         "expr": "30 8 * * *"
@@ -518,14 +518,14 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773361800000,
-        "lastRunAtMs": 1773275400012,
+        "nextRunAtMs": 1773448200000,
+        "lastRunAtMs": 1773361800012,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 57257,
+        "lastDurationMs": 43174,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 2,
+        "consecutiveErrors": 3,
         "lastDeliveryError": "⚠️ ✉️ Message failed",
         "lastError": "⚠️ ✉️ Message failed"
       }
@@ -535,7 +535,7 @@
       "name": "完整审计与反思",
       "enabled": true,
       "createdAtMs": 1773025639479,
-      "updatedAtMs": 1773320444423,
+      "updatedAtMs": 1773406846742,
       "schedule": {
         "kind": "cron",
         "expr": "0 21 * * *"
@@ -551,15 +551,14 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773406800000,
-        "lastRunAtMs": 1773320400011,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 44412,
+        "nextRunAtMs": 1773493200000,
+        "lastRunAtMs": 1773406800011,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 46731,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 2,
-        "lastError": "⚠️ ✉️ Message failed"
+        "consecutiveErrors": 0
       }
     },
     {
@@ -593,7 +592,7 @@
       "name": "验证审计-10点日程",
       "enabled": true,
       "createdAtMs": 1773123899178,
-      "updatedAtMs": 1773282608528,
+      "updatedAtMs": 1773369009011,
       "schedule": {
         "kind": "cron",
         "expr": "30 10 * * *",
@@ -611,11 +610,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773369000000,
-        "lastRunAtMs": 1773282600011,
+        "nextRunAtMs": 1773455400000,
+        "lastRunAtMs": 1773369000011,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 8517,
+        "lastDurationMs": 9000,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -626,7 +625,7 @@
       "name": "验证审计-15点日程",
       "enabled": true,
       "createdAtMs": 1773123901727,
-      "updatedAtMs": 1773300607927,
+      "updatedAtMs": 1773387020508,
       "schedule": {
         "kind": "cron",
         "expr": "30 15 * * *",
@@ -644,11 +643,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773387000000,
-        "lastRunAtMs": 1773300600012,
+        "nextRunAtMs": 1773473400000,
+        "lastRunAtMs": 1773387000012,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 7915,
+        "lastDurationMs": 20496,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -659,7 +658,7 @@
       "name": "验证审计-19点日程",
       "enabled": true,
       "createdAtMs": 1773123904226,
-      "updatedAtMs": 1773315011144,
+      "updatedAtMs": 1773401410108,
       "schedule": {
         "kind": "cron",
         "expr": "30 19 * * *",
@@ -677,11 +676,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773401400000,
-        "lastRunAtMs": 1773315000012,
+        "nextRunAtMs": 1773487800000,
+        "lastRunAtMs": 1773401400012,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 11132,
+        "lastDurationMs": 10096,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -692,7 +691,7 @@
       "name": "CRCL每日监控",
       "enabled": true,
       "createdAtMs": 1773146328494,
-      "updatedAtMs": 1773261019988,
+      "updatedAtMs": 1773347418797,
       "schedule": {
         "kind": "cron",
         "expr": "30 4 * * 2-6",
@@ -710,11 +709,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773347400000,
-        "lastRunAtMs": 1773261000012,
+        "nextRunAtMs": 1773433800000,
+        "lastRunAtMs": 1773347400012,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 19976,
+        "lastDurationMs": 18785,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
