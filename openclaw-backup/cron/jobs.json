@@ -146,7 +146,7 @@
       "name": "每日8点总结",
       "enabled": true,
       "createdAtMs": 1770100951956,
-      "updatedAtMs": 1773360000012,
+      "updatedAtMs": 1773446400014,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -159,8 +159,8 @@
         "text": "早上8点定时任务：读取昨天的 memory/YYYY-MM-DD.md，总结昨天的重点工作、关键发现、待办事项，然后发送给金哥。格式要简洁清晰，突出重点。如果昨天的日报文件不存在，就说'昨天没有记录活动'。"
       },
       "state": {
-        "nextRunAtMs": 1773446400000,
-        "lastRunAtMs": 1773360000011,
+        "nextRunAtMs": 1773532800000,
+        "lastRunAtMs": 1773446400013,
         "lastStatus": "ok",
         "lastDurationMs": 1,
         "consecutiveErrors": 0,
@@ -316,7 +316,7 @@
       "name": "Web3早期项目雷达",
       "enabled": true,
       "createdAtMs": 1772868794058,
-      "updatedAtMs": 1773360061580,
+      "updatedAtMs": 1773446462504,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -334,11 +334,11 @@
         "to": "6645374783"
       },
       "state": {
-        "nextRunAtMs": 1773446400000,
-        "lastRunAtMs": 1773360000012,
+        "nextRunAtMs": 1773532800000,
+        "lastRunAtMs": 1773446400014,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 61568,
+        "lastDurationMs": 62490,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -382,7 +382,7 @@
       "name": "日程汇报-10点",
       "enabled": true,
       "createdAtMs": 1773022605690,
-      "updatedAtMs": 1773367221320,
+      "updatedAtMs": 1773498508727,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 * * *"
@@ -394,16 +394,16 @@
         "message": "日程汇报任务\n\n步骤：\n1. 获取当前日期\n2. 读取日程文件：/root/.openclaw/workspace/memory/daily-schedule/YYYY-MM-DD.md\n3. 用message工具发送给金哥（target: 6645374783, channel: telegram）\n4. 写入状态文件：/tmp/schedule_delivery_log.json\n\n**输出格式（严格遵守，不得修改）：**\n\n📋 **YYYY-MM-DD 日程清单**\n\n## ⛹️ 运动\n  • ✅ 或 🔸 每项任务单独一行\n\n## 💰 投资\n  • ✅ 或 🔸 每项任务单独一行\n\n## ✍️ 写作\n  • ✅ 或 🔸 每项任务单独一行\n\n## 🤝 社交/人脉\n  • ✅ 或 🔸 每项任务单独一行\n\n## 🏠 家庭\n  • ✅ 或 🔸 每项任务单独一行\n\n---\n**完成度**: X/Y (XX%)\n\n规则：\n- ✅ = 已完成\n- 🔸 = 待完成\n- 每个任务单独一行，不要合并\n- 按类别分组，保留emoji标题\n- 不要加多余的话，不要改格式"
       },
       "delivery": {
-        "mode": "none",
-        "channel": "last",
+        "mode": "announce",
+        "channel": "telegram",
         "to": "6645374783"
       },
       "state": {
-        "nextRunAtMs": 1773453600000,
-        "lastRunAtMs": 1773367200016,
+        "nextRunAtMs": 1773540000000,
+        "lastRunAtMs": 1773453600014,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 21304,
+        "lastDurationMs": 27795,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false
@@ -414,7 +414,7 @@
       "name": "日程汇报-15点",
       "enabled": true,
       "createdAtMs": 1773022616378,
-      "updatedAtMs": 1773385222935,
+      "updatedAtMs": 1773498519892,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -426,16 +426,16 @@
         "message": "日程汇报任务\n\n步骤：\n1. 获取当前日期\n2. 读取日程文件：/root/.openclaw/workspace/memory/daily-schedule/YYYY-MM-DD.md\n3. 用message工具发送给金哥（target: 6645374783, channel: telegram）\n4. 写入状态文件：/tmp/schedule_delivery_log.json\n\n**输出格式（严格遵守，不得修改）：**\n\n📋 **YYYY-MM-DD 日程清单**\n\n## ⛹️ 运动\n  • ✅ 或 🔸 每项任务单独一行\n\n## 💰 投资\n  • ✅ 或 🔸 每项任务单独一行\n\n## ✍️ 写作\n  • ✅ 或 🔸 每项任务单独一行\n\n## 🤝 社交/人脉\n  • ✅ 或 🔸 每项任务单独一行\n\n## 🏠 家庭\n  • ✅ 或 🔸 每项任务单独一行\n\n---\n**完成度**: X/Y (XX%)\n\n规则：\n- ✅ = 已完成\n- 🔸 = 待完成\n- 每个任务单独一行，不要合并\n- 按类别分组，保留emoji标题\n- 不要加多余的话，不要改格式"
       },
       "delivery": {
-        "mode": "none",
-        "channel": "last",
+        "mode": "announce",
+        "channel": "telegram",
         "to": "6645374783"
       },
       "state": {
-        "nextRunAtMs": 1773471600000,
-        "lastRunAtMs": 1773385200012,
+        "nextRunAtMs": 1773558000000,
+        "lastRunAtMs": 1773471600011,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 22923,
+        "lastDurationMs": 22954,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false
@@ -446,7 +446,7 @@
       "name": "日程汇报-19点",
       "enabled": true,
       "createdAtMs": 1773022618887,
-      "updatedAtMs": 1773399629298,
+      "updatedAtMs": 1773498495978,
       "schedule": {
         "kind": "cron",
         "expr": "0 19 * * *"
@@ -458,16 +458,16 @@
         "message": "日程汇报任务\n\n步骤：\n1. 获取当前日期\n2. 读取日程文件：/root/.openclaw/workspace/memory/daily-schedule/YYYY-MM-DD.md\n3. 用message工具发送给金哥（target: 6645374783, channel: telegram）\n4. 写入状态文件：/tmp/schedule_delivery_log.json\n\n**输出格式（严格遵守，不得修改）：**\n\n📋 **YYYY-MM-DD 日程清单**\n\n## ⛹️ 运动\n  • ✅ 或 🔸 每项任务单独一行\n\n## 💰 投资\n  • ✅ 或 🔸 每项任务单独一行\n\n## ✍️ 写作\n  • ✅ 或 🔸 每项任务单独一行\n\n## 🤝 社交/人脉\n  • ✅ 或 🔸 每项任务单独一行\n\n## 🏠 家庭\n  • ✅ 或 🔸 每项任务单独一行\n\n---\n**完成度**: X/Y (XX%)\n\n规则：\n- ✅ = 已完成\n- 🔸 = 待完成\n- 每个任务单独一行，不要合并\n- 按类别分组，保留emoji标题\n- 不要加多余的话，不要改格式"
       },
       "delivery": {
-        "mode": "none",
-        "channel": "last",
+        "mode": "announce",
+        "channel": "telegram",
         "to": "6645374783"
       },
       "state": {
-        "nextRunAtMs": 1773486000000,
-        "lastRunAtMs": 1773399600012,
+        "nextRunAtMs": 1773572400000,
+        "lastRunAtMs": 1773486000010,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 29286,
+        "lastDurationMs": 27845,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false
@@ -502,7 +502,7 @@
       "name": "验证审计-定投",
       "enabled": true,
       "createdAtMs": 1773025596412,
-      "updatedAtMs": 1773361843186,
+      "updatedAtMs": 1773448238260,
       "schedule": {
         "kind": "cron",
         "expr": "30 8 * * *"
@@ -518,14 +518,14 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773448200000,
-        "lastRunAtMs": 1773361800012,
+        "nextRunAtMs": 1773534600000,
+        "lastRunAtMs": 1773448200013,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 43174,
+        "lastDurationMs": 38247,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 3,
+        "consecutiveErrors": 4,
         "lastDeliveryError": "⚠️ ✉️ Message failed",
         "lastError": "⚠️ ✉️ Message failed"
       }
@@ -535,7 +535,7 @@
       "name": "完整审计与反思",
       "enabled": true,
       "createdAtMs": 1773025639479,
-      "updatedAtMs": 1773406846742,
+      "updatedAtMs": 1773493263822,
       "schedule": {
         "kind": "cron",
         "expr": "0 21 * * *"
@@ -551,14 +551,14 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773493200000,
-        "lastRunAtMs": 1773406800011,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 46731,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1773579600000,
+        "lastRunAtMs": 1773493200011,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 63811,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/usr/lib/node_modules/openclaw/dist/deps-send-telegram.runtime-C0kzjePT.js' imported from /usr/lib/node_modules/openclaw/dist/compact-D3emcZgv.js"
       }
     },
     {
@@ -592,7 +592,7 @@
       "name": "验证审计-10点日程",
       "enabled": true,
       "createdAtMs": 1773123899178,
-      "updatedAtMs": 1773369009011,
+      "updatedAtMs": 1773455408725,
       "schedule": {
         "kind": "cron",
         "expr": "30 10 * * *",
@@ -610,11 +610,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773455400000,
-        "lastRunAtMs": 1773369000011,
+        "nextRunAtMs": 1773541800000,
+        "lastRunAtMs": 1773455400011,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 9000,
+        "lastDurationMs": 8714,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -625,7 +625,7 @@
       "name": "验证审计-15点日程",
       "enabled": true,
       "createdAtMs": 1773123901727,
-      "updatedAtMs": 1773387020508,
+      "updatedAtMs": 1773473409701,
       "schedule": {
         "kind": "cron",
         "expr": "30 15 * * *",
@@ -643,11 +643,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773473400000,
-        "lastRunAtMs": 1773387000012,
+        "nextRunAtMs": 1773559800000,
+        "lastRunAtMs": 1773473400011,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 20496,
+        "lastDurationMs": 9690,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -658,7 +658,7 @@
       "name": "验证审计-19点日程",
       "enabled": true,
       "createdAtMs": 1773123904226,
-      "updatedAtMs": 1773401410108,
+      "updatedAtMs": 1773487809472,
       "schedule": {
         "kind": "cron",
         "expr": "30 19 * * *",
@@ -676,11 +676,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773487800000,
-        "lastRunAtMs": 1773401400012,
+        "nextRunAtMs": 1773574200000,
+        "lastRunAtMs": 1773487800015,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 10096,
+        "lastDurationMs": 9457,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -691,7 +691,7 @@
       "name": "CRCL每日监控",
       "enabled": true,
       "createdAtMs": 1773146328494,
-      "updatedAtMs": 1773347418797,
+      "updatedAtMs": 1773433819970,
       "schedule": {
         "kind": "cron",
         "expr": "30 4 * * 2-6",
@@ -709,11 +709,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773433800000,
-        "lastRunAtMs": 1773347400012,
+        "nextRunAtMs": 1773693000000,
+        "lastRunAtMs": 1773433800011,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 18785,
+        "lastDurationMs": 19959,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0

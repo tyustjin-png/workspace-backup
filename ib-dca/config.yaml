@@ -1,0 +1,54 @@
+# CRCL 条件定投配置
+# ===================
+
+# IB Gateway 连接配置
+ib:
+  host: "127.0.0.1"
+  port: 4001          # Live: 4001, Paper: 4002
+  client_id: 1
+  timeout: 30         # 连接超时（秒）
+  readonly: false     # 设为 true 禁止下单（测试用）
+
+# 股票信息
+stock:
+  symbol: "CRCL"
+  exchange: "SMART"
+  currency: "USD"
+  sec_type: "STK"
+
+# 阶梯买入策略
+# 从高到低匹配，匹配到第一个就停止
+tiers:
+  - price_max: 90.0   # 价格 <= 90
+    price_min: 80.0   # 价格 > 80
+    amount: 300       # 买入金额 $300
+
+  - price_max: 80.0   # 价格 <= 80
+    price_min: 70.0   # 价格 > 70
+    amount: 700       # 买入金额 $700
+
+  - price_max: 70.0   # 价格 <= 70
+    price_min: 0.0    # 无下限
+    amount: 1500      # 买入金额 $1500
+
+# 价格高于此值时不买入
+max_buy_price: 90.0
+
+# 订单配置
+order:
+  type: "MKT"         # 市价单
+  tif: "DAY"          # 当日有效
+  
+# 日志配置
+logging:
+  level: "INFO"       # DEBUG, INFO, WARNING, ERROR
+  file: "logs/crcl_dca.log"
+  max_size_mb: 10
+  backup_count: 5
+
+# 通知配置
+notification:
+  enabled: true
+  on_success: true    # 交易成功时通知
+  on_failure: true    # 交易失败时通知
+  on_skip: false      # 跳过交易时通知（价格过高）
