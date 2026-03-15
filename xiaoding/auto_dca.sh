@@ -25,17 +25,8 @@ if [ $EXIT_CODE -eq 0 ]; then
     
     # 同步到日程系统
     cd /Users/qianzhao/.openclaw/workspace
-    python3 daily_schedule_manager.py "定投相关完成" >> "$LOG_FILE" 2>&1
+    python3 scripts/schedule/daily_schedule_manager.py "定投相关完成" >> "$LOG_FILE" 2>&1
     echo "✅ 已同步日程系统" >> "$LOG_FILE"
-    
-    # 更新状态中心
-    python3 -c "
-import sys
-sys.path.insert(0, '/Users/qianzhao/.openclaw/workspace/infra')
-from state_center import mark_task_completed
-mark_task_completed('xiaoding', {'source': 'auto_dca.sh'}, 'auto_dca')
-print('✅ 状态中心已更新')
-" >> "$LOG_FILE" 2>&1
 else
     echo "❌ 定投执行失败，退出码: $EXIT_CODE" >> "$LOG_FILE"
     

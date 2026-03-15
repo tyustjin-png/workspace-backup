@@ -289,6 +289,7 @@ class AutoBuyStrategy:
         z_value = self.get_z_value()
         if z_value is None:
             print("❌ 无法获取 z 值，退出")
+            import sys; sys.exit(1)
             return
         
         print(f"\n📊 当前 z 值: {z_value}")
@@ -310,12 +311,14 @@ class AutoBuyStrategy:
         
         if not self.client:
             print("❌ 币安客户端未初始化，请检查 API 配置")
+            import sys; sys.exit(1)
             return
         
         # 获取当前价格
         current_price = self.client.get_price(symbol)
         if not current_price:
             print("❌ 无法获取当前价格")
+            import sys; sys.exit(1)
             return
         
         print(f"💵 当前价格: ${current_price:.2f}")
@@ -378,6 +381,8 @@ class AutoBuyStrategy:
             print("❌ 买入失败")
             if result:
                 print(f"   错误信息: {result}")
+            import sys
+            sys.exit(1)
         
         print("\n" + "=" * 60)
     
