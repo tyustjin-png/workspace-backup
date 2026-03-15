@@ -66,8 +66,8 @@ heartbeat 推送结果
 |-----|------|------|
 | healthcheck:security | 周一四 02:00 | 安全审计 |
 | healthcheck:update | 周一四 02:05 | 更新状态 |
-| CRCL每日监控 | 周二-六 04:30 | 链上数据 |
-| Web3早期项目雷达 | 每日 08:00 | 项目扫描（有error） |
+| CRCL每日监控 | 周二-六 04:30 | 美股价格 |
+| Web3早期项目雷达 | 每日 08:00 | Gmail邮件→Gemini研报 |
 
 ---
 
