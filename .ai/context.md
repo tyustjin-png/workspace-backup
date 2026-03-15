@@ -7,57 +7,75 @@
 **项目名称**: OpenClaw 个人助手系统  
 **主要用户**: 金哥  
 **启动时间**: 2026-02-08  
-**当前版本**: v1.0  
+**当前版本**: v2.0  
+
+## 🖥️ 运行环境
+
+### 主机：Mac mini（主力）
+- **OS**: macOS (Darwin 25.2.0, arm64)
+- **Node**: v25.3.0
+- **OpenClaw**: 2026.3.13 (stable)
+- **AI 模型**: Claude Opus 4.6（默认）
+- **角色**: Gateway + 紫龙主会话 + 全部 cron 任务
+- **Bot**: Telegram @紫龙
+
+### 服务器：EPYC（2026-03-14 上线）
+- **CPU**: AMD EPYC 7B12 64-Core（128线程）
+- **内存**: 503 GB
+- **存储**: nvme0n1 (7TB 系统) + nvme1n1 (15TB 数据)
+- **OS**: Ubuntu 24.04 LTS Desktop
+- **本地 IP**: 192.168.4.250
+- **Tailscale IP**: 100.105.92.26
+- **用户名**: jinjin
+- **代理**: mihomo (Clash Meta) + VLESS Reality
+- **Bot**: Telegram @ergou9527_bot（二狗）
 
 ## 🎯 核心目标
 
-1. **Meme 币监控**: 自动发现和跟踪高潜力 Meme 币
-2. **持仓管理**: 自动止损/止盈，风险控制
-3. **系统监控**: 服务器健康、资源使用
+1. **日常管理**: 日程追踪、定投执行、汇报推送
+2. **投资辅助**: 定投系统、链上监控、美股跟踪
+3. **系统监控**: 服务器健康、安全审计
 4. **智能助手**: 信息整理、任务提醒、深度分析
+5. **内容创作**: 公众号写作（每周三篇）
 
-## 🔧 技术栈
+## ⚙️ 四大核心系统
 
-**基础环境**:
-- 操作系统: Ubuntu (腾讯云服务器)
-- 运行时: Node.js v22.22.0
-- AI 框架: OpenClaw 2026.1.29
-- AI 模型: Claude Opus 4.5 (深度分析) / Sonnet 4.5 (日常)
+### 1. 📅 日程系统
+- 07:30 `create_daily_schedule.sh` 生成当日日程
+- 10:00 / 15:00 / 19:00 推送日程汇报
+- 数据：`memory/daily-schedule/YYYY-MM-DD.md`
 
-**核心服务**:
-- Meme 监控: Python + DexScreener API
-- 持仓管理: position_manager.py
-- 内存监控: memory_monitor.sh
-- 端口监控: ss + ps
+### 2. 💰 定投系统
+- 08:00 `xiaoding/auto_dca.sh` 执行定投
+- 结果写入 `/tmp/xiaoding_notify.txt`
+- heartbeat 08:00-08:10 推送结果
 
-## 📍 当前活跃项目
+### 3. 📊 汇报系统
+- 08:00 昨日总结 + 今日计划
+- 21:00 完整审计与反思
+- 21:30（周日）每周总结
 
-**1. Meme 币交易系统** (运行中)
-- 路径: `projects/meme-trading-system/`
-- 进度: 85%
-- 状态: 稳定运行，持续优化中
+### 4. 🔍 监控系统
+- healthcheck 安全审计（周一四 02:00）
+- CRCL 链上监控（周二-六 04:30）
+- Web3 早期项目雷达（每日 08:00）
 
-**2. 设计一个多agent方案** (规划中) ⭐ NEW
-- 路径: `projects/multi-agent-collaboration-system/`
-- 进度: 0%
-- 状态: 刚启动，需求分析阶段
+## ⏰ 系统 Cron（crontab）
 
----
+| 时间 | 任务 |
+|-----|------|
+| 03:00 | daily_backup.sh |
+| 07:00 | scripts/notification/reset_heartbeat_state.sh |
+| 07:30 | scripts/schedule/create_daily_schedule.sh |
+| 08:00 | xiaoding/auto_dca.sh |
 
-## 📍 系统状态 (2026-02-08 20:36)
+## 📍 活跃项目
 
-**正在运行的服务**:
-- ✅ OpenClaw Gateway (PID: 138838)
-- ✅ Meme 监控脚本 (每 30 分钟)
-- ✅ 持仓监控 (每 30 分钟)
-- ✅ 系统健康检查 (每小时)
-
-**持仓情况**:
-- 所有持仓正常
-
-**系统资源**:
-- 内存使用: ~17% (正常)
-- 服务稳定性: ✅
+| 项目 | 路径 | 进度 |
+|-----|------|------|
+| Meme 币交易系统 | `projects/meme-trading-system/` | 85% |
+| 多 Agent 协作系统 | `projects/multi-agent-collaboration-system/` | 0%（规划中）|
+| 雅萍合作计费 | `projects/yaping-cooperation-billing/` | 待确认 |
 
 ## 🚨 重要约束
 
@@ -68,25 +86,20 @@
 
 ## 📝 工作习惯
 
-**每日节奏**:
-- 08:00 - 早报（昨日总结 + 今日计划）
-- 20:00 - 晚报（今日进展 + 明日提醒）
-- 全天 - 异常立即通知
-
-**文档维护**:
-- 每次会话后更新 `memory/YYYY-MM-DD.md`
-- 重要决策写入 `MEMORY.md`
-- 项目变更更新本文件
+- 异常才通知，正常静默
+- 简洁直接，不废话
+- 给方案让金哥选，不问开放问题
+- Done > Perfect
 
 ## 🔗 快速链接
 
-- **架构设计**: `.ai/architecture.md`
-- **编码规范**: `.ai/coding-rules.md`
-- **决策日志**: `.ai/decisions.md`
-- **工作记忆**: `.ai/memory.md`
+- **系统架构速查**: `memory/SYSTEMS.md`
+- **长期记忆**: `MEMORY.md`
 - **每日日志**: `memory/YYYY-MM-DD.md`
+- **规则库**: `memory/rules.md`
+- **教训库**: `memory/lessons.md`
 
 ---
 
-**最后更新**: 2026-02-08 20:19  
+**最后更新**: 2026-03-15 12:00  
 **更新人**: 紫龙
