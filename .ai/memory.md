@@ -9,7 +9,7 @@
 所有记忆已迁移到统一的 `memory/` 目录：
 
 ```
-/root/.openclaw/workspace/memory/
+/Users/qianzhao/.openclaw/workspace/memory/
 ├── ARCHITECTURE.md         # 记忆系统架构说明
 ├── YYYY-MM-DD.md           # 每日日志（记录层）
 ├── lessons.md              # 错误教训（知识层）
@@ -19,7 +19,7 @@
 └── ...                     # 其他专题文件
 ```
 
-**长期记忆：** `/root/.openclaw/workspace/MEMORY.md`
+**长期记忆：** `/Users/qianzhao/.openclaw/workspace/MEMORY.md`
 
 ---
 
@@ -50,4 +50,4 @@
 ---
 
 **废弃时间：** 2026-03-08 11:15  
-**如需查看记忆，请前往：** `/root/.openclaw/workspace/memory/`
+**如需查看记忆，请前往：** `/Users/qianzhao/.openclaw/workspace/memory/`

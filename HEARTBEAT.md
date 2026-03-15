@@ -134,7 +134,7 @@
 - 不是在 heartbeat 响应里附带，而是主动发送
 - 如无需推送，返回 HEARTBEAT_OK
 
-**状态追踪：** `/root/.openclaw/workspace/heartbeat_state.json`
+**状态追踪：** `/Users/qianzhao/.openclaw/workspace/heartbeat_state.json`
 
 ---
 

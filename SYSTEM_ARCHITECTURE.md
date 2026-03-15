@@ -74,7 +74,7 @@
 ## 🔄 日程管理
 
 ### 日程文件位置
-`/root/.openclaw/workspace/memory/daily-schedule/YYYY-MM-DD.md`
+`/Users/qianzhao/.openclaw/workspace/memory/daily-schedule/YYYY-MM-DD.md`
 
 ### 日程更新规则
 
@@ -88,7 +88,7 @@
 2. 如果是业务任务 → 推送通知
 
 ### 日程管理器
-`/root/.openclaw/workspace/daily_schedule_manager.py`
+`/Users/qianzhao/.openclaw/workspace/daily_schedule_manager.py`
 
 用法：
 ```bash
@@ -163,7 +163,7 @@ auto_dca.sh 调用 binance_auto_buy.py
 ## 🔍 快速诊断
 
 ### 定投没收到通知？
-1. 检查 `/root/.openclaw/workspace/xiaoding/data/dca_log.txt`
+1. 检查 `/Users/qianzhao/.openclaw/workspace/xiaoding/data/dca_log.txt`
 2. 检查 `openclaw cron runs e43ae640 --limit 5`
 3. 检查日程文件是否标记完成
 

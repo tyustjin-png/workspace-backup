@@ -19,7 +19,7 @@
 ### 1. 立即测试运行（前台）
 
 ```bash
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 ./start_monitor.sh
 ```
 
@@ -31,13 +31,13 @@ cd /root/.openclaw/workspace
 ### 2. 后台运行（推荐）
 
 ```bash
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 nohup ./start_monitor.sh > monitor.log 2>&1 &
 ```
 
 查看日志：
 ```bash
-tail -f /root/.openclaw/workspace/monitor.log
+tail -f /Users/qianzhao/.openclaw/workspace/monitor.log
 ```
 
 停止监控：
@@ -59,8 +59,8 @@ After=network.target
 [Service]
 Type=simple
 User=root
-WorkingDirectory=/root/.openclaw/workspace
-ExecStart=/root/.openclaw/workspace/start_monitor.sh
+WorkingDirectory=/Users/qianzhao/.openclaw/workspace
+ExecStart=/Users/qianzhao/.openclaw/workspace/start_monitor.sh
 Restart=always
 RestartSec=10
 
@@ -168,7 +168,7 @@ curl -s https://www.moltbook.com/api/v1/posts?limit=1
 ### 问题：Python 模块错误
 ```bash
 # 重新安装依赖
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 ./meme_monitor_env/bin/pip install --upgrade requests
 ```
 

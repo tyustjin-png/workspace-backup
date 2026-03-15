@@ -24,7 +24,7 @@
 ## 📁 **CSV 文件说明**
 
 ### 文件信息
-- **路径**: `/root/.openclaw/workspace/btc_metrics_history.csv`
+- **路径**: `/Users/qianzhao/.openclaw/workspace/btc_metrics_history.csv`
 - **大小**: 149 KB
 - **行数**: 1,503 行
 - **日期范围**: 2025-02-04 至 2026-02-03（约 1 年）
@@ -92,7 +92,7 @@ Fear & Greed: 17（极度恐慌）
 ### 手动更新
 
 ```bash
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 ./meme_monitor_env/bin/python btc_metrics_scraper.py
 ```
 
@@ -103,7 +103,7 @@ cd /root/.openclaw/workspace
 openclaw cron add \
   --name "BTC 指标更新" \
   --schedule "0 2 * * *" \
-  --command "cd /root/.openclaw/workspace && ./meme_monitor_env/bin/python btc_metrics_scraper.py"
+  --command "cd /Users/qianzhao/.openclaw/workspace && ./meme_monitor_env/bin/python btc_metrics_scraper.py"
 ```
 
 ### 查看更新后的数据

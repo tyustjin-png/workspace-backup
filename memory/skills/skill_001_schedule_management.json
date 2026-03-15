@@ -12,7 +12,7 @@
     "需要更新任务完成状态"
   ],
   "execution_steps": [
-    "1. cd /root/.openclaw/workspace",
+    "1. cd /Users/qianzhao/.openclaw/workspace",
     "2. 根据需求选择命令：",
     "   - 添加任务：python3 daily_schedule_manager.py add '类别' '任务名'",
     "   - 完成任务：python3 daily_schedule_manager.py complete '类别' '任务名'",

@@ -15,7 +15,7 @@
 ## 📁 目录结构（单一真相源）
 
 ```
-/root/.openclaw/workspace/
+/Users/qianzhao/.openclaw/workspace/
 ├── AGENTS.md               # 启动指引（每次会话必读）
 ├── SOUL.md                 # 身份层：我是谁
 ├── USER.md                 # 用户层：金哥是谁

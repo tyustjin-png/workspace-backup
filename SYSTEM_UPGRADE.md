@@ -187,7 +187,7 @@
 ### 手动测试评分
 
 ```bash
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 ./meme_monitor_env/bin/python meme_monitor_simple.py
 ```
 

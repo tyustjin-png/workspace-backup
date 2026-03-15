@@ -30,7 +30,7 @@
   ],
   
   "execution_steps": [
-    "1. cd /root/.openclaw/workspace",
+    "1. cd /Users/qianzhao/.openclaw/workspace",
     "2. python3 daily_schedule_manager.py [add|complete|show]",
     "3. 确认操作结果"
   ],

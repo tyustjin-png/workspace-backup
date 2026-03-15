@@ -40,7 +40,7 @@ sudo systemctl restart sshd
 sudo useradd -m -s /bin/bash memebot
 
 # 转移文件
-sudo cp -r /root/.openclaw/workspace /home/memebot/
+sudo cp -r /Users/qianzhao/.openclaw/workspace /home/memebot/
 sudo chown -R memebot:memebot /home/memebot/workspace
 
 # 以 memebot 用户运行

@@ -21,7 +21,7 @@
 ### 1. 安装 Solana CLI 并创建钱包
 
 ```bash
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 chmod +x setup_wallet.sh
 ./setup_wallet.sh
 ```
@@ -54,7 +54,7 @@ solana balance
 ### 3. 安装交易依赖
 
 ```bash
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 ./meme_monitor_env/bin/pip install solana solders base58
 ```
 
@@ -164,7 +164,7 @@ BLACKLIST = [
 ## 📊 查看交易历史
 
 ```bash
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 cat pending_trades.json
 ```
 

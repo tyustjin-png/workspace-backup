@@ -56,7 +56,7 @@ OpenClaw cron 检查文件
 
 ### 手动触发监控
 ```bash
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 ./meme_monitor_env/bin/python meme_monitor_simple.py
 ```
 

@@ -53,7 +53,7 @@
 ### 方式 1：导入已有钱包（推荐）
 
 ```bash
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 
 # 导入你的 Base 钱包私钥
 ./meme_monitor_env/bin/python << 'EOF'
@@ -71,7 +71,7 @@ EOF
 ### 方式 2：创建新钱包
 
 ```bash
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 ./meme_monitor_env/bin/python -c "from base_trader import create_wallet; create_wallet()"
 ```
 
@@ -134,7 +134,7 @@ DAILY_LIMIT_ETH = 0.3     # 每日最多 0.3 ETH
 ### 1. 检查钱包
 
 ```bash
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 ./meme_monitor_env/bin/python base_trader.py
 ```
 
@@ -149,7 +149,7 @@ ETH 余额: 0.1000
 ### 2. 测试监控
 
 ```bash
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 ./meme_monitor_env/bin/python meme_monitor_simple.py
 ```
 

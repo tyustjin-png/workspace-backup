@@ -96,7 +96,7 @@ python3 ~/.openclaw/workspace/schedule_report.py
 ### 定时任务
 ```bash
 # 每天 10:00, 15:00, 19:00 生成日程汇报
-0 10,15,19 * * * /root/.openclaw/workspace/generate_schedule_reminder.sh
+0 10,15,19 * * * /Users/qianzhao/.openclaw/workspace/generate_schedule_reminder.sh
 ```
 
 ---

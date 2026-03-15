@@ -94,9 +94,9 @@ full_auto_trader.py             - Solana 交易 ⏳
 ### 配置文件
 
 ```
-/root/.config/solana/trading-bot.json  - Solana 钱包 ✅
-/root/.config/base/trading-bot-key.json  - Base 钱包 ✅
-/root/.secrets/base_wallet.json        - Base 钱包源 ✅
+/Users/qianzhao/.config/solana/trading-bot.json  - Solana 钱包 ✅
+/Users/qianzhao/.config/base/trading-bot-key.json  - Base 钱包 ✅
+/Users/qianzhao/.secrets/base_wallet.json        - Base 钱包源 ✅
 ```
 
 ### 数据文件
@@ -298,7 +298,7 @@ multichain_trade_history.json   - 多链交易记录
 
 ```bash
 # 多链钱包状态
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 ./meme_monitor_env/bin/python << 'EOF'
 from base_trader import BaseTrader
 from full_auto_trader import Wallet
@@ -316,7 +316,7 @@ EOF
 ### 手动触发监控
 
 ```bash
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 ./meme_monitor_env/bin/python meme_monitor_simple.py
 ```
 

@@ -135,7 +135,7 @@
 
 ```bash
 # 查看当前持仓
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 cat positions.json
 
 # 手动运行监控（测试）

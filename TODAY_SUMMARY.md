@@ -40,7 +40,7 @@
 **问题：** 钱包地址混乱，有多个备份
 
 **解决过程：**
-1. 发现 `/root/.config/solana/trading-bot.json` 地址错误
+1. 发现 `/Users/qianzhao/.config/solana/trading-bot.json` 地址错误
 2. 找到正确备份在 `/home/memebot/.config/solana/trading-bot.json.age`
 3. 解密并复制到正确位置
 4. 验证地址：`7tLcKDnqBwvs3ZSz99qU6PcWYqhq73N3tsCfv96kQvyB`
@@ -48,7 +48,7 @@
 6. 删除所有旧/错误的备份
 
 **最终状态：**
-- ✅ 唯一钱包：`/root/.config/solana/trading-bot.json`
+- ✅ 唯一钱包：`/Users/qianzhao/.config/solana/trading-bot.json`
 - ✅ 地址正确
 - ✅ 余额充足
 - ✅ 无冗余备份
@@ -300,7 +300,7 @@ TODAY_SUMMARY.md                - 今日总结（本文件）
 ```
 地址: 7tLcKDnqBwvs3ZSz99qU6PcWYqhq73N3tsCfv96kQvyB
 余额: 4.0 SOL
-路径: /root/.config/solana/trading-bot.json
+路径: /Users/qianzhao/.config/solana/trading-bot.json
 状态: ✅ 正常
 ```
 

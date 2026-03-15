@@ -14,7 +14,7 @@
 ## 安装
 
 ```bash
-cd /root/.openclaw/workspace/ib-dca
+cd /Users/qianzhao/.openclaw/workspace/ib-dca
 pip install -r requirements.txt
 ```
 
@@ -65,13 +65,13 @@ python crcl_dca.py --config /path/to/config.yaml
 
 ```bash
 # 使用 cron (示例：每天北京时间 21:35 执行)
-35 21 * * 1-5 cd /root/.openclaw/workspace/ib-dca && python crcl_dca.py >> logs/cron.log 2>&1
+35 21 * * 1-5 cd /Users/qianzhao/.openclaw/workspace/ib-dca && python crcl_dca.py >> logs/cron.log 2>&1
 ```
 
 或使用 OpenClaw cron：
 
 ```bash
-openclaw cron add "35 21 * * 1-5" "cd /root/.openclaw/workspace/ib-dca && python crcl_dca.py"
+openclaw cron add "35 21 * * 1-5" "cd /Users/qianzhao/.openclaw/workspace/ib-dca && python crcl_dca.py"
 ```
 
 ## 日志

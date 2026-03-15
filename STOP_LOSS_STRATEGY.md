@@ -207,7 +207,7 @@ else:  # partial_sold = True
 ## ✅ 配置参数
 
 ```python
-# /root/.openclaw/workspace/position_manager.py
+# /Users/qianzhao/.openclaw/workspace/position_manager.py
 
 STOP_LOSS_PCT = -0.50              # -50% 止损
 TAKE_PROFIT_BREAKEVEN = 1.00       # +100% 回本（卖 50%）
@@ -228,7 +228,7 @@ MAX_HOLD_HOURS = 48                # 超时止损时间
 ### 手动检查
 
 ```bash
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 ./meme_monitor_env/bin/python position_manager.py
 ```
 

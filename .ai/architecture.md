@@ -109,7 +109,7 @@
   - 定时提醒
 
 ### 3. 文件系统
-- **工作目录**: `/root/.openclaw/workspace`
+- **工作目录**: `/Users/qianzhao/.openclaw/workspace`
 - **临时文件**: `/tmp/meme_notify_pending.json` 等
 - **权限**: root 用户权限
 

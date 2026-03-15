@@ -116,7 +116,7 @@ tail -f /tmp/meme_monitor.log
 ## 📊 查看交易历史
 
 ```bash
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 cat trade_history.json
 ```
 
