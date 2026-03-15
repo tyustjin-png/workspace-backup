@@ -11,24 +11,14 @@
 
 ## 🖥️ 运行环境
 
-### 主机：Mac mini（主力）
+### Mac mini
 - **OS**: macOS (Darwin 25.2.0, arm64)
 - **Node**: v25.3.0
 - **OpenClaw**: 2026.3.13 (stable)
 - **AI 模型**: Claude Opus 4.6（默认）
 - **角色**: Gateway + 紫龙主会话 + 全部 cron 任务
 - **Bot**: Telegram @紫龙
-
-### 服务器：EPYC（2026-03-14 上线）
-- **CPU**: AMD EPYC 7B12 64-Core（128线程）
-- **内存**: 503 GB
-- **存储**: nvme0n1 (7TB 系统) + nvme1n1 (15TB 数据)
-- **OS**: Ubuntu 24.04 LTS Desktop
-- **本地 IP**: 192.168.4.250
-- **Tailscale IP**: 100.105.92.26
-- **用户名**: jinjin
-- **代理**: mihomo (Clash Meta) + VLESS Reality
-- **Bot**: Telegram @ergou9527_bot（二狗）
+- **代理**: Surge（HTTP :6152）
 
 ## 🎯 核心目标
 
