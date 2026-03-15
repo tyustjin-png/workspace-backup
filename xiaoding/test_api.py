@@ -9,7 +9,7 @@ from urllib.parse import urlencode
 
 def test_binance_api():
     # 读取配置
-    with open('/root/.openclaw/workspace/xiaoding/config/binance_auto_buy.json', 'r') as f:
+    with open('/Users/qianzhao/.openclaw/workspace/xiaoding/config/binance_auto_buy.json', 'r') as f:
         config = json.load(f)
     
     api_key = config['api_key']

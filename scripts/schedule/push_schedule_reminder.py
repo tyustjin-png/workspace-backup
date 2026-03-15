@@ -7,7 +7,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-WORKSPACE = Path("/root/.openclaw/workspace")
+WORKSPACE = Path("/Users/qianzhao/.openclaw/workspace")
 MESSAGE_FILE = Path("/tmp/schedule_message.txt")
 STATE_FILE = WORKSPACE / "heartbeat_state.json"
 

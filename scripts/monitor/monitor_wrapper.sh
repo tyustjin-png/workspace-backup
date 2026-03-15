@@ -2,7 +2,7 @@
 # Meme 币监控包装脚本
 # 监控程序运行，发现通知后通过 OpenClaw 发送
 
-WORKSPACE="/root/.openclaw/workspace"
+WORKSPACE="/Users/qianzhao/.openclaw/workspace"
 NOTIFY_FILE="/tmp/meme_monitor_notify.txt"
 PYTHON_ENV="$WORKSPACE/meme_monitor_env/bin/python"
 

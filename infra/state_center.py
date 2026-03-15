@@ -12,7 +12,7 @@ from datetime import datetime
 from pathlib import Path
 
 # 配置
-WORKSPACE = Path("/root/.openclaw/workspace")
+WORKSPACE = Path("/Users/qianzhao/.openclaw/workspace")
 STATE_FILE = WORKSPACE / "infra" / "system_state.json"
 CHANGE_LOG = WORKSPACE / "infra" / "state_changes.jsonl"
 
@@ -152,10 +152,10 @@ def sync_schedule_from_xiaoding(trigger: str):
     try:
         import subprocess
         result = subprocess.run(
-            ["python3", "/root/.openclaw/workspace/daily_schedule_manager.py", "定投相关完成"],
+            ["python3", "/Users/qianzhao/.openclaw/workspace/daily_schedule_manager.py", "定投相关完成"],
             capture_output=True,
             text=True,
-            cwd="/root/.openclaw/workspace"
+            cwd="/Users/qianzhao/.openclaw/workspace"
         )
         log_change(
             "schedule.sync_from_xiaoding", 

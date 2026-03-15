@@ -1,7 +1,7 @@
 #!/bin/bash
 # 每日 07:30 创建当天日程文件
 
-WORKSPACE="/root/.openclaw/workspace"
+WORKSPACE="/Users/qianzhao/.openclaw/workspace"
 DATE=$(date +%Y-%m-%d)
 DAY=$(date +%A)
 SCHEDULE_FILE="$WORKSPACE/memory/daily-schedule/$DATE.md"

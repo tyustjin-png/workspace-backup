@@ -13,7 +13,7 @@ from datetime import datetime
 from pathlib import Path
 
 # 配置
-WORKSPACE = Path("/root/.openclaw/workspace")
+WORKSPACE = Path("/Users/qianzhao/.openclaw/workspace")
 STATE_FILE = WORKSPACE / "infra" / "notification_state.json"
 LOG_FILE = WORKSPACE / "infra" / "notification_log.jsonl"
 

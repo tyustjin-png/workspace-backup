@@ -3,8 +3,8 @@
 
 LOG_FILE="/tmp/meme_monitor.log"
 PID_FILE="/tmp/meme_monitor.pid"
-SCRIPT="/root/.openclaw/workspace/meme_monitor_simple.py"
-PYTHON="/root/.openclaw/workspace/meme_monitor_env/bin/python"
+SCRIPT="/Users/qianzhao/.openclaw/workspace/meme_monitor_simple.py"
+PYTHON="/Users/qianzhao/.openclaw/workspace/meme_monitor_env/bin/python"
 
 # 检查进程是否运行
 check_running() {
@@ -19,7 +19,7 @@ check_running() {
 
 # 启动监控
 start_monitor() {
-    cd /root/.openclaw/workspace
+    cd /Users/qianzhao/.openclaw/workspace
     nohup $PYTHON $SCRIPT > $LOG_FILE 2>&1 &
     echo $! > $PID_FILE
     echo "[$(date)] 监控已启动，PID: $(cat $PID_FILE)" >> /tmp/watchdog.log

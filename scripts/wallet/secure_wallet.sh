@@ -1,9 +1,9 @@
 #!/bin/bash
 # 钱包安全管理脚本
 
-WALLET_PLAIN="/root/.config/solana/trading-bot.json"
-WALLET_ENCRYPTED="/root/.config/solana/trading-bot.json.age"
-WALLET_KEY="/root/.config/solana/.wallet.key"
+WALLET_PLAIN="/Users/qianzhao/.config/solana/trading-bot.json"
+WALLET_ENCRYPTED="/Users/qianzhao/.config/solana/trading-bot.json.age"
+WALLET_KEY="/Users/qianzhao/.config/solana/.wallet.key"
 
 # 生成加密密钥（只运行一次）
 generate_key() {

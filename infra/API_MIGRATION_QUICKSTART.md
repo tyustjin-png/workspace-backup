@@ -230,7 +230,7 @@ cat ~/.openclaw/openclaw.json | grep -E "sk-|AAH|api.*:"
 **方式2：添加到系统cron**
 ```bash
 # 每天早上7:00自动同步
-0 7 * * * /root/.openclaw/sync-secrets.sh >> /tmp/secrets-sync.log 2>&1
+0 7 * * * /Users/qianzhao/.openclaw/sync-secrets.sh >> /tmp/secrets-sync.log 2>&1
 ```
 
 **方式3：添加到OpenClaw cron**

@@ -14,7 +14,7 @@ DAILY_LIMIT_SOL = 3.0     # Solana 每日限额
 DAILY_LIMIT_ETH = 0.3     # Base 每日限额
 MIN_SCORE = 70
 
-TRADE_LOG = "/root/.openclaw/workspace/multichain_trade_history.json"
+TRADE_LOG = "/Users/qianzhao/.openclaw/workspace/multichain_trade_history.json"
 
 class MultiChainTrader:
     def __init__(self):
@@ -182,7 +182,7 @@ class MultiChainTrader:
         return trade_record
 
 # 主程序
-def auto_trade_from_signal(signal_file="/root/.openclaw/workspace/meme_signals.json"):
+def auto_trade_from_signal(signal_file="/Users/qianzhao/.openclaw/workspace/meme_signals.json"):
     """从信号文件读取并自动交易（多链）"""
     try:
         with open(signal_file, 'r') as f:

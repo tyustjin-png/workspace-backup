@@ -8,7 +8,7 @@ echo ""
 if ! command -v solana &> /dev/null; then
     echo "📦 安装 Solana CLI..."
     sh -c "$(curl -sSfL https://release.solana.com/v1.18.0/install)"
-    export PATH="/root/.local/share/solana/install/active_release/bin:$PATH"
+    export PATH="/Users/qianzhao/.local/share/solana/install/active_release/bin:$PATH"
 fi
 
 # 创建钱包目录

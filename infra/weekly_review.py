@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 # 配置
-WORKSPACE = Path("/root/.openclaw/workspace")
+WORKSPACE = Path("/Users/qianzhao/.openclaw/workspace")
 MEMORY_DIR = WORKSPACE / "memory"
 INFRA_DIR = WORKSPACE / "infra"
 

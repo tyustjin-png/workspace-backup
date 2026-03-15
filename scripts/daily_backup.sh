@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-WORKSPACE="/root/.openclaw/workspace"
-OPENCLAW="/root/.openclaw"
+WORKSPACE="/Users/qianzhao/.openclaw/workspace"
+OPENCLAW="/Users/qianzhao/.openclaw"
 BACKUP_DIR="$WORKSPACE/openclaw-backup"
 
 cd "$WORKSPACE"

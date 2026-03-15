@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 from datetime import datetime
 
-WORKSPACE = Path("/root/.openclaw/workspace")
+WORKSPACE = Path("/Users/qianzhao/.openclaw/workspace")
 MEMORY_DIR = WORKSPACE / "memory"
 
 def extract_skills_from_daily_log(date: str = None) -> str:

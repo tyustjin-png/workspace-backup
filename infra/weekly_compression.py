@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 from datetime import datetime, timedelta
 
-WORKSPACE = Path("/root/.openclaw/workspace")
+WORKSPACE = Path("/Users/qianzhao/.openclaw/workspace")
 MEMORY_DIR = WORKSPACE / "memory"
 SUMMARIES_DIR = MEMORY_DIR / "summaries"
 

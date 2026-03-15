@@ -16,7 +16,7 @@ fi
 
 # 2. 钱包余额
 echo -e "\n💰 钱包余额:"
-cd /root/.openclaw/workspace
+cd /Users/qianzhao/.openclaw/workspace
 ./meme_monitor_env/bin/python << 'EOF'
 from full_auto_trader import Wallet
 wallet = Wallet()
@@ -32,8 +32,8 @@ echo "  活跃任务数: $CRON_COUNT"
 
 # 4. 最近信号
 echo -e "\n📡 最近信号:"
-if [ -f "/root/.openclaw/workspace/meme_signals.json" ]; then
-    SIGNAL_COUNT=$(grep -c "contract" /root/.openclaw/workspace/meme_signals.json 2>/dev/null || echo 0)
+if [ -f "/Users/qianzhao/.openclaw/workspace/meme_signals.json" ]; then
+    SIGNAL_COUNT=$(grep -c "contract" /Users/qianzhao/.openclaw/workspace/meme_signals.json 2>/dev/null || echo 0)
     echo "  发现信号: $SIGNAL_COUNT 个"
 else
     echo "  无信号文件"
@@ -41,8 +41,8 @@ fi
 
 # 5. 持仓
 echo -e "\n📊 持仓:"
-if [ -f "/root/.openclaw/workspace/positions.json" ]; then
-    POS_COUNT=$(grep -c "contract" /root/.openclaw/workspace/positions.json 2>/dev/null || echo 0)
+if [ -f "/Users/qianzhao/.openclaw/workspace/positions.json" ]; then
+    POS_COUNT=$(grep -c "contract" /Users/qianzhao/.openclaw/workspace/positions.json 2>/dev/null || echo 0)
     echo "  当前持仓: $POS_COUNT 个"
 else
     echo "  无持仓"

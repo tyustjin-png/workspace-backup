@@ -209,7 +209,7 @@ def fetch_all_data():
         final_df = pd.merge(final_df, fng_subset, on='date', how='left')
     
     # 7. 保存为 CSV
-    output_file = "/root/.openclaw/workspace/btc_metrics_history.csv"
+    output_file = "/Users/qianzhao/.openclaw/workspace/btc_metrics_history.csv"
     final_df.to_csv(output_file, index=False)
     
     print(f"\n✅ 数据已保存到: {output_file}")

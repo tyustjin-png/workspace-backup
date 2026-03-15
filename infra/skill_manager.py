@@ -13,7 +13,7 @@ from pathlib import Path
 from datetime import datetime, timedelta
 from typing import List, Dict, Optional
 
-WORKSPACE = Path("/root/.openclaw/workspace")
+WORKSPACE = Path("/Users/qianzhao/.openclaw/workspace")
 SKILLS_DIR = WORKSPACE / "memory" / "skills"
 EXPERIENCE_DIR = WORKSPACE / "memory" / "experience"
 

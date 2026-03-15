@@ -14,7 +14,7 @@ from datetime import datetime
 from pathlib import Path
 
 # 配置
-WORKSPACE = Path("/root/.openclaw/workspace")
+WORKSPACE = Path("/Users/qianzhao/.openclaw/workspace")
 AUDIT_LOG = WORKSPACE / "infra" / "audit_log.jsonl"
 AUDIT_REPORT = WORKSPACE / "infra" / "audit_report.md"
 

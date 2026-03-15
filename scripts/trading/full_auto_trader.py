@@ -28,7 +28,7 @@ STOP_LOSS_PCT = -0.50  # -50% 止损
 TAKE_PROFIT_BREAKEVEN = 1.00  # +100% 卖出 50% 回本，剩余继续持有（无止盈）
 
 # 交易记录文件
-TRADE_LOG = "/root/.openclaw/workspace/trade_history.json"
+TRADE_LOG = "/Users/qianzhao/.openclaw/workspace/trade_history.json"
 
 # ==================== 钱包管理 ====================
 class Wallet:
@@ -433,7 +433,7 @@ class JupiterTrader:
         return trade_record
 
 # ==================== 主程序 ====================
-def auto_trade_from_signal(signal_file="/root/.openclaw/workspace/meme_signals.json"):
+def auto_trade_from_signal(signal_file="/Users/qianzhao/.openclaw/workspace/meme_signals.json"):
     """从信号文件读取并自动交易"""
     try:
         with open(signal_file, 'r') as f:

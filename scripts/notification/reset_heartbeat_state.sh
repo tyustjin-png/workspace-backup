@@ -1,7 +1,7 @@
 #!/bin/bash
 # 每日07:00重置 heartbeat 状态文件
 
-STATE_FILE="/root/.openclaw/workspace/heartbeat_state.json"
+STATE_FILE="/Users/qianzhao/.openclaw/workspace/heartbeat_state.json"
 TODAY=$(date '+%Y-%m-%d')
 
 cat > "$STATE_FILE" << EOF

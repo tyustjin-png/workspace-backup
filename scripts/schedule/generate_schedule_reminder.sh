@@ -1,7 +1,7 @@
 #!/bin/bash
 # 生成日程提醒消息并立即推送
 
-WORKSPACE="/root/.openclaw/workspace"
+WORKSPACE="/Users/qianzhao/.openclaw/workspace"
 OUTPUT_FILE="/tmp/schedule_message.txt"
 STATE_FILE="$WORKSPACE/heartbeat_state.json"
 

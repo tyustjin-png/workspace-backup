@@ -61,7 +61,7 @@ def get_z_value():
         print(f"❌ 未知错误: {e}", file=sys.stderr)
         return None
 
-def save_z_value(data, filepath='/root/.openclaw/workspace/xiaoding/data/current_z_value.json'):
+def save_z_value(data, filepath='/Users/qianzhao/.openclaw/workspace/xiaoding/data/current_z_value.json'):
     """保存z值到文件"""
     try:
         with open(filepath, 'w', encoding='utf-8') as f:

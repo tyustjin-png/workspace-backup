@@ -2,7 +2,7 @@
 # 日程汇报主动推送脚本
 # 替代原来的 generate_schedule_reminder.sh
 
-WORKSPACE="/root/.openclaw/workspace"
+WORKSPACE="/Users/qianzhao/.openclaw/workspace"
 SCHEDULE_FILE="/tmp/schedule_message.txt"
 LOG_FILE="/tmp/schedule_report.log"
 
@@ -19,7 +19,7 @@ fi
 echo "$(date '+%Y-%m-%d %H:%M:%S') ✅ 日程汇报已生成" >> "$LOG_FILE"
 
 # 主动推送到 Telegram
-/root/.openclaw/workspace/send_telegram_notification.sh "$(cat $SCHEDULE_FILE)"
+/Users/qianzhao/.openclaw/workspace/send_telegram_notification.sh "$(cat $SCHEDULE_FILE)"
 
 if [ $? -eq 0 ]; then
     echo "$(date '+%Y-%m-%d %H:%M:%S') ✅ 已推送到 Telegram" >> "$LOG_FILE"

@@ -1,7 +1,7 @@
 #!/bin/bash
 # 小定自动定投执行脚本
 
-XIAODING_DIR="/root/.openclaw/workspace/xiaoding"
+XIAODING_DIR="/Users/qianzhao/.openclaw/workspace/xiaoding"
 LOG_FILE="$XIAODING_DIR/data/dca_log.txt"
 NOTIFY_FILE="/tmp/xiaoding_notify.txt"
 
@@ -24,14 +24,14 @@ if [ $EXIT_CODE -eq 0 ]; then
     tail -20 "$LOG_FILE" >> "$NOTIFY_FILE"
     
     # 同步到日程系统
-    cd /root/.openclaw/workspace
+    cd /Users/qianzhao/.openclaw/workspace
     python3 daily_schedule_manager.py "定投相关完成" >> "$LOG_FILE" 2>&1
     echo "✅ 已同步日程系统" >> "$LOG_FILE"
     
     # 更新状态中心
     python3 -c "
 import sys
-sys.path.insert(0, '/root/.openclaw/workspace/infra')
+sys.path.insert(0, '/Users/qianzhao/.openclaw/workspace/infra')
 from state_center import mark_task_completed
 mark_task_completed('xiaoding', {'source': 'auto_dca.sh'}, 'auto_dca')
 print('✅ 状态中心已更新')

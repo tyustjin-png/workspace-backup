@@ -8,7 +8,7 @@ import sys
 from datetime import datetime
 from auto_trader import AutoTrader
 
-PENDING_FILE = "/root/.openclaw/workspace/pending_trades.json"
+PENDING_FILE = "/Users/qianzhao/.openclaw/workspace/pending_trades.json"
 
 def load_pending():
     """加载待处理交易"""
