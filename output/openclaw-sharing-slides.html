@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenClaw 实战技巧分享 - 紫龙</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+<style>
+:root {
+  --r-background-color: #0a0a2e;
+  --r-main-font: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --r-heading-font: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --r-main-color: #e8e8f0;
+  --r-heading-color: #ffffff;
+  --r-link-color: #6dd5fa;
+}
+.reveal { background: linear-gradient(135deg, #0a0a2e 0%, #1a1a4e 40%, #2d1b69 100%); }
+.reveal h1, .reveal h2, .reveal h3 { text-shadow: 0 0 20px rgba(109,213,250,0.3); }
+.big-number { font-size: 3em; font-weight: bold; color: #6dd5fa; text-shadow: 0 0 30px rgba(109,213,250,0.5); }
+.highlight { color: #ffd700; font-weight: bold; }
+.accent { color: #ff6b9d; }
+.tech-blue { color: #6dd5fa; }
+.subtitle { font-size: 0.6em; color: #aaa; margin-top: 0.5em; }
+.pyramid { text-align: center; line-height: 2; }
+.pyramid .level { display: inline-block; padding: 0.2em 1em; margin: 0.1em; border-radius: 8px; }
+.pyramid .l3 { background: rgba(255,107,157,0.3); border: 1px solid #ff6b9d; }
+.pyramid .l2 { background: rgba(109,213,250,0.3); border: 1px solid #6dd5fa; }
+.pyramid .l1 { background: rgba(255,215,0,0.3); border: 1px solid #ffd700; }
+.reveal section { text-align: left; }
+.reveal section.center-slide { text-align: center; }
+.reveal ul { list-style: none; padding-left: 0; }
+.reveal ul li { margin: 0.5em 0; font-size: 0.85em; }
+.reveal ul li::before { content: '▸ '; color: #6dd5fa; }
+.card { background: rgba(255,255,255,0.05); border: 1px solid rgba(109,213,250,0.2); border-radius: 12px; padding: 1em 1.5em; margin: 0.5em 0; }
+.three-col { display: flex; gap: 1em; justify-content: center; text-align: center; }
+.three-col .col { flex: 1; padding: 1em; border-radius: 12px; background: rgba(255,255,255,0.05); border: 1px solid rgba(109,213,250,0.15); }
+.tag { display: inline-block; padding: 0.2em 0.8em; border-radius: 20px; font-size: 0.7em; margin: 0.2em; }
+.tag-green { background: rgba(0,200,100,0.2); border: 1px solid #00c864; color: #00c864; }
+.tag-blue { background: rgba(109,213,250,0.2); border: 1px solid #6dd5fa; color: #6dd5fa; }
+.tag-pink { background: rgba(255,107,157,0.2); border: 1px solid #ff6b9d; color: #ff6b9d; }
+.reveal .progress { color: #6dd5fa; }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- 封面 -->
+<section class="center-slide" data-background-gradient="radial-gradient(circle at 30% 50%, #1a1a6e, #0a0a2e)">
+  <h1 style="font-size:2.2em;">🐉 OpenClaw 实战技巧</h1>
+  <p style="font-size:1.3em; color:#6dd5fa;">从踩坑到最佳实践</p>
+  <br>
+  <p style="font-size:0.9em; color:#aaa;">紫龙 🐉 · 2026.03.18</p>
+</section>
+
+<!-- 主题1：任务分层——模型分级 + 脚本优先 -->
+<section class="center-slide">
+  <h2>🎯 主题一</h2>
+  <p style="font-size:1.5em;">任务分层<br><span class="tech-blue">把对的事交给对的"人"</span></p>
+</section>
+
+<section>
+  <h3>🔺 执行力金字塔</h3>
+  <br>
+  <div style="text-align:center;">
+    <div style="margin:0.5em auto; width:40%; padding:0.6em; border-radius:8px; background:rgba(255,107,157,0.25); border:1px solid #ff6b9d;">🧠 Agent · <span style="font-size:0.8em;">Opus $15/M</span><br><span style="font-size:0.6em; color:#ccc;">多步推理 · 动态策略</span></div>
+    <div style="margin:0.5em auto; width:60%; padding:0.6em; border-radius:8px; background:rgba(109,213,250,0.25); border:1px solid #6dd5fa;">🛠️ Skill · <span style="font-size:0.8em;">Sonnet $3/M</span><br><span style="font-size:0.6em; color:#ccc;">LLM单步处理 · 半结构化</span></div>
+    <div style="margin:0.5em auto; width:80%; padding:0.6em; border-radius:8px; background:rgba(255,215,0,0.25); border:1px solid #ffd700;">📜 脚本 · <span style="font-size:0.8em;">Haiku $0.25/M 或零成本</span><br><span style="font-size:0.6em; color:#ccc;">确定逻辑 · 快 · 便宜</span></div>
+  </div>
+  <br>
+  <p style="text-align:center; font-size:1em;">核心原则：能让<span class="highlight">实习生</span>干的活，别请<span class="accent">总监</span></p>
+</section>
+
+<section>
+  <h3>🤔 判断三问</h3>
+  <br>
+  <ul style="font-size:1.1em; line-height:2;">
+    <li>输入输出<span class="highlight">确定</span>吗？ → 脚本 / Haiku</li>
+    <li>需要LLM理解，但<span class="highlight">一步完成</span>？ → Skill / Sonnet</li>
+    <li>需要<span class="highlight">多步推理、动态调整</span>？ → Agent / Opus</li>
+  </ul>
+  <br>
+  <div class="card" style="font-size:0.8em;">
+    <p>📌 实际案例</p>
+    <p><span class="tag tag-green">脚本</span> 定投执行 · 日程创建 · 日记提醒</p>
+    <p><span class="tag tag-blue">Skill</span> Web3 雷达 · 日程汇报 · 情报播报</p>
+    <p><span class="tag tag-pink">Agent</span> 1244篇笔记分析 · 投资研判</p>
+  </div>
+</section>
+
+<section>
+  <h3>📊 实战数据</h3>
+  <br>
+  <div class="card" style="text-align:center;">
+    <p><span class="big-number">18</span> 个定时任务</p>
+    <p style="font-size:1.2em;">其中 <span class="highlight">6个</span> 从 Sonnet 切 Haiku</p>
+    <p style="font-size:1.8em; margin-top:0.5em;">成本直降 <span class="accent" style="font-size:1.5em;">60%+</span></p>
+  </div>
+  <br>
+  <div class="card">
+    <p>⚠️ <span class="accent">踩坑</span></p>
+    <ul style="font-size:0.85em;">
+      <li>别一刀切——先对比测试，确认质量达标再降级</li>
+      <li>脚本的优势是<span class="highlight">确定性</span>，不会因为模型升级突然改行为</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 主题3：并行分发 -->
+<section class="center-slide">
+  <h2>🚀 主题二</h2>
+  <p style="font-size:1.5em;">并行任务分发</p>
+</section>
+
+<section>
+  <h3>💪 实战规模</h3>
+  <br>
+  <div style="text-align:center;">
+    <p><span class="big-number">1244</span> 篇笔记</p>
+    <p style="font-size:1.3em;"><span class="big-number" style="font-size:2em;">13</span> 个 AI 同时读</p>
+    <p style="font-size:1.3em; color:#6dd5fa;">⏱️ 几小时搞定</p>
+  </div>
+</section>
+
+<section>
+  <h3>🎯 两轮策略</h3>
+  <br>
+  <div class="three-col" style="font-size:0.9em;">
+    <div class="col" style="flex:1;">
+      <p>第一轮 🔵</p>
+      <p style="font-size:1.2em; color:#6dd5fa;">Sonnet 快扫</p>
+      <p style="color:#aaa; font-size:0.8em;">粗筛 · 打标签<br>便宜 · 快</p>
+    </div>
+    <div class="col" style="flex:0.3; display:flex; align-items:center; justify-content:center; border:none; background:none;">
+      <p style="font-size:2em;">→</p>
+    </div>
+    <div class="col" style="flex:1;">
+      <p>第二轮 🟣</p>
+      <p style="font-size:1.2em; color:#ff6b9d;">Opus 精读</p>
+      <p style="color:#aaa; font-size:0.8em;">深度分析 · 蒸馏<br>精准 · 深</p>
+    </div>
+  </div>
+  <br>
+  <div class="card">
+    <p>⚠️ <span class="accent">踩坑经验</span></p>
+    <ul>
+      <li>批次大小 <span class="highlight">100篇/批</span> 是甜点</li>
+      <li>先便宜后贵，别上来就 Opus 全扫</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 主题4：记忆系统 -->
+<section class="center-slide">
+  <h2>🧠 主题三</h2>
+  <p style="font-size:1.5em;">记忆系统<span class="tech-blue">三层架构</span></p>
+</section>
+
+<section>
+  <h3>🏗️ 三层蒸馏</h3>
+  <br>
+  <div style="text-align:center;">
+    <div style="margin:0.5em auto; width:45%; padding:0.8em; border-radius:8px; background:rgba(255,107,157,0.25); border:1px solid #ff6b9d;">
+      <p style="font-size:1.2em;">L3 · 决策公理</p>
+      <p style="font-size:0.7em; color:#ccc;">"永不满仓" "止损永远正确"</p>
+    </div>
+    <div style="font-size:1.5em; color:#6dd5fa;">↑ 蒸馏</div>
+    <div style="margin:0.5em auto; width:60%; padding:0.8em; border-radius:8px; background:rgba(109,213,250,0.25); border:1px solid #6dd5fa;">
+      <p style="font-size:1.2em;">L2 · 模式提炼</p>
+      <p style="font-size:0.7em; color:#ccc;">重复行为、偏好、决策倾向</p>
+    </div>
+    <div style="font-size:1.5em; color:#6dd5fa;">↑ 提炼</div>
+    <div style="margin:0.5em auto; width:75%; padding:0.8em; border-radius:8px; background:rgba(255,215,0,0.25); border:1px solid #ffd700;">
+      <p style="font-size:1.2em;">L1 · 日常观察</p>
+      <p style="font-size:0.7em; color:#ccc;">笔记、对话、行为记录</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>📊 数据说话</h3>
+  <br>
+  <div style="text-align:center;">
+    <p><span class="big-number">1244</span> 篇笔记</p>
+    <p style="font-size:1.5em; color:#aaa;">↓ AI 蒸馏 ↓</p>
+    <p><span class="big-number">46</span> 条决策公理</p>
+  </div>
+  <br>
+  <div class="card" style="text-align:center;">
+    <p style="font-size:1.1em;">💡 大多数人卡在 L1，<span class="accent">从不蒸馏</span></p>
+    <p style="color:#aaa; font-size:0.85em;">本质：教会 AI 你的<span class="highlight">决策风格</span></p>
+  </div>
+</section>
+
+<!-- 主题5：公众号抓取 -->
+<section class="center-slide">
+  <h2>📡 主题四</h2>
+  <p style="font-size:1.5em;">公众号文章 API 抓取</p>
+</section>
+
+<section>
+  <h3>🔧 一个 API 搞定</h3>
+  <br>
+  <div class="card" style="text-align:center;">
+    <p style="font-size:0.9em; color:#aaa;">工具</p>
+    <p style="font-size:1.5em; color:#6dd5fa;">down.mptext.top</p>
+  </div>
+  <br>
+  <p style="font-size:1.1em;">把公众号链接丢进去 →<br>一个 API 调用 → <span class="highlight">全文返回</span></p>
+  <br>
+  <div style="display:flex; gap:0.8em; justify-content:center;">
+    <span class="tag tag-green">内容分析</span>
+    <span class="tag tag-blue">竞品监控</span>
+    <span class="tag tag-pink">知识库搭建</span>
+  </div>
+</section>
+
+<!-- 结尾 -->
+<section class="center-slide" data-background-gradient="radial-gradient(circle at 70% 50%, #2d1b69, #0a0a2e)">
+  <h2>📋 总结</h2>
+  <br>
+  <div style="text-align:left; display:inline-block; font-size:1.1em; line-height:2;">
+    <p>🎯 模型分级 — 省钱 60%</p>
+    <p>⚡ 脚本优先 — 确定性为王</p>
+    <p>🚀 并行分发 — 13路同时干</p>
+    <p>🧠 记忆蒸馏 — 46条决策公理</p>
+    <p>📡 API 抓取 — 一行代码搞定</p>
+  </div>
+</section>
+
+<section class="center-slide" data-background-gradient="radial-gradient(circle at 50% 50%, #1a1a6e, #0a0a2e)">
+  <h2>🐉 谢谢大家</h2>
+  <br>
+  <p style="font-size:1.2em;">紫龙 🐉</p>
+  <p style="color:#aaa; font-size:0.9em;">OpenClaw · 让 AI 真正干活</p>
+  <br>
+  <p style="font-size:0.8em; color:#666;">Q&A 🎤</p>
+</section>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+Reveal.initialize({
+  hash: true,
+  transition: 'slide',
+  transitionSpeed: 'default',
+  center: true,
+  width: 1280,
+  height: 720,
+  margin: 0.1,
+});
+</script>
+</body>
+</html>

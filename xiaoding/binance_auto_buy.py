@@ -31,7 +31,8 @@ Z_MULTIPLIER_MAP = {
 }
 
 # 币安 API 端点
-BINANCE_API_BASE = 'https://api.binance.com'
+# 通过VPS Nginx代理访问币安API（固定IP，解决白名单问题）
+BINANCE_API_BASE = 'http://100.72.82.26:9080/binance'
 BINANCE_API_ENDPOINTS = {
     'order': '/api/v3/order',
     'account': '/api/v3/account',
@@ -50,6 +51,8 @@ class BinanceClient:
         self.session.headers.update({
             'X-MBX-APIKEY': api_key
         })
+        # 走VPS代理时不经过本地Surge代理
+        self.session.trust_env = False
     
     def _sign(self, params):
         """生成签名"""
@@ -144,14 +147,70 @@ class AutoBuyStrategy:
             )
     
     def load_config(self, config_path):
-        """加载配置"""
+        """加载配置，API Key直接从1Password读取（不落盘）"""
         if not config_path.exists():
             print(f"❌ 配置文件不存在: {config_path}")
             print(f"   请先创建配置文件")
             return {}
         
         with open(config_path, 'r') as f:
-            return json.load(f)
+            config = json.load(f)
+        
+        # 直接从1Password CLI读取，无明文文件
+        try:
+            import subprocess
+            token_file = Path('/Users/qianzhao/.openclaw/.op-token')
+            if token_file.exists():
+                env = dict(os.environ, OP_SERVICE_ACCOUNT_TOKEN=token_file.read_text().strip())
+                api_key = subprocess.run(
+                    ['op', 'read', 'op://Agent/w54ycg3h3k7uxixfcfhfui3rgu/te2dvfdmjrwpzgweat7ocwjb2e'],
+                    capture_output=True, text=True, env=env
+                ).stdout.strip()
+                api_secret = subprocess.run(
+                    ['op', 'read', 'op://Agent/w54ycg3h3k7uxixfcfhfui3rgu/ghdrbpsvsmuuf6bsjxwrxyibvy'],
+                    capture_output=True, text=True, env=env
+                ).stdout.strip()
+                
+                # 清理（取64位长的行）
+                for line in api_key.split('\n'):
+                    if len(line.strip()) == 64:
+                        api_key = line.strip()
+                        break
+                for line in api_secret.split('\n'):
+                    if len(line.strip()) == 64:
+                        api_secret = line.strip()
+                        break
+                
+                if len(api_key) == 64 and len(api_secret) == 64:
+                    config['binance_api_key'] = api_key
+                    config['binance_api_secret'] = api_secret
+                    print("✅ 已从1Password直接加载API Key（零落盘）")
+                else:
+                    print("⚠️ 1Password字段格式异常，尝试secrets.json")
+                    self._try_secrets_json(config)
+            else:
+                print("⚠️ .op-token不存在，尝试secrets.json")
+                self._try_secrets_json(config)
+        except Exception as e:
+            print(f"⚠️ 1Password读取失败，尝试secrets.json: {e}")
+            self._try_secrets_json(config)
+        
+        return config
+    
+    def _try_secrets_json(self, config):
+        """Fallback: 从secrets.json读取"""
+        secrets_file = Path('/Users/qianzhao/.openclaw/secrets.json')
+        if secrets_file.exists():
+            try:
+                with open(secrets_file, 'r') as f:
+                    secrets = json.load(f)
+                if secrets.get('binance-api-key'):
+                    config['binance_api_key'] = secrets['binance-api-key']
+                if secrets.get('binance-secret-key'):
+                    config['binance_api_secret'] = secrets['binance-secret-key']
+                print("✅ 已从secrets.json加载API Key")
+            except Exception as e:
+                print(f"⚠️ secrets.json也失败: {e}")
     
     def load_state(self):
         """加载状态"""

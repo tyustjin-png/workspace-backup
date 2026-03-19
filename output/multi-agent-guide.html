@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>OpenClaw 多Agent架构方案</title>
+<style>
+@page { margin: 2cm; size: A4; }
+body { font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif; color: #1a1a1a; line-height: 1.8; font-size: 14px; }
+h1 { text-align: center; font-size: 24px; margin-bottom: 5px; color: #1a1a1a; }
+.subtitle { text-align: center; color: #666; font-size: 13px; margin-bottom: 30px; }
+h2 { font-size: 18px; color: #2563eb; border-bottom: 2px solid #2563eb; padding-bottom: 6px; margin-top: 30px; }
+h3 { font-size: 15px; color: #444; margin-top: 20px; }
+pre { background: #f5f7fa; border-radius: 8px; padding: 16px; font-size: 12.5px; overflow-x: auto; border: 1px solid #e2e8f0; }
+code { font-family: "SF Mono", "Fira Code", monospace; font-size: 12.5px; }
+.highlight-box { background: #eff6ff; border-left: 4px solid #2563eb; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 16px 0; }
+.native-box { background: #f0fdf4; border-left: 4px solid #16a34a; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 16px 0; }
+.warn-box { background: #fefce8; border-left: 4px solid #eab308; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 16px 0; }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+th { background: #f1f5f9; text-align: left; padding: 10px 12px; font-size: 13px; border-bottom: 2px solid #cbd5e1; }
+td { padding: 10px 12px; border-bottom: 1px solid #e2e8f0; font-size: 13px; }
+ul { padding-left: 20px; }
+li { margin-bottom: 6px; }
+.arch-diagram { background: #1e293b; color: #e2e8f0; border-radius: 10px; padding: 20px; font-family: monospace; font-size: 13px; line-height: 2; }
+.arch-diagram .label { color: #60a5fa; }
+.arch-diagram .bot { color: #34d399; }
+.footer { text-align: center; color: #999; font-size: 11px; margin-top: 40px; border-top: 1px solid #e2e8f0; padding-top: 12px; }
+.step { display: flex; margin: 12px 0; }
+.step-num { background: #2563eb; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 14px; flex-shrink: 0; margin-right: 12px; margin-top: 2px; }
+.step-content { flex: 1; }
+.badge { display: inline-block; background: #16a34a; color: white; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; vertical-align: middle; }
+.tag-yes { background: #dcfce7; color: #166534; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+.tag-no { background: #fef2f2; color: #991b1b; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<h1>🤖 OpenClaw 多Agent架构方案</h1>
+<p class="subtitle">基于 OpenClaw 原生多Agent能力 · 一个Gateway · 多个专精Agent · 统一记忆</p>
+
+<h2>🎯 解决什么问题？</h2>
+<p>一个AI助手什么都管，看起来方便，但随着使用深入会遇到两个瓶颈：</p>
+<table>
+<tr><th>问题</th><th>表现</th></tr>
+<tr><td>上下文膨胀</td><td>对话越来越长，响应变慢，重要信息被稀释</td></tr>
+<tr><td>人设漂移</td><td>聊完投资接着聊健康，角色定位模糊，专业度下降</td></tr>
+</table>
+<div class="highlight-box">
+<strong>多Agent方案：</strong>每个Bot专精一个领域，像雇了一个专业团队。不同的事找不同的人聊。
+</div>
+
+<h2>🏗️ OpenClaw 原生多Agent能力</h2>
+
+<div class="native-box">
+<span class="badge">OpenClaw 原生支持</span><br><br>
+OpenClaw 从架构层面原生支持多Agent：<strong>一个Gateway进程可以同时运行多个独立Agent</strong>，每个Agent绑定不同的通信渠道（如不同的Telegram Bot）。这不是hack或变通方案，而是官方设计的核心功能。
+</div>
+
+<h3>原生提供的能力：</h3>
+<table>
+<tr><th>能力</th><th>说明</th></tr>
+<tr><td><code>agents.list</code> 配置</td><td>在 openclaw.json 中声明多个Agent，每个有独立ID和workspace</td></tr>
+<tr><td><code>bindings</code> 路由</td><td>将不同渠道/账号的消息自动路由到对应Agent</td></tr>
+<tr><td>独立 workspace</td><td>每个Agent拥有独立的文件系统（SOUL.md、AGENTS.md、memory/）</td></tr>
+<tr><td>独立 session</td><td>每个Agent的对话历史完全隔离</td></tr>
+<tr><td>共享 Gateway</td><td>所有Agent共用一个进程、一套LLM配置、一个端口</td></tr>
+<tr><td>独立 cron</td><td>每个Agent可以有自己的定时任务</td></tr>
+<tr><td>多渠道支持</td><td>Telegram / Discord / WhatsApp / Signal / Slack 等均支持</td></tr>
+</table>
+
+<h3>架构示意：</h3>
+<div class="arch-diagram">
+<span class="label">Mac Mini（一台机器）</span><br>
+&nbsp;&nbsp;└── <span class="label">OpenClaw Gateway</span>（一个进程，端口 18789）<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── 🐉 紫龙（总管）<span class="bot">@zilong_bot</span> → workspace/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── 🐕 二狗（投资）<span class="bot">@jin_invest_bot</span> → workspace-invest/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── 🧬 小尹烨（健康）<span class="bot">@jin_health_bot</span> → workspace-health/
+</div>
+
+<p>用户体验：跟微信加了几个好友一样，不同的事找不同的人聊。</p>
+
+<h2>⚙️ 搭建步骤</h2>
+
+<div class="step">
+<div class="step-num">1</div>
+<div class="step-content">
+<strong>创建Agent工作区</strong> <span class="badge">OpenClaw CLI</span><br>
+<pre>openclaw agents add invest</pre>
+OpenClaw 自动创建独立的 workspace、session store、agent 目录。
+</div>
+</div>
+
+<div class="step">
+<div class="step-num">2</div>
+<div class="step-content">
+<strong>创建Telegram Bot</strong><br>
+在 Telegram 找 <code>@BotFather</code>，发送 <code>/newbot</code>，设置名字和用户名，拿到 Bot Token。
+</div>
+</div>
+
+<div class="step">
+<div class="step-num">3</div>
+<div class="step-content">
+<strong>配置 openclaw.json</strong> <span class="badge">OpenClaw 原生配置</span>
+<pre>{
+  "agents": {
+    "list": [
+      { "id": "main" },
+      { "id": "invest", "workspace": "~/.openclaw/workspace-invest" }
+    ]
+  },
+  "bindings": [
+    { "agentId": "main",
+      "match": { "channel": "telegram", "accountId": "default" } },
+    { "agentId": "invest",
+      "match": { "channel": "telegram", "accountId": "invest" } }
+  ],
+  "channels": {
+    "telegram": {
+      "accounts": {
+        "default": { "botToken": "主Bot的token" },
+        "invest":  { "botToken": "投资Bot的token" }
+      }
+    }
+  }
+}</pre>
+</div>
+</div>
+
+<div class="step">
+<div class="step-num">4</div>
+<div class="step-content">
+<strong>重启Gateway + 配对</strong> <span class="badge">OpenClaw CLI</span>
+<pre>openclaw gateway restart
+openclaw pairing approve telegram &lt;配对码&gt;</pre>
+给新Bot发消息会收到配对码，批准后即可使用。
+</div>
+</div>
+
+<h2>🧠 记忆共享方案</h2>
+<div class="warn-box">
+<strong>核心挑战：</strong>多Agent各自workspace隔离，投资Bot不知道你跟健康Bot聊了什么。
+</div>
+
+<h3>第1层：共享核心记忆文件（推荐）</h3>
+<p>每个Agent的workspace放软链接，指向主Agent的 MEMORY.md：</p>
+<pre>ln -s ~/.openclaw/workspace/MEMORY.md \
+     ~/.openclaw/workspace-invest/SHARED_MEMORY.md</pre>
+<p>所有Agent启动时都能读到你的核心画像、偏好和重要决策。</p>
+
+<h3>第2层：共享用户信息</h3>
+<p>将 USER.md 复制到每个Agent的workspace，让它们都认识你。</p>
+
+<h3>第3层（进阶）：Mem0 统一记忆服务</h3>
+<p>所有Agent共享一个记忆API，自动从对话中提取事实，支持三级作用域：</p>
+<table>
+<tr><th>作用域</th><th>说明</th></tr>
+<tr><td>user级</td><td>跨所有Agent共享，如个人偏好、基本信息</td></tr>
+<tr><td>agent级</td><td>单Agent专属，如投资Bot的持仓分析历史</td></tr>
+<tr><td>session级</td><td>单次会话，如当前讨论的上下文</td></tr>
+</table>
+<p>大多数个人场景，前两层已足够。</p>
+
+<h2>📐 每个Agent的标准文件结构</h2>
+<div class="native-box">
+<span class="badge">OpenClaw 约定</span> 每个Agent的workspace遵循统一规范：
+</div>
+<pre>workspace-invest/
+├── SOUL.md          # 人设、专业知识、行为规则
+├── AGENTS.md        # 启动流程、工作规范
+├── USER.md          # 用户信息（复制自主Agent）
+├── SHARED_MEMORY.md # → 软链接到主Agent的MEMORY.md
+├── TOOLS.md         # 工具使用备忘
+└── memory/          # 独立记忆目录
+    ├── YYYY-MM-DD.md
+    └── ...</pre>
+<p>Agent启动时自动读取这些文件，建立身份认知和用户理解。</p>
+
+<h2>🤔 什么时候该拆Agent？</h2>
+<table>
+<tr><th><span class="tag-yes">✅ 该拆</span></th><th><span class="tag-no">❌ 不该拆</span></th></tr>
+<tr><td>某领域对话量大（每天几十轮讨论）</td><td>总对话量不大，一个Agent能hold住</td></tr>
+<tr><td>需要完全不同的人设和专业知识库</td><td>功能间关联性强（心情影响投资决策）</td></tr>
+<tr><td>想让某Agent 24小时自动跑任务</td><td>不想维护多套人设文件</td></tr>
+</table>
+
+<div class="highlight-box">
+<strong>核心原则：</strong>"一个聪明的全才 + 几个专精助手" 优于 "多个割裂的专才"
+</div>
+
+<p style="margin-top:24px; color:#666; font-size:13px;">官方文档：<code>docs.openclaw.ai/concepts/multi-agent</code></p>
+
+<div class="footer">
+OpenClaw 多Agent架构方案 · 2026年3月
+</div>
+
+</body>
+</html>

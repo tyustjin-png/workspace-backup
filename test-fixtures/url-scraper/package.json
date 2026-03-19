@@ -1,0 +1,19 @@
+{
+  "name": "url-scraper",
+  "version": "1.0.0",
+  "description": "CLI tool to scrape page title and meta description",
+  "main": "index.js",
+  "bin": {
+    "url-scraper": "index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "undici": "^7.24.4"
+  }
+}

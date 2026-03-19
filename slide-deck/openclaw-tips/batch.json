@@ -1,0 +1,19 @@
+{
+  "jobs": 3,
+  "tasks": [
+    {"id": "slide-01", "promptFiles": ["prompts/01-slide-cover.md"], "image": "01-slide-cover.png", "provider": "google", "ar": "16:9", "quality": "2k"},
+    {"id": "slide-02", "promptFiles": ["prompts/02-slide-overview.md"], "image": "02-slide-overview.png", "provider": "google", "ar": "16:9", "quality": "2k"},
+    {"id": "slide-03", "promptFiles": ["prompts/03-slide-model-tiers.md"], "image": "03-slide-model-tiers.png", "provider": "google", "ar": "16:9", "quality": "2k"},
+    {"id": "slide-04", "promptFiles": ["prompts/04-slide-model-tier-table.md"], "image": "04-slide-model-tier-table.png", "provider": "google", "ar": "16:9", "quality": "2k"},
+    {"id": "slide-05", "promptFiles": ["prompts/05-slide-model-result.md"], "image": "05-slide-model-result.png", "provider": "google", "ar": "16:9", "quality": "2k"},
+    {"id": "slide-06", "promptFiles": ["prompts/06-slide-script-vs-agent.md"], "image": "06-slide-script-vs-agent.png", "provider": "google", "ar": "16:9", "quality": "2k"},
+    {"id": "slide-07", "promptFiles": ["prompts/07-slide-pyramid.md"], "image": "07-slide-pyramid.png", "provider": "google", "ar": "16:9", "quality": "2k"},
+    {"id": "slide-08", "promptFiles": ["prompts/08-slide-decision-tree.md"], "image": "08-slide-decision-tree.png", "provider": "google", "ar": "16:9", "quality": "2k"},
+    {"id": "slide-09", "promptFiles": ["prompts/09-slide-parallel.md"], "image": "09-slide-parallel.png", "provider": "google", "ar": "16:9", "quality": "2k"},
+    {"id": "slide-10", "promptFiles": ["prompts/10-slide-parallel-detail.md"], "image": "10-slide-parallel-detail.png", "provider": "google", "ar": "16:9", "quality": "2k"},
+    {"id": "slide-11", "promptFiles": ["prompts/11-slide-memory-system.md"], "image": "11-slide-memory-system.png", "provider": "google", "ar": "16:9", "quality": "2k"},
+    {"id": "slide-12", "promptFiles": ["prompts/12-slide-memory-insight.md"], "image": "12-slide-memory-insight.png", "provider": "google", "ar": "16:9", "quality": "2k"},
+    {"id": "slide-13", "promptFiles": ["prompts/13-slide-wechat-api.md"], "image": "13-slide-wechat-api.png", "provider": "google", "ar": "16:9", "quality": "2k"},
+    {"id": "slide-14", "promptFiles": ["prompts/14-slide-back-cover.md"], "image": "14-slide-back-cover.png", "provider": "google", "ar": "16:9", "quality": "2k"}
+  ]
+}

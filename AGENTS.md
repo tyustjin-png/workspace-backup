@@ -48,6 +48,7 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - Don't run destructive commands without asking.
 - `trash` > `rm` (recoverable beats gone forever)
 - When in doubt, ask.
+- **安装任何 skill 之前必须进行安全检查**：审查来源、权限需求、代码内容，确认安全后才能安装。
 
 ## External vs Internal
 

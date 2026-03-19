@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+@page { margin: 1.2cm; size: A4; }
+body { font-family: -apple-system, "PingFang SC", sans-serif; color: #1a1a1a; line-height: 1.5; font-size: 11px; margin: 0; padding: 0; }
+.header { background: linear-gradient(135deg, #76b900, #1a1a1a); color: white; padding: 18px 20px; text-align: center; border-radius: 0 0 14px 14px; }
+.header h1 { font-size: 20px; margin: 0; letter-spacing: 1px; }
+.header .sub { font-size: 11px; opacity: 0.8; margin-top: 4px; }
+.content { padding: 10px 5px; }
+h2 { font-size: 13px; color: #76b900; border-left: 3px solid #76b900; padding-left: 8px; margin: 12px 0 6px 0; }
+.quote { background: #1a1a1a; color: #f0f0f0; border-radius: 8px; padding: 10px 14px; margin: 8px 0; font-size: 11px; font-style: italic; }
+.quote .author { color: #76b900; font-size: 10px; text-align: right; margin-top: 4px; }
+.grid { display: flex; gap: 10px; margin: 8px 0; }
+.card { flex: 1; background: #f8faf5; border: 1px solid #e0e8d0; border-radius: 8px; padding: 10px 12px; }
+.card h3 { margin: 0 0 5px 0; font-size: 12px; color: #333; }
+.card li { margin-bottom: 2px; font-size: 10.5px; }
+.card ul { margin: 0; padding-left: 14px; }
+table { width: 100%; border-collapse: collapse; margin: 6px 0; font-size: 10.5px; }
+th { background: #76b900; color: white; padding: 4px 8px; text-align: left; font-size: 10px; }
+td { padding: 3px 8px; border-bottom: 1px solid #eee; }
+.takeaway { background: #f8faf5; border: 1.5px solid #76b900; border-radius: 8px; padding: 8px 12px; margin: 8px 0; font-size: 11px; }
+.takeaway ol { margin: 4px 0; padding-left: 16px; }
+.takeaway li { margin-bottom: 2px; }
+.links { font-size: 10px; color: #666; margin-top: 8px; }
+.links a { color: #76b900; text-decoration: none; }
+.footer { text-align: center; color: #bbb; font-size: 9px; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="header">
+<h1>NVIDIA GTC 2026 × NemoClaw 速报</h1>
+<div class="sub">黄仁勋官宣企业级AI Agent平台 · 2026.3.16 San Jose</div>
+</div>
+<div class="content">
+
+<div class="quote">
+"每家公司都需要一个OpenClaw战略。就像当年需要Linux战略、Kubernetes战略一样。OpenClaw给了行业恰好在恰好的时间需要的东西。"
+<div class="author">—— Jensen Huang, NVIDIA CEO, GTC 2026 Keynote</div>
+</div>
+
+<div class="grid">
+<div class="card">
+<h3>🔍 NemoClaw 是什么</h3>
+<ul>
+<li><strong>OpenClaw + 企业安全 = NemoClaw</strong></li>
+<li>与 OpenClaw 创始人 Peter Steinberger 联合开发</li>
+<li>企业级权限管理、隐私控制、沙箱编排</li>
+<li>硬件无关（不强制NVIDIA GPU）</li>
+<li>支持任意Agent + 开源模型（含NemoTron）</li>
+<li>集成 NeMo AI Agent 管理套件</li>
+<li>当前状态：<strong>早期 Alpha</strong></li>
+</ul>
+</div>
+<div class="card">
+<h3>🎯 四个关键判断</h3>
+<ul>
+<li><strong>个人工具 → 行业标准</strong>：NVIDIA背书是里程碑</li>
+<li><strong>补最大短板</strong>：企业安全是OpenClaw缺的，NemoClaw补上</li>
+<li><strong>AI Agent 进入主流</strong>：老黄喊话所有CEO制定OpenClaw战略</li>
+<li><strong>现在学 = 当年学Linux</strong>：越早掌握越有先发优势</li>
+</ul>
+</div>
+</div>
+
+<h2>📊 时间线</h2>
+<table>
+<tr><th>时间</th><th>事件</th></tr>
+<tr><td>2026年初</td><td>OpenClaw 爆火，成为最热AI Agent开源项目</td></tr>
+<tr><td>2月</td><td>OpenAI 收购 OpenClaw 并雇用创始人；发布 Frontier 企业Agent平台</td></tr>
+<tr><td>3/10</td><td>CNBC 曝光 NVIDIA 向 Salesforce、Google、Adobe、CrowdStrike 推介 NemoClaw</td></tr>
+<tr><td>3/16</td><td>GTC 2026 黄仁勋正式官宣，开源、合作伙伴以早期访问换贡献</td></tr>
+</table>
+
+<h2>🔗 资源</h2>
+<div class="links">
+📹 完整Keynote：<a href="https://youtube.com/watch?v=WX9klFkp0BQ">youtube.com/watch?v=WX9klFkp0BQ</a> ｜
+12分钟精华：<a href="https://youtube.com/watch?v=X2i_8O75_Os">youtube.com/watch?v=X2i_8O75_Os</a><br>
+📰 TechCrunch：<a href="https://techcrunch.com/2026/03/16/nvidias-version-of-openclaw-could-solve-its-biggest-problem-security/">techcrunch.com/.../nvidias-version-of-openclaw...</a> ｜
+CNBC：<a href="https://www.cnbc.com/2026/03/10/nvidia-open-source-ai-agent-platform-nemoclaw-wired-agentic-tools-openclaw-clawdbot-moltbot.html">cnbc.com/.../nvidia-open-source-ai-agent-platform...</a><br>
+🌐 NemoClaw官网：<a href="https://nemoclaw.bot/">nemoclaw.bot</a> ｜
+NVIDIA博客：<a href="https://blogs.nvidia.com/blog/gtc-2026-news/">blogs.nvidia.com/blog/gtc-2026-news</a>
+</div>
+
+</div>
+<div class="footer">2026.3.17 整理</div>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenClaw 使用技巧</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'PingFang SC', sans-serif; background: #0f0f0f; color: #fff; overflow: hidden; }
+  
+  .slides { width: 100vw; height: 100vh; position: relative; }
+  .slide {
+    position: absolute; width: 100%; height: 100%;
+    display: none; flex-direction: column; justify-content: center; align-items: center;
+    padding: 60px 80px;
+  }
+  .slide.active { display: flex; }
+
+  /* Cover */
+  .slide-cover { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); }
+  .slide-cover .tag { color: #e94560; font-size: 14px; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 24px; }
+  .slide-cover h1 { font-size: 52px; font-weight: 700; line-height: 1.2; text-align: center; margin-bottom: 20px; }
+  .slide-cover .sub { color: #aaa; font-size: 18px; }
+
+  /* Section */
+  .slide-section { background: #0f0f0f; }
+  .slide-section .num { font-size: 100px; font-weight: 800; color: #1a1a1a; position: absolute; top: 40px; right: 80px; }
+  .slide-section .label { color: #e94560; font-size: 13px; letter-spacing: 3px; margin-bottom: 16px; }
+  .slide-section h2 { font-size: 44px; font-weight: 700; line-height: 1.3; max-width: 700px; }
+  .slide-section .desc { color: #888; font-size: 20px; margin-top: 20px; max-width: 600px; line-height: 1.6; }
+
+  /* Content */
+  .slide-content { background: #111; align-items: flex-start; }
+  .slide-content h3 { font-size: 28px; font-weight: 600; margin-bottom: 32px; color: #e94560; }
+  .slide-content ul { list-style: none; width: 100%; max-width: 800px; }
+  .slide-content ul li {
+    padding: 16px 20px; margin-bottom: 12px;
+    border-left: 3px solid #e94560;
+    background: #1a1a1a; border-radius: 4px;
+    font-size: 18px; line-height: 1.5; color: #ddd;
+  }
+  .slide-content ul li strong { color: #fff; }
+
+  /* Compare */
+  .slide-compare { background: #111; gap: 40px; flex-direction: column; }
+  .slide-compare h3 { font-size: 28px; color: #e94560; align-self: flex-start; margin-bottom: 8px; }
+  .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; width: 100%; max-width: 900px; }
+  .compare-card { background: #1a1a1a; border-radius: 8px; padding: 24px; }
+  .compare-card .label { font-size: 12px; letter-spacing: 2px; color: #666; margin-bottom: 12px; }
+  .compare-card .price { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+  .compare-card .price.cheap { color: #4ade80; }
+  .compare-card .price.mid { color: #facc15; }
+  .compare-card .price.expensive { color: #e94560; }
+  .compare-card p { color: #aaa; font-size: 15px; line-height: 1.5; }
+
+  /* Stats */
+  .slide-stats { background: #0f0f0f; }
+  .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; width: 100%; max-width: 900px; }
+  .stat-card { background: #1a1a1a; border-radius: 12px; padding: 32px 24px; text-align: center; }
+  .stat-card .num { font-size: 52px; font-weight: 800; color: #e94560; }
+  .stat-card .unit { font-size: 20px; color: #aaa; }
+  .stat-card p { color: #666; font-size: 14px; margin-top: 8px; }
+
+  /* End */
+  .slide-end { background: linear-gradient(135deg, #0f3460 0%, #16213e 50%, #1a1a2e 100%); }
+  .slide-end h2 { font-size: 48px; font-weight: 700; text-align: center; margin-bottom: 20px; }
+  .slide-end p { color: #aaa; font-size: 20px; text-align: center; }
+
+  /* Nav */
+  .nav {
+    position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%);
+    display: flex; gap: 12px; align-items: center; z-index: 100;
+  }
+  .nav button {
+    background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+    color: #fff; padding: 10px 24px; border-radius: 24px; cursor: pointer;
+    font-size: 14px; transition: all 0.2s;
+  }
+  .nav button:hover { background: rgba(255,255,255,0.2); }
+  .nav .counter { color: #666; font-size: 13px; min-width: 60px; text-align: center; }
+
+  /* Progress */
+  .progress {
+    position: fixed; top: 0; left: 0; height: 3px;
+    background: #e94560; transition: width 0.3s;
+    z-index: 100;
+  }
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<div class="slides" id="slides">
+
+  <!-- 封面 -->
+  <div class="slide slide-cover active">
+    <div class="tag">OpenClaw 实战分享</div>
+    <h1>把 AI 真正用起来<br>的 5 个技巧</h1>
+    <div class="sub">不是讲概念，是讲我自己在用的</div>
+  </div>
+
+  <!-- 技巧1 标题 -->
+  <div class="slide slide-section">
+    <div class="num">01</div>
+    <div class="label">省钱提效</div>
+    <h2>模型分级 +<br>脚本优先</h2>
+    <div class="desc">不是所有任务都需要最强模型，不是所有任务都需要 AI</div>
+  </div>
+
+  <!-- 技巧1 内容 -->
+  <div class="slide slide-content">
+    <h3>01 · 模型当员工分级</h3>
+    <ul>
+      <li><strong>执行层 Haiku · $0.25/M</strong> — 固定逻辑、跑脚本、定时任务</li>
+      <li><strong>处理层 Sonnet · $3/M</strong> — 信息处理、日报生成、摘要</li>
+      <li><strong>思考层 Opus · $15/M</strong> — 深度分析、策略制定、决策</li>
+      <li><strong>18个任务 → 6个切 Haiku</strong>，日常成本降 60%+，效果零差异</li>
+      <li><strong>任务三问：</strong>输入输出确定？→ 脚本 · 需要LLM一步？→ Skill · 多步推理？→ Agent</li>
+    </ul>
+  </div>
+
+  <!-- 技巧2 标题 -->
+  <div class="slide slide-section">
+    <div class="num">02</div>
+    <div class="label">知识蒸馏</div>
+    <h2>1244 篇笔记<br>→ 46 条公理</h2>
+    <div class="desc">7年笔记，自己都没全部回顾过。AI 帮你蒸馏</div>
+  </div>
+
+  <!-- 技巧2 内容 -->
+  <div class="slide slide-stats">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="num">1244</div>
+        <div class="unit">篇</div>
+        <p>7年积累的笔记</p>
+      </div>
+      <div class="stat-card">
+        <div class="num">13</div>
+        <div class="unit">个</div>
+        <p>Opus 并行深读</p>
+      </div>
+      <div class="stat-card">
+        <div class="num">46</div>
+        <div class="unit">条</div>
+        <p>最终决策公理</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 技巧2 流程 -->
+  <div class="slide slide-content">
+    <h3>02 · 三层蒸馏</h3>
+    <ul>
+      <li><strong>L1 日常观察</strong> — 每天记录，原始素材</li>
+      <li><strong>L2 模式提炼</strong> — 识别重复出现的规律</li>
+      <li><strong>L3 决策公理</strong> — 可执行的行动准则，标注来源+置信度</li>
+      <li><strong>7个类别：</strong>投资决策(9)、风险管理(7)、信息处理(7)、个人成长(7)、人际(5)、内容(5)、团队(6)</li>
+    </ul>
+  </div>
+
+  <!-- 技巧3 标题 -->
+  <div class="slide slide-section">
+    <div class="num">03</div>
+    <div class="label">上下文积累</div>
+    <h2>AI 越懂你<br>越能干活</h2>
+    <div class="desc">从"每次从零"变成"带着理解工作"</div>
+  </div>
+
+  <!-- 技巧3 内容 -->
+  <div class="slide slide-content">
+    <h3>03 · 喂给 AI 的三层数据</h3>
+    <ul>
+      <li><strong>历史笔记</strong> — 1244篇全部喂进去，建立思维基线</li>
+      <li><strong>决策公理</strong> — 46条写入系统，AI 建议带你的味道</li>
+      <li><strong>日常交互</strong> — 每次对话持续积累，越用越懂你</li>
+      <li><strong>效果：</strong>不再说"建议分散投资"，而是"按你的 INV-01，定投指数3，该加仓了"</li>
+    </ul>
+  </div>
+
+  <!-- 技巧4 标题 -->
+  <div class="slide slide-section">
+    <div class="num">04</div>
+    <div class="label">主动管理</div>
+    <h2>AI 帮你管日程<br>不是提醒你管</h2>
+    <div class="desc">把"自律"外包给 AI</div>
+  </div>
+
+  <!-- 技巧4 内容 -->
+  <div class="slide slide-content">
+    <h3>04 · 每日日程四环节</h3>
+    <ul>
+      <li><strong>7:30 自动创建</strong> — 模板生成，你发了日程就覆盖</li>
+      <li><strong>随时打卡</strong> — "做了100个仰卧起坐" → 自动归类+标记✅</li>
+      <li><strong>10/15/19点主动推送</strong> — 进度送到 Telegram，不用你问</li>
+      <li><strong>21:00 自动复盘</strong> — 完成度统计+当日反思，零操作</li>
+    </ul>
+  </div>
+
+  <!-- 技巧5 标题 -->
+  <div class="slide slide-section">
+    <div class="num">05</div>
+    <div class="label">浏览器控制</div>
+    <h2>AI 操控浏览器<br>帮你卖二手</h2>
+    <div class="desc">不只是生成内容，而是真的帮你干活</div>
+  </div>
+
+  <!-- 技巧5 内容 -->
+  <div class="slide slide-content">
+    <h3>05 · EPYC 配件上架全流程</h3>
+    <ul>
+      <li><strong>查价</strong> — 打开闲鱼搜同款，给出挂价和底价</li>
+      <li><strong>写文案</strong> — 8个品类标题+描述，SEO优化，打包方案</li>
+      <li><strong>列清单</strong> — 每个配件的拍照 checklist</li>
+      <li><strong>操作上架</strong> — 直接在浏览器里填信息、发布，你只需拍照确认</li>
+    </ul>
+  </div>
+
+  <!-- 结尾 -->
+  <div class="slide slide-end">
+    <h2>核心：把 AI 当员工用<br>不是当搜索引擎用</h2>
+    <p style="margin-top: 32px;">省钱 · 蒸馏 · 个性化 · 主动管理 · 浏览器操控</p>
+  </div>
+
+</div>
+
+<div class="nav">
+  <button onclick="prev()">← 上一页</button>
+  <div class="counter" id="counter">1 / 13</div>
+  <button onclick="next()">下一页 →</button>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
+  const total = slides.length;
+
+  function show(n) {
+    slides[current].classList.remove('active');
+    current = (n + total) % total;
+    slides[current].classList.add('active');
+    document.getElementById('counter').textContent = `${current + 1} / ${total}`;
+    document.getElementById('progress').style.width = `${((current + 1) / total) * 100}%`;
+  }
+
+  function next() { show(current + 1); }
+  function prev() { show(current - 1); }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') next();
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') prev();
+  });
+
+  show(0);
+</script>
+</body>
+</html>
